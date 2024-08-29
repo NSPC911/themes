@@ -1,0 +1,105 @@
+/**
+ * @name CSS Snippets
+ * @author NIL
+ * @version 0.0.0
+ * @description A bunch of stuff taken from Vencord's CSS Snippets channel. I do not own anything!
+*/
+
+
+/* Make the App Launcher disappear among a sea of butterflies */
+.channelAppLauncher_df39bd {
+	display: none;
+}
+
+/* Reposition App Launcher /
+.channelTextArea_a7d72e {
+    position: relative;
+}
+.channelAppLauncher_df39bd {
+    position: absolute;
+    top: -50px;
+    right: 16px;;
+}
+
+/* Mordernize Audio Attachements */
+[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioMetadata"] {
+  margin-bottom: 24px;
+}
+[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+/* Discord actually useable on low width windows */
+@media (max-width: 1100px)
+{
+    [class*="sidebar_"]
+    {
+        width: 200px;
+        .vc-typing-indicator, .vc-channelemojis-emoji, [class*="guildIconV2Container_"]
+        {
+            display: none;
+        }
+        [class*="containerDefault_"]
+        {
+            [role="img"]
+            {
+                display: none;
+            }
+        }
+    }
+    [class*="chat_"]
+    {
+        [class*="membersWrap_"]
+        {
+            display: none;
+        }
+    }
+}
+
+/* Let the User Area elements breathe */
+[class^=panels] > [class^=container]
+{
+    height: unset !important;
+    align-items: unset !important;
+    padding: 6px 8px !important; 
+    flex-direction: column-reverse !important;
+    gap: 2px !important;
+}
+
+[class^=avatarWrapper]
+{
+    margin-right: unset !important;
+    margin-left: unset !important;
+    padding-left: 4px !important;
+}
+
+[class^=container] > [class*=buttons]
+{
+    justify-content: space-evenly !important;
+}
+
+/* Hide chatbox when no access */
+[class*=channelTextAreaDisabled] {
+    display: none!important;
+}
+[class*=channelTextAreaDisabled] {
+    opacity: 0!important;
+    position: absolute!important;
+    height: 0px!important;
+    width: 0px!important;
+    z-index: 0!important;
+}
+
+/* Fix long ass profiles */
+[class*=userPopoutOverlayBackground] {
+  max-height: 60vh;
+}
+
+/* Blurred Background while loading */
+.container_e40c16.fixClipping_c7e9c6  {
+  background: 0 0;
+  backdrop-filter: blur(5px);
+}
