@@ -103,3 +103,9 @@
   background: 0 0;
   backdrop-filter: blur(5px);
 }
+
+/* I dont care about current players */
+[class^='membersGroup']:has([role=button]),
+[class^='member'] [class^='container']:has([class*='badges']) {
+  display: none;
+}
