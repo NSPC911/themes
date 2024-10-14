@@ -3,22 +3,62 @@
  * @author NIL
  * @version 0.0.0
  * @description A bunch of stuff taken from Vencord's CSS Snippets channel. I do not own anything!
+ * @source https://github.com/NSPC911/vc-themes
 */
 
+/* DM Gradient */
+@import url("https://raw.githubusercontent.com/Teeenoob/vc-css/refs/heads/main/dm-gradient.css");
+
+/* Gradient Reply/Mention messages */
+.messageListItem_d5deea {
+    margin-left: 5px;
+}
+div[class*="cozy_"][class*="wrapper_"] {
+    border-radius: 8px;
+}
+div[class*="mentioned_"],
+div[class*="replying_"] {
+    position: relative;
+    border-radius: 8px;
+}
+div[class*="mentioned_"]:before,
+div[class*="replying_"]:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    border-radius: 8px;
+    width: 300px;
+    opacity: 0.4;
+}
+div[class*="mentioned_"]:hover:before,
+div[class*="replying_"]:hover:before {
+    opacity: 0.5;
+}
+div[class*="mentioned_"] {
+    background: var(--background-mentioned);
+    border-left: 0px solid var(--info-warning-foreground);
+}
+div[class*="mentioned_"]:before {
+    background: linear-gradient(to right, var(--info-warning-foreground), transparent); 
+}
+div[class*="replying_"] {
+    background: var(--background-message-highlight);
+    border-left: 0px solid var(--brand-500);
+}
+div[class*="replying_"]:before {
+    background: linear-gradient(to right, var(--brand-500), transparent);
+}
+div[class*="repliedMessageSpine_"] {
+    transition: none;
+}
 
 /* Make the App Launcher disappear among a sea of butterflies */
 .channelAppLauncher_df39bd {
 	display: none;
-}
-
-/* Reposition App Launcher /
-.channelTextArea_a7d72e {
-    position: relative;
-}
-.channelAppLauncher_df39bd {
-    position: absolute;
-    top: -50px;
-    right: 16px;;
 }
 
 /* Mordernize Audio Attachements */
@@ -104,8 +144,20 @@
   backdrop-filter: blur(5px);
 }
 
-/* I dont care about current players */
+/* Remove stickers and gifting */
+button[aria-label|="Send a gift"]{
+    display:none;
+}
+button[aria-label|="Open sticker picker"]{
+    display:none;
+}
+button[aria-label|="Open GIF picker"]{
+    display:none;
+}
+
+/* Hide recent activity */
 [class^='membersGroup']:has([role=button]),
 [class^='member'] [class^='container']:has([class*='badges']) {
   display: none;
 }
+
