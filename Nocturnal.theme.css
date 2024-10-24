@@ -24,8 +24,18 @@
 #app-mount .quickswitcher_f4e139,
 #app-mount .scroller_f4e139,
 #app-mount .uploadModalIn_f82cc7 .uploadDropModal_f82cc7 .bgScale_f82cc7 {
-  background: var(--backgroundName);
+  background: var(--backgroundName) !important;
 }
 #app-mount .tooltipPrimary-3qLMbS {
   background-color: var(--backgroundName) !important;
+}
+.interactive_f5eb4b:focus-within,
+.interactive_f5eb4b:hover {
+  background-color: transparent !important;
+}
+.interactiveSelected_c91bad {
+  background: transparent !important;
+}
+#app-mount .selected_d808b0 .layout_d808b0 {
+  background-color: transparent !important
 }

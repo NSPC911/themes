@@ -9,57 +9,86 @@
 /*
 User Gradient
 Original Message: https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1298575279169605693
-Modified by me
+Heavily modified by me
 */
 
 :root {
-  --gDM-online: linear-gradient(to right, rgb(34, 52, 34), transparent);
-  --gDM-offline: linear-gradient(to right, rgb(33, 33, 33), transparent);
-  --gDM-dnd: linear-gradient(to right, rgb(65, 35, 35), transparent);
-  --gDM-idle: linear-gradient(to right, rgb(67, 52, 67), transparent);
-  --gDM-streaming: linear-gradient(to right, rgb(31, 16, 44), transparent);
-  --gDM-border-radius: 25px;
+  --gDM-online: 67, 181, 129;
+  --gDM-offline: 99, 107, 117;
+  --gDM-dnd: 240, 71, 71;
+  --gDM-idle: 250, 166, 26;
+  --gDM-streaming: 100, 61, 167;
+  --gDM-border-radius: 50px;
+  --gDM-opacity: 0.5;
+  --gDM-selected-opacity: 1;
 }
-
-[class^="link_"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: var(--gDM-online);
+[class$="c91bad"] {
   border-radius: var(--gDM-border-radius);
+  transition: background 0.5s ease;
 }
-[class^="link_"]:has(:is([mask*="offline"], [fill="#80848e"])) {
-  background: var(--gDM-offline);
-  border-radius: var(--gDM-border-radius);
+.interactive_c91bad [class^="link_"]:has(:is([mask*="online"], [fill="#23a55a"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-online), var(--gDM-opacity)), transparent);
 }
-[class^="link_"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: var(--gDM-dnd);
-  border-radius: var(--gDM-border-radius);
+.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="online"], [fill="#23a55a"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-online), var(--gDM-selected-opacity)), transparent);
 }
-[class^="link_"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: var(--gDM-idle);
-  border-radius: var(--gDM-border-radius);
+.interactive_c91bad [class^="link_"]:has(:is([mask*="offline"], [fill="#80848e"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-offline), var(--gDM-opacity)), transparent);
 }
-[class^="link_"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: var(--gDM-streaming);
-  border-radius: var(--gDM-border-radius);
+.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="offline"], [fill="#80848e"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-offline), var(--gDM-selected-opacity)), transparent);
 }
-[class^="memberInner"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: var(--gDM-online);
-  border-radius: var(--gDM-border-radius);
+.interactive_c91bad [class^="link_"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-dnd), var(--gDM-opacity)), transparent);
 }
-[class^="memberInner"]:has(:is([mask*="offline"], [fill="#f0b232"])) {
-  background: var(--gDM-offline);
-  border-radius: var(--gDM-border-radius);
+.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-dnd), var(--gDM-selected-opacity)), transparent);
 }
-[class^="memberInner"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: var(--gDM-dnd);
-  border-radius: var(--gDM-border-radius);
+.interactive_c91bad [class^="link_"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-idle), var(--gDM-opacity)), transparent);
 }
-[class^="memberInner"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: var(--gDM-idle);
-  border-radius: var(--gDM-border-radius);
+.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-idle), var(--gDM-selected-opacity)), transparent);
 }
-[class^="memberInner"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: var(--gDM-streaming);
+.interactive_c91bad [class^="link_"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-streaming), var(--gDM-selected-opacity)), transparent);
+}
+.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-streaming), var(--gDM-selected-opacity)), transparent);
+}
+[class^="memberInner"] {
   border-radius: var(--gDM-border-radius);
+  transition: background 1s ease-in-out;
+}
+.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="online"], [fill="#23a55a"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-online), var(--gDM-opacity)), transparent);
+}
+.selected_d808b0 [class^="memberInner"]:has(:is([mask*="online"], [fill="#23a55a"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-online), var(--gDM-selected-opacity)), transparent);
+}
+.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="offline"], [fill="#f0b232"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-offline), var(--gDM-opacity)), transparent);
+}
+.selected_d808b0 [class^="memberInner"]:has(:is([mask*="offline"], [fill="#f0b232"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-offline), var(--gDM-selected-opacity)), transparent);
+}
+.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-dnd), var(--gDM-opacity)), transparent);
+}
+.selected_d808b0 [class^="memberInner"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-dnd), var(--gDM-selected-opacity)), transparent);
+}
+.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-idle), var(--gDM-opacity)), transparent);
+}
+.selected_d808b0 [class^="memberInner"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-idle), var(--gDM-selected-opacity)), transparent);
+}
+.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-streaming), var(--gDM-opacity)), transparent);
+}
+.selected_d808b0 [class^="memberInner"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+  background: linear-gradient(to right, rgba(var(--gDM-streaming), var(--gDM-opacity)), transparent);
 }
 
 /* Gradient Reply/Mention messages */
