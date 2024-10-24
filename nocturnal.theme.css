@@ -14,18 +14,18 @@
   --backgroundColor01: #1e2731;
   --backgroundColor02: #12171d;
   --mainColor: #2275c9;
-  --gradientColor01: #00F260;
-  --gradientColor02: #0575E6;
+  --gradientColor01: #00f260;
+  --gradientColor02: #0575e6;
   /* Better Hljs */
   --backgroundCode: #1e2731;
-  --backgroundName: rgba(0, 0, 0, .2);
-  --customFont: 'gg sans', sans-serif;
+  --backgroundName: rgba(0, 0, 0, 0.2);
+  --customFont: "gg sans", sans-serif;
 }
 #app-mount .quickswitcher_f4e139,
 #app-mount .scroller_f4e139,
 #app-mount .uploadModalIn_f82cc7 .uploadDropModal_f82cc7 .bgScale_f82cc7 {
-    background: var(--backgroundName);
+  background: var(--backgroundName);
 }
 #app-mount .tooltipPrimary-3qLMbS {
-    background-color: var(--backgroundName) !important
+  background-color: var(--backgroundName) !important;
 }
