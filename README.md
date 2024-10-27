@@ -12,7 +12,7 @@ Repository of the themes I use and have modified
 
 - [Nocturnal](https://nspc911.github.io/vc-themes/Nocturnal.theme.css)
 
-  Originally from [xcruxiex/themes](https://github.com/xcruxiex/themes), just with my variable preferences
+  Originally from [xcruxiex/themes](https://github.com/xcruxiex/themes), just with my variable preferences and fixes to be compatible with CSS Snippets
 
 - [Radial Status](https://nspc911.github.io/vc-themes/RadialStatus.theme.css)
 
