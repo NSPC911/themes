@@ -6,11 +6,9 @@
  * @source https://github.com/NSPC911/vc-themes
 */
 
-/*
-User Gradient
-Original Message: https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1298575279169605693
-Heavily modified by me
-*/
+/* User Gradient
+   From: https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1298575279169605693
+   Heavily modified by me */
 
 :root {
   --gDM-online: 67, 181, 129;
@@ -91,7 +89,8 @@ Heavily modified by me
   background: linear-gradient(to right, rgba(var(--gDM-streaming), var(--gDM-opacity)), transparent);
 }
 
-/* Gradient Reply/Mention messages */
+/* Gradient Reply/Mention messages
+   From: https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1294823473390030890 */
 .messageListItem_d5deea {
   margin-left: 5px;
 }
@@ -140,6 +139,16 @@ div[class*="replying_"]:before {
 }
 div[class*="repliedMessageSpine_"] {
   transition: none;
+}
+
+/* Hide status icons
+   From https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1299991457079234572 */
+[class^=avatar_] svg>:is(rect, mask) {
+  display: none;
+}
+[class^=avatar_] foreignObject {
+  border-radius: 100%;
+  mask: none;
 }
 
 /* Make the App Launcher disappear among a sea of butterflies */
