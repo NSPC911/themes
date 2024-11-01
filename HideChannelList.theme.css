@@ -10,6 +10,7 @@
 */
 
 :root {
+  --HC-sidebar-width: 52px;
   --HC-transition-duration: 1s;
 }
 
@@ -105,6 +106,18 @@
   height: 20px;
 }
 
+.sidebar_a4d4d9:hover .vc-typing-indicator:has(.avatarContainer_d03bba) {
+  width: 28px;
+}
+
+.sidebar_a4d4d9:hover .vc-typing-indicator:has(.avatarContainer_d03bba + .avatarContainer_d03bba) {
+  width: 40px;
+}
+
+.sidebar_a4d4d9:hover .vc-typing-indicator:has(.avatarContainer_d03bba + .avatarContainer_d03bba + .avatarContainer_d03bba) {
+  width: 52px;
+}
+
 .sidebar_a4d4d9:not(:hover) {
   overflow: hidden;
   width: 52px;
@@ -130,6 +143,10 @@
 
 .sidebar_a4d4d9:not(:hover) .container_c75f85 {
   max-height: 0px;
+}
+
+.sidebar_a4d4d9:not(:hover) .container_c75f85::after {
+  border-bottom: unset !important;
 }
 
 .sidebar_a4d4d9:not(:hover) .container_fa295b {
@@ -176,10 +193,6 @@
   width: 0;
 }
 
-.sidebar_a4d4d9:not(:hover) .container_c75f85::after {
-  border-bottom: unset !important;
-}
-
 .unreadBar_c43953 {
   overflow: hidden;
 }
@@ -214,7 +227,7 @@
   }
 
   .nameTag_b2ca13 {
-    transition-delay: 10ms;
+    transition-delay: 1s;
     transition: transform var(--HC-transition-duration) ease-in-out;
   }
 
