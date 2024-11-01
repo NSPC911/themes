@@ -10,7 +10,6 @@
 */
 
 :root {
-  --HC-sidebar-width: 52px;
   --HC-transition-duration: 1s;
 }
 
@@ -75,6 +74,11 @@
 
 .sidebar_a4d4d9:has([aria-label="Private channels"]):not(:hover) .content_eed6a8 {
   padding-left: 0px;
+}
+
+.sidebar_a4d4d9:hover .animatedContainer_fd6364 {
+  height: 135px !important;
+  overflow: hidden;
 }
 
 .sidebar_a4d4d9:hover .avatar_b2ca13 {
@@ -198,6 +202,9 @@
 }
 
 @media (prefers-reduced-motion) {
+  .animatedContainer_fd6364 {
+    transition: height var(--HC-transition-duration) ease-in-out
+  }
   .avatar_b2ca13 {
     transition: right var(--HC-transition-duration) ease-in-out, left var(--HC-transition-duration) ease-in-out;
   }
