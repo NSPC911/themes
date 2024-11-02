@@ -24,69 +24,168 @@
   border-radius: var(--gDM-border-radius);
   transition: background 0.5s ease;
 }
-.interactive_c91bad [class^="link_"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-online), var(--gDM-opacity)), transparent);
+.interactive_c91bad
+  [class^="link_"]:has(:is([mask*="online"], [fill="#23a55a"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-online), var(--gDM-opacity)),
+    transparent
+  );
 }
-.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-online), var(--gDM-selected-opacity)), transparent);
+.interactiveSelected_c91bad
+  [class^="link_"]:has(:is([mask*="online"], [fill="#23a55a"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-online), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
-.interactive_c91bad [class^="link_"]:has(:is([mask*="offline"], [fill="#80848e"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-offline), var(--gDM-opacity)), transparent);
+.interactive_c91bad
+  [class^="link_"]:has(:is([mask*="offline"], [fill="#80848e"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-offline), var(--gDM-opacity)),
+    transparent
+  );
 }
-.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="offline"], [fill="#80848e"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-offline), var(--gDM-selected-opacity)), transparent);
+.interactiveSelected_c91bad
+  [class^="link_"]:has(:is([mask*="offline"], [fill="#80848e"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-offline), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
 .interactive_c91bad [class^="link_"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-dnd), var(--gDM-opacity)), transparent);
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-dnd), var(--gDM-opacity)),
+    transparent
+  );
 }
-.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-dnd), var(--gDM-selected-opacity)), transparent);
+.interactiveSelected_c91bad
+  [class^="link_"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-dnd), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
-.interactive_c91bad [class^="link_"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-idle), var(--gDM-opacity)), transparent);
+.interactive_c91bad
+  [class^="link_"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-idle), var(--gDM-opacity)),
+    transparent
+  );
 }
-.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-idle), var(--gDM-selected-opacity)), transparent);
+.interactiveSelected_c91bad
+  [class^="link_"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-idle), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
-.interactive_c91bad [class^="link_"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-streaming), var(--gDM-selected-opacity)), transparent);
+.interactive_c91bad
+  [class^="link_"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
-.interactiveSelected_c91bad [class^="link_"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-streaming), var(--gDM-selected-opacity)), transparent);
+.interactiveSelected_c91bad
+  [class^="link_"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
 [class^="memberInner"] {
   border-radius: var(--gDM-border-radius);
   transition: background 1s ease-in-out;
 }
-.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-online), var(--gDM-opacity)), transparent);
+.clickable_d808b0
+  [class^="memberInner"]:has(:is([mask*="online"], [fill="#23a55a"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-online), var(--gDM-opacity)),
+    transparent
+  );
 }
-.selected_d808b0 [class^="memberInner"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-online), var(--gDM-selected-opacity)), transparent);
+.selected_d808b0
+  [class^="memberInner"]:has(:is([mask*="online"], [fill="#23a55a"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-online), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
-.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="offline"], [fill="#f0b232"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-offline), var(--gDM-opacity)), transparent);
+.clickable_d808b0
+  [class^="memberInner"]:has(:is([mask*="offline"], [fill="#f0b232"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-offline), var(--gDM-opacity)),
+    transparent
+  );
 }
-.selected_d808b0 [class^="memberInner"]:has(:is([mask*="offline"], [fill="#f0b232"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-offline), var(--gDM-selected-opacity)), transparent);
+.selected_d808b0
+  [class^="memberInner"]:has(:is([mask*="offline"], [fill="#f0b232"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-offline), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
-.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-dnd), var(--gDM-opacity)), transparent);
+.clickable_d808b0
+  [class^="memberInner"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-dnd), var(--gDM-opacity)),
+    transparent
+  );
 }
-.selected_d808b0 [class^="memberInner"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-dnd), var(--gDM-selected-opacity)), transparent);
+.selected_d808b0
+  [class^="memberInner"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-dnd), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
-.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-idle), var(--gDM-opacity)), transparent);
+.clickable_d808b0
+  [class^="memberInner"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-idle), var(--gDM-opacity)),
+    transparent
+  );
 }
-.selected_d808b0 [class^="memberInner"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-idle), var(--gDM-selected-opacity)), transparent);
+.selected_d808b0
+  [class^="memberInner"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-idle), var(--gDM-selected-opacity)),
+    transparent
+  );
 }
-.clickable_d808b0 [class^="memberInner"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-streaming), var(--gDM-opacity)), transparent);
+.clickable_d808b0
+  [class^="memberInner"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-streaming), var(--gDM-opacity)),
+    transparent
+  );
 }
-.selected_d808b0 [class^="memberInner"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: linear-gradient(to right, rgba(var(--gDM-streaming), var(--gDM-opacity)), transparent);
+.selected_d808b0
+  [class^="memberInner"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-streaming), var(--gDM-opacity)),
+    transparent
+  );
 }
 
 /* Gradient Reply/Mention messages
@@ -143,10 +242,10 @@ div[class*="repliedMessageSpine_"] {
 
 /* Hide status icons
    From https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1299991457079234572 */
-[class^=avatar_] svg>:is(rect, mask) {
+[class^="avatar_"] svg > :is(rect, mask) {
   display: none;
 }
-[class^=avatar_] foreignObject {
+[class^="avatar_"] foreignObject {
   border-radius: 100%;
   mask: none;
 }
