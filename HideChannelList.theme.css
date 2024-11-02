@@ -13,9 +13,7 @@
   --HC-transition-duration: 1s;
 }
 
-.content_eed6a8 > div[style="height: 12px;"] {
-  height: 0 !important;
-}
+/* setting default stuff */
 
 .avatar_b2ca13 {
   z-index: 3;
@@ -35,16 +33,29 @@
   overflow: hidden;
 }
 
+.content_eed6a8 > div[style="height: 12px;"] {
+  /* border between boost and banner
+     i cant believe i had to attribute
+	 select a style */
+  height: 0 !important;
+}
+
 .nameTag_b2ca13 {
   z-index: 0;
 }
 
 .sidebar_a4d4d9 .buttons_b2ca13 {
+  /* the buttons above your profile */
   align-content: flex-start;
   display: flex;
   flex-wrap: wrap;
 }
 
+.unreadBar_c43953 {
+  overflow: hidden;
+}
+
+/* my favourite part */
 .sidebar_a4d4d9:has([aria-label="Favorites (server)"]):not(:hover) {
   width: 64px;
 
@@ -90,9 +101,11 @@
   }
 
   .children_d8bfb3:has(.channelInfo_f6f816) {
-    width: 51.5px !important; /* It is overwritten by earlier checks */
+    /* checks for unread forum posts */
+    width: 51.5px;
   }
 
+  /* hardcoding is my passion */
   .children_d8bfb3:has([aria-label="Create Invite"]),
   .children_d8bfb3:has([aria-label="Edit Channel"]) {
     width: 20px;
@@ -117,6 +130,7 @@
     overflow: hidden;
   }
 
+  /* hardcoding is my passion */
   .vc-typing-indicator:has(.avatarContainer_d03bba) {
     width: 42px;
   }
@@ -135,9 +149,6 @@
   .voiceChannelsButton_a08117 .defaultColor_a595eb {
     width: 100%;
     overflow: hidden;
-  }
-  .unread_c43953 {
-    width: 222px; /*hardcoding is my passion*/
   }
 }
 
@@ -225,10 +236,6 @@
   }
 }
 
-.unreadBar_c43953 {
-  overflow: hidden;
-}
-
 @media (!prefers-reduced-motion) {
   .avatar_b2ca13 {
     transition:
@@ -290,8 +297,5 @@
       padding var(--HC-transition-duration) ease-in-out,
       margin-right var(--HC-transition-duration) ease-in-out,
       padding-left var(--HC-transition-duration) ease-in-out;
-  }
-  .unreadBar_c43953 {
-    transition: transform var(--HC-transition-duration) ease-in-out;
   }
 }
