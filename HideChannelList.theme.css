@@ -232,11 +232,11 @@
   }
 
   .unread_c43953 {
-    transform: translateY(180%) !important;
+    display: none;
   }
 }
 
-@media (!prefers-reduced-motion) {
+@media (prefers-reduced-motion: no-preference) {
   .avatar_b2ca13 {
     transition:
       right var(--HC-transition-duration) ease-in-out,
@@ -279,7 +279,6 @@
   .sidebar_a4d4d9,
   .progressBarContainer_c75f85,
   .progressBar_c75f85,
-  .unread_c43953,
   .voiceChannelsButton_a08117 .defaultColor_a595eb {
     transition: width var(--HC-transition-duration) ease-in-out;
   }
