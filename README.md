@@ -6,9 +6,9 @@ Repository of the themes I use and have modified
   A collection of CSS Snippets from the Vencord Discord Server.
   Message links from where I took them will be slowly added (I forgot where I took them)
 
-- [HideChannelList](https://nspc911.github.io/vc-themes/HideChannelList.theme.css)
-
-  A wonky theme to hide channels list until hovered on.
+- [Discolored](https://nspc911.github.io/vc-themes/discolored.theme.css)
+  
+  From [NYRI4/Discolored](https://github.com/NYRI4/Discolored)
 
 - [HideUserList](https://nspc911.github.io/vc-themes/HideUserList.theme.css)
 
