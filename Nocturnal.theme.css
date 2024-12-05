@@ -37,19 +37,19 @@
   background: transparent !important;
 }
 #app-mount .selected_d808b0 .layout_d808b0 {
-  background-color: transparent !important
+  background-color: transparent !important;
 }
 /* I couldn't fix Nocturnal not being compatible with Gradient Mention
    message, so I just hardcoded it in here */
 #app-mount .mentioned_d5deea::after {
-    background: linear-gradient(
+  background: linear-gradient(
     to right,
     var(--info-warning-foreground),
     transparent
   ) !important;
 }
 #app-mount .mentioned_d5deea:before {
-    background-color: transparent !important;
-    width: 0px;
-    border: none;
+  background-color: transparent !important;
+  width: 0px;
+  border: none;
 }

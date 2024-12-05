@@ -20,9 +20,9 @@
   --gDM-opacity: 0.5;
 }
 #app-mount .mentioned_d5deea:before {
-    background-color: transparent !important;
-    width: 0px;
-    border: none;
+  background-color: transparent !important;
+  width: 0px;
+  border: none;
 }
 [class$="c91bad"] {
   border-radius: var(--gDM-border-radius);
@@ -34,41 +34,41 @@
 }
 .interactive_c91bad [class^="link_"],
 .clickable_d808b0 [class^="memberInner"] {
-	&:has(:is([mask*="online"], [fill="#23a55a"])) {
-	  background: linear-gradient(
-		to right,
-		rgba(var(--gDM-online), var(--gDM-opacity)),
-		transparent
-	  );
-	}
-	&:has(:is([mask*="offline"], [fill="#80848e"])) {
-	  background: linear-gradient(
-		to right,
-		rgba(var(--gDM-offline), var(--gDM-opacity)),
-		transparent
-	  );
-	}
-	&:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-	  background: linear-gradient(
-		to right,
-		rgba(var(--gDM-dnd), var(--gDM-opacity)),
-		transparent
-	  );
-	}
-	&:has(:is([mask*="idle"], [fill="#f0b232"])) {
-	  background: linear-gradient(
-		to right,
-		rgba(var(--gDM-idle), var(--gDM-opacity)),
-		transparent
-	  );
-	}
-	&:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-	  background: linear-gradient(
-		to right,
-		rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
-		transparent
-	  );
-	}
+  &:has(:is([mask*="online"], [fill="#23a55a"])) {
+    background: linear-gradient(
+      to right,
+      rgba(var(--gDM-online), var(--gDM-opacity)),
+      transparent
+    );
+  }
+  &:has(:is([mask*="offline"], [fill="#80848e"])) {
+    background: linear-gradient(
+      to right,
+      rgba(var(--gDM-offline), var(--gDM-opacity)),
+      transparent
+    );
+  }
+  &:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+    background: linear-gradient(
+      to right,
+      rgba(var(--gDM-dnd), var(--gDM-opacity)),
+      transparent
+    );
+  }
+  &:has(:is([mask*="idle"], [fill="#f0b232"])) {
+    background: linear-gradient(
+      to right,
+      rgba(var(--gDM-idle), var(--gDM-opacity)),
+      transparent
+    );
+  }
+  &:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+    background: linear-gradient(
+      to right,
+      rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
+      transparent
+    );
+  }
 }
 /* Gradient Reply/Mention messages
    From: https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1294823473390030890 */
