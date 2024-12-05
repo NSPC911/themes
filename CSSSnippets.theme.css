@@ -18,176 +18,58 @@
   --gDM-streaming: 100, 61, 167;
   --gDM-border-radius: 50px;
   --gDM-opacity: 0.5;
-  --gDM-selected-opacity: 1;
+}
+#app-mount .mentioned_d5deea:before {
+    background-color: transparent !important;
+    width: 0px;
+    border: none;
 }
 [class$="c91bad"] {
   border-radius: var(--gDM-border-radius);
   transition: background 0.5s ease;
 }
-.interactive_c91bad
-  [class^="link_"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-online), var(--gDM-opacity)),
-    transparent
-  );
-}
-.interactiveSelected_c91bad
-  [class^="link_"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-online), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
-.interactive_c91bad
-  [class^="link_"]:has(:is([mask*="offline"], [fill="#80848e"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-offline), var(--gDM-opacity)),
-    transparent
-  );
-}
-.interactiveSelected_c91bad
-  [class^="link_"]:has(:is([mask*="offline"], [fill="#80848e"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-offline), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
-.interactive_c91bad [class^="link_"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-dnd), var(--gDM-opacity)),
-    transparent
-  );
-}
-.interactiveSelected_c91bad
-  [class^="link_"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-dnd), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
-.interactive_c91bad
-  [class^="link_"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-idle), var(--gDM-opacity)),
-    transparent
-  );
-}
-.interactiveSelected_c91bad
-  [class^="link_"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-idle), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
-.interactive_c91bad
-  [class^="link_"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
-.interactiveSelected_c91bad
-  [class^="link_"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
 [class^="memberInner"] {
   border-radius: var(--gDM-border-radius);
   transition: background 1s ease-in-out;
 }
-.clickable_d808b0
-  [class^="memberInner"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-online), var(--gDM-opacity)),
-    transparent
-  );
+.interactive_c91bad [class^="link_"],
+.clickable_d808b0 [class^="memberInner"] {
+	&:has(:is([mask*="online"], [fill="#23a55a"])) {
+	  background: linear-gradient(
+		to right,
+		rgba(var(--gDM-online), var(--gDM-opacity)),
+		transparent
+	  );
+	}
+	&:has(:is([mask*="offline"], [fill="#80848e"])) {
+	  background: linear-gradient(
+		to right,
+		rgba(var(--gDM-offline), var(--gDM-opacity)),
+		transparent
+	  );
+	}
+	&:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+	  background: linear-gradient(
+		to right,
+		rgba(var(--gDM-dnd), var(--gDM-opacity)),
+		transparent
+	  );
+	}
+	&:has(:is([mask*="idle"], [fill="#f0b232"])) {
+	  background: linear-gradient(
+		to right,
+		rgba(var(--gDM-idle), var(--gDM-opacity)),
+		transparent
+	  );
+	}
+	&:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+	  background: linear-gradient(
+		to right,
+		rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
+		transparent
+	  );
+	}
 }
-.selected_d808b0
-  [class^="memberInner"]:has(:is([mask*="online"], [fill="#23a55a"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-online), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
-.clickable_d808b0
-  [class^="memberInner"]:has(:is([mask*="offline"], [fill="#f0b232"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-offline), var(--gDM-opacity)),
-    transparent
-  );
-}
-.selected_d808b0
-  [class^="memberInner"]:has(:is([mask*="offline"], [fill="#f0b232"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-offline), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
-.clickable_d808b0
-  [class^="memberInner"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-dnd), var(--gDM-opacity)),
-    transparent
-  );
-}
-.selected_d808b0
-  [class^="memberInner"]:has(:is([mask*="dnd"], [fill="#f23f43"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-dnd), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
-.clickable_d808b0
-  [class^="memberInner"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-idle), var(--gDM-opacity)),
-    transparent
-  );
-}
-.selected_d808b0
-  [class^="memberInner"]:has(:is([mask*="idle"], [fill="#f0b232"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-idle), var(--gDM-selected-opacity)),
-    transparent
-  );
-}
-.clickable_d808b0
-  [class^="memberInner"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-streaming), var(--gDM-opacity)),
-    transparent
-  );
-}
-.selected_d808b0
-  [class^="memberInner"]:has(:is([mask*="streaming"], [fill="#3f2158"])) {
-  background: linear-gradient(
-    to right,
-    rgba(var(--gDM-streaming), var(--gDM-opacity)),
-    transparent
-  );
-}
-
 /* Gradient Reply/Mention messages
    From: https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1294823473390030890 */
 .messageListItem_d5deea {
@@ -255,7 +137,8 @@ div[class*="repliedMessageSpine_"] {
   display: none;
 }
 
-/* Mordernize Audio Attachements */
+/* Mordernize Audio Attachements 
+   I barely ever use this
 [class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioMetadata"] {
   margin-bottom: 24px;
 }
@@ -308,10 +191,8 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* Hide chatbox when no access */
-[class*="channelTextAreaDisabled"] {
+.channelTextAreaDisabled_bdf0de {
   display: none !important;
-}
-[class*="channelTextAreaDisabled"] {
   opacity: 0 !important;
   position: absolute !important;
   height: 0px !important;
