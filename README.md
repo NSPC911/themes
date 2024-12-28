@@ -29,3 +29,7 @@ Repository of the themes I use and have modified
 - [Settings Modal](https://nspc911.github.io/vc-themes/SettingsModal.theme.css)
 
   Originally from [mwittrien/BetterDiscordAddons](https://github.com/mwittrien/BetterDiscordAddons/). Only HorizontalServerList was added to my list.
+
+- [Seamless Chat Bar](https://nspc911.github.io/vc-themes/SeamlessChatBar.theme.css)
+  
+  My first CSS Snippet that moves any element near the message bar such that it becomes seamless with the message bar!
