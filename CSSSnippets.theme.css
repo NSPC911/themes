@@ -33,7 +33,7 @@
   transition: background 1s ease-in-out;
 }
 .interactive_c91bad [class^="link_"],
-.clickable_d808b0 [class^="memberInner"] {
+[class$="d808b0"] [class^="memberInner"] {
   &:has(:is([mask*="online"], [fill="#23a55a"])) {
     background: linear-gradient(
       to right,
@@ -149,7 +149,8 @@ div[class*="repliedMessageSpine_"] {
   border-radius: 0px 0px 8px 8px;
 }
 
-/* Discord actually useable on low width windows */
+/* Discord actually useable on low width windows
+   I dont really like it now
 @media (max-width: 1100px) {
   [class*="sidebar_"] {
     width: 200px;
