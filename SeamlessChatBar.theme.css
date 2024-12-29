@@ -1,89 +1,92 @@
 /**
  * @name Seamless Chat Bar
- * @author NSPC911
+ * @author NSPG911
  * @version 1.0.5
  * @description Moves around elements near the Chat Bar to be seamless with the message bar
- * @source https://github.com/NSPC911/vc-themes
+ * @source https://nspc911.github.io/vc-themes/SeamlessChatBar.theme.css
 */
 
 :root {
-    /* Use if your theme overwrites the color 
+  /* Use if your theme overwrites the color 
     --channeltextarea-background: var(--backgroundColor01);*/
-    /* set to 0 if no applauncher */
-    --applauncher-padding: -52px;
+  /* set to `0px` if no applauncher */
+  --scb-applauncher-padding: -52px;
+  /* border-radius of bar */
+  --scb-border-radius: 8px /* default = 8px */;
 }
 
-[class^=chatContent_] {
-> [class^=form_] {
-        margin-top: -20px;
-        [class^=typing_] {
-            top: 0;
-            transform: translateY(-100%);
-            background: transparent !important;
-            [class^=cooldownWrapper_] {
-                background-color: var(--channeltextarea-background);
-                border-radius: 5px 5px 0px 0px;
-                padding: 2.5px 7.5px 2.5px 7.5px;
-                /* remove line if you removed app launcher */
-                transform: translateX(var(--applauncher-padding));
-            }
-            [class^=typingDots_] {
-                background-color: var(--channeltextarea-background);
-                border-radius: 5px 5px 0px 0px;
-                padding-right: 7.5px;
-            }
-        }
-        [class^=channelTextArea_] {
-            margin-bottom: calc(var(--custom-chat-input-margin-bottom)/2);
-            border-radius: 8px;
-            [class^=stackedBars] {
-                background: transparent;
-            }
-        }
+[class^="chatContent_"] {
+  > [class^="form_"] {
+    margin-top: -20px;
+    [class^="typing_"] {
+      top: 0;
+      transform: translateY(-100%);
+      background: transparent !important;
+      [class^="cooldownWrapper_"] {
+        background-color: var(--channeltextarea-background);
+        border-radius: var(--scb-border-radius) var(--scb-border-radius) 0px 0px;
+        padding: 2.5px 7.5px 2.75px 7.5px;
+        transform: translateX(var(--scb-applauncher-padding));
+      }
+      [class^="typingDots_"] {
+        background-color: var(--channeltextarea-background);
+        border-radius: var(--scb-border-radius) var(--scb-border-radius) 0px 0px;
+        padding-right: 7.5px;
+      }
     }
-    [class^=jumpToPresentBar_] {
-        opacity: 1 !important;
-        background-color: var(--channeltextarea-background) !important;
-        padding-bottom: 0;
-        right: calc(16px - var(--applauncher-padding));
-        transform: translateY(-100%);
+    [class^="channelTextArea_"] {
+      margin-bottom: calc(var(--custom-chat-input-margin-bottom) / 2);
+      border-radius: var(--scb-border-radius);
+      [class^="stackedBars"] {
+        background: transparent;
+      }
     }
-    /* If/Else statements <:blobcatcozy:1026533070955872337> */
-    [class^=form_]:has([class^=typing_]) {
-        margin-top: 0;
+  }
+  [class^="jumpToPresentBar_"] {
+    opacity: 1 !important;
+    background-color: var(--channeltextarea-background) !important;
+    padding-bottom: 0;
+    right: calc(16px - var(--scb-applauncher-padding));
+    transform: translateY(-100%);
+  }
+  /* If/Else statements <:blobcatcozy:1026533070955872337> */
+  [class^="form_"]:has([class^="typing_"]) {
+    margin-top: 0;
+  }
+  /* if someone is typing */
+  &:has([class^="typingDots_"] > svg),
+  &:has([class^="jumpToPresentBar"]) {
+    [class^="channelTextArea_"],
+    [class^="scrollableContainer_"] {
+      border-top-left-radius: 0px;
     }
-    /* if someone is typing */
-    &:has([class^=typingDots_] > svg),
-    &:has([class^=jumpToPresentBar]) {
-        [class^=channelTextArea_] {
-            border-top-left-radius: 0px
-        }
+  }
+  /* slotted between, so only care about typing */
+  &:has([class^="typingDots_"] > svg) {
+    [class^="jumpToPresentBar_"] {
+      border-top-left-radius: 0px;
     }
-    /* slotted between, so only care about typing */
-    &:has([class^=typingDots_] > svg) {
-        [class^=jumpToPresentBar_] {
-            border-top-left-radius: 0px
-        }
+  }
+  /* if got slowmode */
+  &:has([class^="cooldownWrapper_"]),
+  &:has([class^="jumpToPresentBar"]) {
+    [class^="channelTextArea_"],
+    [class^="scrollableContainer"] {
+      border-top-right-radius: 0px;
     }
-    /* if got slowmode */
-    &:has([class^=cooldownWrapper_]),
-    &:has([class^=jumpToPresentBar]) {
-        [class^=channelTextArea_] {
-            border-top-right-radius: 0px;
-        }
+  }
+  /* slotted between, so only care about slowmode */
+  &:has([class^="cooldownWrapper"]) {
+    [class^="jumpToPresentBar_"] {
+      border-top-right-radius: 0px;
     }
-    /* slotted between, so only care about slowmode */
-    &:has([class^=cooldownWrapper]) {
-        [class^=jumpToPresentBar_] {
-            border-top-right-radius: 0px;
-        }
+  }
+  &:has([class^="jumpToPresentBar_"]) {
+    [class^="typing_"] {
+      transform: translateY(-200%) !important;
     }
-    &:has([class^=jumpToPresentBar_]) {
-        [class^=typing_] {
-            transform: translateY(-200%) !important;
-        }
-> [class^=form_] {
-            margin-top: -24px;
-        }
+    > [class^="form_"] {
+      margin-top: -24px;
     }
+  }
 }
