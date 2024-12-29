@@ -16,6 +16,9 @@
 }
 
 [class^="chatContent_"] {
+	&:has([class^="channelTextAreaDisabled"]) {
+		--scb-applauncher-padding: 0px; /* because you cant use them dumbass */
+	}
   > [class^="form_"] {
     margin-top: -20px;
     [class^="typing_"] {
@@ -35,7 +38,6 @@
       }
     }
     [class^="channelTextArea_"] {
-      margin-bottom: calc(var(--custom-chat-input-margin-bottom) / 2);
       border-radius: var(--scb-border-radius);
       [class^="stackedBars"] {
         background: transparent;
@@ -48,6 +50,7 @@
     padding-bottom: 0;
     right: calc(16px - var(--scb-applauncher-padding));
     transform: translateY(-100%);
+	box-shadow: none !important;
   }
   /* If/Else statements <:blobcatcozy:1026533070955872337> */
   [class^="form_"]:has([class^="typing_"]) {
