@@ -16,11 +16,16 @@
 }
 
 [class^="chatContent_"] {
-	&:has([class^="channelTextAreaDisabled"]) {
-		--scb-applauncher-padding: 0px; /* because you cant use them dumbass */
-	}
+  &:has([class^="channelTextAreaDisabled"]) {
+    --scb-applauncher-padding: 0px; /* because you cant use them dumbass */
+  }
   > [class^="form_"] {
     margin-top: -20px;
+    transition: margin-top 1s ease;
+    background: transparent !important;
+    &::before {
+      background: transparent !important;
+    }
     [class^="typing_"] {
       top: 0;
       transform: translateY(-100%);
@@ -39,6 +44,7 @@
     }
     [class^="channelTextArea_"] {
       border-radius: var(--scb-border-radius);
+      margin-bottom: 16px; /* equal distance from left-right and bottom */
       [class^="stackedBars"] {
         background: transparent;
       }
@@ -50,38 +56,48 @@
     padding-bottom: 0;
     right: calc(16px - var(--scb-applauncher-padding));
     transform: translateY(-100%);
-	box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  [class^="scrollableContainer_"] {
+    border-radius: var(--scb-border-radius);
   }
   /* If/Else statements <:blobcatcozy:1026533070955872337> */
   [class^="form_"]:has([class^="typing_"]) {
     margin-top: 0;
   }
-  /* if someone is typing */
-  &:has([class^="typingDots_"] > svg),
-  &:has([class^="jumpToPresentBar"]) {
+
+  &:has([class^="typingDots_"] > svg) {
+    [class^="jumpToPresentBar_"],
+    [class^="replyBar_"],
     [class^="channelTextArea_"],
     [class^="scrollableContainer_"] {
-      border-top-left-radius: 0px;
+      border-top-left-radius: 0px !important;
     }
   }
-  /* slotted between, so only care about typing */
-  &:has([class^="typingDots_"] > svg) {
-    [class^="jumpToPresentBar_"] {
-      border-top-left-radius: 0px;
-    }
-  }
-  /* if got slowmode */
-  &:has([class^="cooldownWrapper_"]),
-  &:has([class^="jumpToPresentBar"]) {
+
+  &:has([class^="cooldownWrapper_"]) {
+    [class^="jumpToPresentBar_"],
+    [class^="replyBar_"],
     [class^="channelTextArea_"],
-    [class^="scrollableContainer"] {
-      border-top-right-radius: 0px;
+    [class^="scrollableContainer_"] {
+      border-top-right-radius: 0px !important;
     }
   }
-  /* slotted between, so only care about slowmode */
-  &:has([class^="cooldownWrapper"]) {
-    [class^="jumpToPresentBar_"] {
-      border-top-right-radius: 0px;
+
+  &:has([class^="jumpToPresentBar_"]) {
+    [class^="replyBar_"],
+    [class^="channelTextArea_"],
+    [class^="scrollableContainer_"] {
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important;
+    }
+  }
+
+  &:has([class^="replyBar_"]) {
+    [class^="channelTextArea_"],
+    [class^="scrollableContainer_"] {
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important;
     }
   }
   &:has([class^="jumpToPresentBar_"]) {
