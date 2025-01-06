@@ -7,7 +7,7 @@ Repository of the themes I use and have modified
   Message links from where I took them will be slowly added (I forgot where I took them)
 
 - [Discolored](https://nspc911.github.io/vc-themes/discolored.theme.css)
-  
+
   From [NYRI4/Discolored](https://github.com/NYRI4/Discolored)
 
 - [HideUserList](https://nspc911.github.io/vc-themes/HideUserList.theme.css)
@@ -18,9 +18,9 @@ Repository of the themes I use and have modified
 
   Originally from [DiscordStyles/HorizontalServerList](https://github.com/DiscordStyles/HorizontalServerList), just with my variable preferences
 
-- [Nocturnal](https://nspc911.github.io/vc-themes/Nocturnal.theme.css)
+- [midnight](https://nspc911.github.io/vc-themes/midnight.theme.css)
 
-  Originally from [xcruxiex/themes](https://github.com/xcruxiex/themes), just with my variable preferences and fixes to be compatible with CSS Snippets
+  Originally from [refact0r/midnight-discord](https://refact0r.github.io/midnight-discord/midnight.css) just with my variable preferences
 
 - [Radial Status](https://nspc911.github.io/vc-themes/RadialStatus.theme.css)
 
@@ -31,5 +31,5 @@ Repository of the themes I use and have modified
   Originally from [mwittrien/BetterDiscordAddons](https://github.com/mwittrien/BetterDiscordAddons/). Only HorizontalServerList was added to my list.
 
 - [Seamless Chat Bar](https://nspc911.github.io/vc-themes/SeamlessChatBar.theme.css)
-  
+
   My first CSS Snippet that moves any element near the message bar such that it becomes seamless with the message bar!
