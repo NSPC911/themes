@@ -34,40 +34,40 @@
 }
 .interactive_c91bad [class^="link_"],
 [class$="d808b0"] [class^="memberInner"] {
-  &:has(:is([mask*="online"], [fill="#23a55a"])) {
+  &:has(:is([mask*="online"])) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-online), var(--gDM-opacity)),
       transparent
-    );
+    ) !important;
   }
-  &:has(:is([mask*="offline"], [fill="#80848e"])) {
+  &:has(:is([mask*="offline"])) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-offline), var(--gDM-opacity)),
       transparent
-    );
+    ) !important;
   }
-  &:has(:is([mask*="dnd"], [fill="#f23f43"])) {
+  &:has(:is([mask*="dnd"])) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-dnd), var(--gDM-opacity)),
       transparent
-    );
+    ) !important;
   }
-  &:has(:is([mask*="idle"], [fill="#f0b232"])) {
+  &:has(:is([mask*="idle"])) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-idle), var(--gDM-opacity)),
       transparent
-    );
+    ) !important;
   }
-  &:has(:is([mask*="streaming"], [fill="#3f2158"])) {
+  &:has(:is([mask*="streaming"])) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
       transparent
-    );
+    ) !important;
   }
 }
 /* Gradient Reply/Mention messages
@@ -93,7 +93,7 @@ div[class*="replying_"]:before {
   bottom: 0;
   pointer-events: none;
   border-radius: 8px;
-  width: 300px;
+  width: 100%;
   opacity: 0.4;
 }
 div[class*="mentioned_"]:hover:before,
@@ -101,22 +101,20 @@ div[class*="replying_"]:hover:before {
   opacity: 0.5;
 }
 div[class*="mentioned_"] {
-  background: var(--background-mentioned);
-  border-left: 0px solid var(--info-warning-foreground);
-}
-div[class*="mentioned_"]:before {
   background: linear-gradient(
     to right,
-    var(--info-warning-foreground),
+    var(--background-mentioned),
     transparent
-  );
+  ) !important;
+  border-left: 0px solid var(--info-warning-foreground);
 }
 div[class*="replying_"] {
-  background: var(--background-message-highlight);
+  background: linear-gradient(
+    to right,
+    var(--background-message-highlight),
+    transparent
+  );
   border-left: 0px solid var(--brand-500);
-}
-div[class*="replying_"]:before {
-  background: linear-gradient(to right, var(--brand-500), transparent);
 }
 div[class*="repliedMessageSpine_"] {
   transition: none;
@@ -192,7 +190,7 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* Hide chatbox when no access */
-.channelTextAreaDisabled_bdf0de {
+[class^="channelTextAreaDisabled"] {
   display: none !important;
   opacity: 0 !important;
   position: absolute !important;
@@ -227,4 +225,13 @@ button[aria-label|="Open GIF picker"] {
 [class^="membersGroup"]:has([role="button"]),
 [class^="member"] [class^="container"]:has([class*="badges"]) {
   display: none;
+}
+
+/* Hide typing dots in chat bar */
+
+svg[class^="ellipsis"] {
+  display: none !important;
+  & + span {
+    margin-left: 5px !important;
+  }
 }
