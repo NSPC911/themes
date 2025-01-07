@@ -117,11 +117,71 @@
   background-color: var(--bg-4);
   border-top-right-radius: var(--roundness-xl);
 }
-/* fix for gradient mention/reply */
+
 div[class*="replying_"]:before {
   background: transparent !important;
 }
 [class^="message"] {
   padding-bottom: 0 !important;
   padding-top: 0 !important;
+}
+
+[class^=base_] {
+  margin-top: calc(var(--spacing)) !important;
+}
+
+[class*="wrapper"]:hover [class^=link_],
+[class^=memberInner_]:hover,
+[class^=channel][class*=dm]:hover > div >[class^=link] {
+  margin-left: 0 !important;
+  box-shadow: inset 0px -2px 0 0 var(--accent-1);
+}
+
+[class^=channel][class*=dm] {
+  margin-left: 0 !important;
+}
+
+li[id^=chat-messages] {
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    top: -5px;
+    bottom: -5px;
+    border-radius: var(--roundness-m);
+    pointer-events: none;
+  }
+  &:hover::after {
+    background: linear-gradient(to right, #ffffff08, transparent);
+  }
+}
+
+[class*=focused] > [class^=searchBar] {
+  box-shadow: 0 0 7.5px 2px var(--accent-1);
+}
+
+[class^=chatContent] + [class^=container] {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: var(--bg-3);
+    left: calc(0px - var(--spacing));
+    right: 100%;
+    top: -2.5px;
+    bottom: 0;
+    border-radius: var(--roundness-xl);
+  }
+}
+
+[class^=newMessagesBar] {
+  top: 0;
+  height: 32px;
+  &:hover {
+    top: 0;
+    height: 32px;
+  }
 }

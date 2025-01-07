@@ -28,41 +28,52 @@
   border-radius: var(--gDM-border-radius);
   transition: background 0.5s ease;
 }
+[class*=interactiveSelected] {
+  background: transparent !important;
+}
 [class^="memberInner"] {
   border-radius: var(--gDM-border-radius);
   transition: background 1s ease-in-out;
 }
-.interactive_c91bad [class^="link_"],
+
+[class*=interactive] {
+  transform: translateX(3px);
+  [class^=layout] {
+    transform: translateX(-3px);
+  }
+}
+
+[class*=interactive] [class^="link_"],
 [class$="d808b0"] [class^="memberInner"] {
-  &:has(:is([mask*="online"])) {
+  &:has([aria-label*="Online"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-online), var(--gDM-opacity)),
       transparent
     ) !important;
   }
-  &:has(:is([mask*="offline"])) {
+  &:has([aria-label*="Offline"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-offline), var(--gDM-opacity)),
       transparent
     ) !important;
   }
-  &:has(:is([mask*="dnd"])) {
+  &:has([aria-label*="Do Not Disturb"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-dnd), var(--gDM-opacity)),
       transparent
     ) !important;
   }
-  &:has(:is([mask*="idle"])) {
+  &:has([aria-label*="Idle"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-idle), var(--gDM-opacity)),
       transparent
     ) !important;
   }
-  &:has(:is([mask*="streaming"])) {
+  &:has([aria-label*="Streaming"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
@@ -78,29 +89,30 @@
 div[class*="cozy_"][class*="wrapper_"] {
   border-radius: 8px;
 }
-div[class*="mentioned_"],
-div[class*="replying_"] {
+li[id^=chat-messages]:has([class*=mentioned_]),
+li[id^=chat-messages]:has([class*=replying_]) {
   position: relative;
   border-radius: 8px;
 }
-div[class*="mentioned_"]:before,
-div[class*="replying_"]:before {
+li[id^=chat-messages]:has([class*=mentioned_])::before,
+li[id^=chat-messages]:has([class*=replying_])::before {
   content: "";
   position: absolute;
   display: block;
-  top: 0;
+  top: -5px;
+  bottom: -5px;
   left: 0;
-  bottom: 0;
+  right: 0;
   pointer-events: none;
   border-radius: 8px;
   width: 100%;
-  opacity: 0.4;
+  pointer-events: none;
 }
-div[class*="mentioned_"]:hover:before,
-div[class*="replying_"]:hover:before {
+li[id^=chat-messages]:has([class*=mentioned_]):hover:before,
+li[id^=chat-messages]:has([class*=replying_]):hover:before {
   opacity: 0.5;
 }
-div[class*="mentioned_"] {
+li[id^=chat-messages]:has([class*=mentioned_])::before {
   background: linear-gradient(
     to right,
     var(--background-mentioned),
@@ -108,13 +120,16 @@ div[class*="mentioned_"] {
   ) !important;
   border-left: 0px solid var(--info-warning-foreground);
 }
-div[class*="replying_"] {
+li[id^=chat-messages]:has([class*=replying_])::before {
   background: linear-gradient(
     to right,
     var(--background-message-highlight),
     transparent
   );
   border-left: 0px solid var(--brand-500);
+}
+li[id^=chat-messages] [class^=message] {
+  background: none !important;
 }
 div[class*="repliedMessageSpine_"] {
   transition: none;
