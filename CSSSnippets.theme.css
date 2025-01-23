@@ -28,7 +28,7 @@
   border-radius: var(--gDM-border-radius);
   transition: background 0.5s ease;
 }
-[class*=interactiveSelected] {
+[class*="interactiveSelected"] {
   background: transparent !important;
 }
 [class^="memberInner"] {
@@ -36,14 +36,14 @@
   transition: background 1s ease-in-out;
 }
 
-[class*=interactive] {
+[class*="interactive"] {
   transform: translateX(3px);
-  [class^=layout] {
+  [class^="layout"] {
     transform: translateX(-3px);
   }
 }
 
-[class*=interactive] [class^="link_"],
+[class*="interactive"] [class^="link_"],
 [class$="d808b0"] [class^="memberInner"] {
   &:has([aria-label*="Online"]) {
     background: linear-gradient(
@@ -89,13 +89,13 @@
 div[class*="cozy_"][class*="wrapper_"] {
   border-radius: 8px;
 }
-li[id^=chat-messages]:has([class*=mentioned_]),
-li[id^=chat-messages]:has([class*=replying_]) {
+li[id^="chat-messages"]:has([class*="mentioned_"]),
+li[id^="chat-messages"]:has([class*="replying_"]) {
   position: relative;
   border-radius: 8px;
 }
-li[id^=chat-messages]:has([class*=mentioned_])::before,
-li[id^=chat-messages]:has([class*=replying_])::before {
+li[id^="chat-messages"]:has([class*="mentioned_"])::before,
+li[id^="chat-messages"]:has([class*="replying_"])::before {
   content: "";
   position: absolute;
   display: block;
@@ -108,11 +108,11 @@ li[id^=chat-messages]:has([class*=replying_])::before {
   width: 100%;
   pointer-events: none;
 }
-li[id^=chat-messages]:has([class*=mentioned_]):hover:before,
-li[id^=chat-messages]:has([class*=replying_]):hover:before {
+li[id^="chat-messages"]:has([class*="mentioned_"]):hover:before,
+li[id^="chat-messages"]:has([class*="replying_"]):hover:before {
   opacity: 0.5;
 }
-li[id^=chat-messages]:has([class*=mentioned_])::before {
+li[id^="chat-messages"]:has([class*="mentioned_"])::before {
   background: linear-gradient(
     to right,
     var(--background-mentioned),
@@ -120,7 +120,7 @@ li[id^=chat-messages]:has([class*=mentioned_])::before {
   ) !important;
   border-left: 0px solid var(--info-warning-foreground);
 }
-li[id^=chat-messages]:has([class*=replying_])::before {
+li[id^="chat-messages"]:has([class*="replying_"])::before {
   background: linear-gradient(
     to right,
     var(--background-message-highlight),
@@ -128,7 +128,7 @@ li[id^=chat-messages]:has([class*=replying_])::before {
   );
   border-left: 0px solid var(--brand-500);
 }
-li[id^=chat-messages] [class^=message] {
+li[id^="chat-messages"] [class^="message"] {
   background: none !important;
 }
 div[class*="repliedMessageSpine_"] {

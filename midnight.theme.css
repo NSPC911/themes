@@ -126,22 +126,15 @@ div[class*="replying_"]:before {
   padding-top: 0 !important;
 }
 
-[class^=base_] {
+[class^="base_"] {
   margin-top: calc(var(--spacing)) !important;
 }
 
-[class*="wrapper"]:hover [class^=link_],
-[class^=memberInner_]:hover,
-[class^=channel][class*=dm]:hover > div >[class^=link] {
-  margin-left: 0 !important;
-  box-shadow: inset 0px -2px 0 0 var(--accent-1);
-}
-
-[class^=channel][class*=dm] {
+[class^="channel"][class*="dm"] {
   margin-left: 0 !important;
 }
 
-li[id^=chat-messages] {
+li[id^="chat-messages"] {
   &::after {
     content: "";
     position: absolute;
@@ -158,11 +151,11 @@ li[id^=chat-messages] {
   }
 }
 
-[class*=focused] > [class^=searchBar] {
+[class*="focused"] > [class^="searchBar"] {
   box-shadow: 0 0 7.5px 2px var(--accent-1);
 }
 
-[class^=chatContent] + [class^=container] {
+[class^="chatContent"] + [class^="container"] {
   position: relative;
   &::after {
     content: "";
@@ -177,7 +170,7 @@ li[id^=chat-messages] {
   }
 }
 
-[class^=newMessagesBar] {
+[class^="newMessagesBar"] {
   top: 0;
   height: 32px;
   &:hover {

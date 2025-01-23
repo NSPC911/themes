@@ -33,3 +33,7 @@ Repository of the themes I use and have modified
 - [Seamless Chat Bar](https://nspc911.github.io/vc-themes/SeamlessChatBar.theme.css)
 
   My first CSS Snippet that moves any element near the message bar such that it becomes seamless with the message bar!
+
+- [Visual Refresh Client Theme](https://nspc911.github.io/vc-themes/VisualRefreshClientTheme.theme.css)
+
+  Allows the Client Theme plugin to theme the Visual Refresh.
