@@ -30,10 +30,7 @@ Repository of the themes I use and have modified
 
   Originally from [mwittrien/BetterDiscordAddons](https://github.com/mwittrien/BetterDiscordAddons/). Only HorizontalServerList was added to my list.
 
-- [Seamless Chat Bar](https://nspc911.github.io/vc-themes/SeamlessChatBar.theme.css)
 
-  My first CSS Snippet that moves any element near the message bar such that it becomes seamless with the message bar!
+I also have a couple CSS Snipoets that were sent in Vencord's [#css-snippets](https://discord.com/channels/1015060230222131221/1028106818368589824) channel
 
-- [Visual Refresh Client Theme](https://nspc911.github.io/vc-themes/VisualRefreshClientTheme.theme.css)
-
-  Allows the Client Theme plugin to theme the Visual Refresh.
+## [Link to my Snippets](https://nspc911.github.io/vc-themes/snippets)
