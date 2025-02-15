@@ -109,7 +109,7 @@
   --custom-nav: block;
 }
 /* remove it */
-.membersWrap_cbd271::before {
+[class*="membersWrap_"]::before {
   display: none;
 }
 /* merge top bar */
@@ -141,8 +141,8 @@ li[id^="chat-messages"] {
     display: block;
     right: 0;
     left: 0;
-    top: -5px;
-    bottom: -5px;
+    top: 0px;
+    bottom: 0px;
     border-radius: var(--roundness-m);
     pointer-events: none;
   }

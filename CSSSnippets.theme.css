@@ -24,10 +24,6 @@
   width: 0px;
   border: none;
 }
-[class$="c91bad"] {
-  border-radius: var(--gDM-border-radius);
-  transition: background 0.5s ease;
-}
 [class*="interactiveSelected"] {
   background: transparent !important;
 }
@@ -44,7 +40,9 @@
 }
 
 [class*="interactive"] [class^="link_"],
-[class$="d808b0"] [class^="memberInner"] {
+[class*="member"][class*="container"] [class^="memberInner"] {
+  border-radius: var(--gDM-border-radius);
+  transition: background 0.5s ease;
   &:has([aria-label*="Online"]) {
     background: linear-gradient(
       to right,
@@ -83,7 +81,7 @@
 }
 /* Gradient Reply/Mention messages
    From: https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1294823473390030890 */
-.messageListItem_d5deea {
+[class*=messageListItem_] {
   margin-left: 5px;
 }
 div[class*="cozy_"][class*="wrapper_"] {
@@ -146,7 +144,7 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* Make the App Launcher disappear among a sea of butterflies */
-.channelAppLauncher_df39bd {
+[class*="channelAppLauncher_"] {
   display: none;
 }
 
@@ -220,7 +218,7 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* Blurred Background while loading */
-.container_e40c16.fixClipping_c7e9c6 {
+[class*="container_"][class*="fixClipping_"] {
   background: 0 0;
   backdrop-filter: blur(5px);
 }
