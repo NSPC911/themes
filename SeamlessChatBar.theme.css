@@ -34,7 +34,7 @@
         background-color: var(--channeltextarea-background);
         border-radius: var(--scb-border-radius) var(--scb-border-radius) 0px 0px;
         padding: 2.5px 7.5px 2.75px 7.5px;
-        transform: translateX(var(--scb-applauncher-padding));
+        transform: translateX(var(--scb-applauncher-padding)) translateY(1px);
       }
       [class^="typingDots_"] {
         background-color: var(--channeltextarea-background);
@@ -44,7 +44,7 @@
     }
     [class^="channelTextArea_"] {
       border-radius: var(--scb-border-radius);
-      margin-bottom: 16px; /* equal distance from left-right and bottom */
+      background: transparent;
       [class^="stackedBars"] {
         background: transparent;
       }
