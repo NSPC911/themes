@@ -18,3 +18,35 @@
   --HSL-server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
   --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
 }
+
+/* Fix for Better Folders */
+
+[class*=container]:has(> [aria-label="Servers sidebar"]) {
+    &:has(> div > nav) [class^=itemsContainer] {
+        height: 54% !important;
+    }
+    [class^=folderEndWrapper] {
+        display: none;
+    }
+    [class^=listItem]:has([class^=guildSeparator]) {
+        display: none;
+    }
+    > div > nav {
+        bottom: 100px;
+        transform: rotate(-90deg) translateY(50%) !important;
+        z-index: 200;
+        [class^=itemsContainer] {
+            height: 49% !important;
+            border-radius: 25%;
+        }
+    }
+}
+
+/* Move pill to bottom */
+[class*="guilds_"] [class*=pill] {
+    position: absolute !important;
+    transform: rotate(90deg) translateX(calc(var(--HSL-server-icon-size) + 16px)) translateY(-50%) !important;
+    span {
+        border-radius: 4px 0 0 4px !important;
+    }
+}

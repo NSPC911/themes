@@ -39,10 +39,23 @@
   }
 }
 
+[class*="member"][class*="container"] {
+    & > [class^=childContainer] {
+        padding: 0;
+        & > [class^=memberInner] {
+            padding: 0 8px;
+            width: unset
+        }
+    }
+}
+
 [class*="interactive"] [class^="link_"],
 [class*="member"][class*="container"] [class^="memberInner"] {
   border-radius: var(--gDM-border-radius);
   transition: background 0.5s ease;
+  > [class^=childContainer] {
+    padding: 0;
+  }
   &:has([aria-label*="Online"]) {
     background: linear-gradient(
       to right,
@@ -247,4 +260,24 @@ svg[class^="ellipsis"] {
   & + span {
     margin-left: 5px !important;
   }
+}
+
+/* Pin the Page Switcher in Finder */
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+/* makes profiles that are long \
+\  because of roles be smaller */
+[class^=mutuals] + [class^=root]:not(:has(>[aria-label="View All Roles"])) {
+    max-height: 20vh;
+}
+
+/* disable folder animations */
+
+[class*=edFolderIconWrapper] {
+    transform: translate3d(0,0,0) !important;
 }
