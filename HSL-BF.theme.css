@@ -2,7 +2,7 @@
     --bfhsl-make-folder-hover: 1 /* set to 1 if you want it to hover */
 }
 
-[class*=container]:has(> [aria-label="Servers sidebar"]) {
+[class*=layer] > [class*=container]:has(> [aria-label="Servers sidebar"]) {
     [class^=listItem]:has([class^=guildSeparator]) {
         display: none;
     }

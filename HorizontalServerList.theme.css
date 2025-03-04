@@ -20,8 +20,7 @@
 }
 
 /* Fix for Better Folders */
-
-[class*=container]:has(> [aria-label="Servers sidebar"]) {
+[class*=layer] > [class*=container]:has(> [aria-label="Servers sidebar"]) {
     &:has(> div > nav) [class^=itemsContainer] {
         height: 54% !important;
     }
