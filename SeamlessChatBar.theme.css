@@ -57,6 +57,8 @@
     right: calc(16px - var(--scb-applauncher-padding));
     transform: translateY(-100%);
     box-shadow: none !important;
+    width: -webkit-fill-available;
+    margin-right: 16px
   }
   [class^="scrollableContainer_"] {
     border-radius: var(--scb-border-radius);

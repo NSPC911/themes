@@ -6,6 +6,9 @@
  * @source https://github.com/NSPC911/vc-themes
 */
 
+/* Show icons in Discord Settings */
+@import url("https://gold-me.github.io/DiscordIcons/main.css");
+
 /* User Gradient
    From: https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1298575279169605693
    Heavily modified by me */
@@ -51,6 +54,11 @@
 
 [class*="interactive"] [class^="link_"],
 [class*="member"][class*="container"] [class^="memberInner"] {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-offline), var(--gDM-opacity)),
+    transparent
+  );
   border-radius: var(--gDM-border-radius);
   transition: background 0.5s ease;
   > [class^=childContainer] {
@@ -60,13 +68,6 @@
     background: linear-gradient(
       to right,
       rgba(var(--gDM-online), var(--gDM-opacity)),
-      transparent
-    ) !important;
-  }
-  &:has([aria-label*="Offline"]) {
-    background: linear-gradient(
-      to right,
-      rgba(var(--gDM-offline), var(--gDM-opacity)),
       transparent
     ) !important;
   }
@@ -87,7 +88,7 @@
   &:has([aria-label*="Streaming"]) {
     background: linear-gradient(
       to right,
-      rgba(var(--gDM-streaming), var(--gDM-selected-opacity)),
+      rgba(var(--gDM-streaming), var(--gDM-opacity)),
       transparent
     ) !important;
   }
@@ -277,7 +278,27 @@ svg[class^="ellipsis"] {
 }
 
 /* disable folder animations */
-
 [class*=edFolderIconWrapper] {
     transform: translate3d(0,0,0) !important;
 }
+
+/* hide edited messages until clicked and held on */
+@keyframes itsEdited {
+    /* show that it is edited through a subtle animation */
+    0% { filter: brightness(100%) }
+    100% { filter: brightness(80%) }
+}
+
+[id^="chat-messages"]:not(:active) .messagelogger-edited {
+    height: 0;
+    overflow: hidden;
+    display: none !important;
+}
+
+[id^="chat-messages"]:not(:active):has(.messagelogger-edited) [id^=message-content] > span:not([class^="timestamp"]) {
+    animation: itsEdited 2s infinite alternate ease-in-out;
+    + [class^="timestamp"] { color: #aaa !important }
+}
+
+/* turn every text white on hover */
+*:hover { color: white !important }

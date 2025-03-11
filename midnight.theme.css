@@ -170,3 +170,8 @@ li[id^="chat-messages"] {
     height: 32px;
   }
 }
+
+/* fix unread bar being unreadable for some unknown reason */
+[class*="unread_"] > [class^="text__"] {
+    color: #ccc
+}
