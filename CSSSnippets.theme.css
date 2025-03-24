@@ -282,23 +282,5 @@ svg[class^="ellipsis"] {
     transform: translate3d(0,0,0) !important;
 }
 
-/* hide edited messages until clicked and held on */
-@keyframes itsEdited {
-    /* show that it is edited through a subtle animation */
-    0% { filter: brightness(100%) }
-    100% { filter: brightness(80%) }
-}
-
-[id^="chat-messages"]:not(:active) .messagelogger-edited {
-    height: 0;
-    overflow: hidden;
-    display: none !important;
-}
-
-[id^="chat-messages"]:not(:active):has(.messagelogger-edited) [id^=message-content] > span:not([class^="timestamp"]) {
-    animation: itsEdited 2s infinite alternate ease-in-out;
-    + [class^="timestamp"] { color: #aaa !important }
-}
-
 /* turn every text white on hover */
 *:hover { color: white !important }
