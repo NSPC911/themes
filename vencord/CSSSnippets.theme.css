@@ -1,0 +1,286 @@
+/**
+ * @name CSS Snippets
+ * @author NIL
+ * @version 0.0.0
+ * @description A bunch of stuff taken from Vencord's CSS Snippets channel. I do not own anything!
+ * @source https://github.com/NSPC911/vc-themes
+*/
+
+/* Show icons in Discord Settings */
+@import url("https://gold-me.github.io/DiscordIcons/main.css");
+
+/* User Gradient
+   From: https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1298575279169605693
+   Heavily modified by me */
+
+:root {
+  --gDM-online: 67, 181, 129;
+  --gDM-offline: 99, 107, 117;
+  --gDM-dnd: 240, 71, 71;
+  --gDM-idle: 250, 166, 26;
+  --gDM-streaming: 100, 61, 167;
+  --gDM-border-radius: 50px;
+  --gDM-opacity: 0.5;
+}
+#app-mount .mentioned_d5deea:before {
+  background-color: transparent !important;
+  width: 0px;
+  border: none;
+}
+[class*="interactiveSelected"] {
+  background: transparent !important;
+}
+[class^="memberInner"] {
+  border-radius: var(--gDM-border-radius);
+  transition: background 1s ease-in-out;
+}
+
+[class*="interactive"] {
+  transform: translateX(3px);
+  [class^="layout"] {
+    transform: translateX(-3px);
+  }
+}
+
+[class*="member"][class*="container"] {
+    & > [class^=childContainer] {
+        padding: 0;
+        & > [class^=memberInner] {
+            padding: 0 8px;
+            width: unset
+        }
+    }
+}
+
+[class*="interactive"] [class^="link_"],
+[class*="member"][class*="container"] [class^="memberInner"] {
+  background: linear-gradient(
+    to right,
+    rgba(var(--gDM-offline), var(--gDM-opacity)),
+    transparent
+  );
+  border-radius: var(--gDM-border-radius);
+  transition: background 0.5s ease;
+  > [class^=childContainer] {
+    padding: 0;
+  }
+  &:has([aria-label*="Online"]) {
+    background: linear-gradient(
+      to right,
+      rgba(var(--gDM-online), var(--gDM-opacity)),
+      transparent
+    ) !important;
+  }
+  &:has([aria-label*="Do Not Disturb"]) {
+    background: linear-gradient(
+      to right,
+      rgba(var(--gDM-dnd), var(--gDM-opacity)),
+      transparent
+    ) !important;
+  }
+  &:has([aria-label*="Idle"]) {
+    background: linear-gradient(
+      to right,
+      rgba(var(--gDM-idle), var(--gDM-opacity)),
+      transparent
+    ) !important;
+  }
+  &:has([aria-label*="Streaming"]) {
+    background: linear-gradient(
+      to right,
+      rgba(var(--gDM-streaming), var(--gDM-opacity)),
+      transparent
+    ) !important;
+  }
+}
+/* Gradient Reply/Mention messages
+   From: https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1294823473390030890 */
+[class*=messageListItem_] {
+  margin-left: 5px;
+}
+div[class*="cozy_"][class*="wrapper_"] {
+  border-radius: 8px;
+}
+li[id^="chat-messages"]:has([class*="mentioned_"]),
+li[id^="chat-messages"]:has([class*="replying_"]) {
+  position: relative;
+  border-radius: 8px;
+}
+li[id^="chat-messages"]:has([class*="mentioned_"])::before,
+li[id^="chat-messages"]:has([class*="replying_"])::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -5px;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  border-radius: 8px;
+  width: 100%;
+  pointer-events: none;
+}
+li[id^="chat-messages"]:has([class*="mentioned_"]):hover:before,
+li[id^="chat-messages"]:has([class*="replying_"]):hover:before {
+  opacity: 0.5;
+}
+li[id^="chat-messages"]:has([class*="mentioned_"])::before {
+  background: linear-gradient(
+    to right,
+    var(--background-mentioned),
+    transparent
+  ) !important;
+  border-left: 0px solid var(--info-warning-foreground);
+}
+li[id^="chat-messages"]:has([class*="replying_"])::before {
+  background: linear-gradient(
+    to right,
+    var(--background-message-highlight),
+    transparent
+  );
+  border-left: 0px solid var(--brand-500);
+}
+li[id^="chat-messages"] [class^="message"] {
+  background: none !important;
+}
+div[class*="repliedMessageSpine_"] {
+  transition: none;
+}
+
+/* Hide status icons
+   From https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1299991457079234572 */
+[class^="avatar_"] svg > :is(rect, mask) {
+  display: none;
+}
+[class^="avatar_"] foreignObject {
+  border-radius: 100%;
+  mask: none;
+}
+
+/* Make the App Launcher disappear among a sea of butterflies */
+[class*="channelAppLauncher_"] {
+  display: none;
+}
+
+/* Mordernize Audio Attachements 
+   I barely ever use this
+[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioMetadata"] {
+  margin-bottom: 24px;
+}
+[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+/* Discord actually useable on low width windows
+   I dont really like it now
+@media (max-width: 1100px) {
+  [class*="sidebar_"] {
+    width: 200px;
+    .vc-typing-indicator,
+    .vc-channelemojis-emoji,
+    [class*="guildIconV2Container_"] {
+      display: none;
+    }
+    [class*="containerDefault_"] {
+      [role="img"] {
+        display: none;
+      }
+    }
+  }
+  [class*="chat_"] {
+    [class*="membersWrap_"] {
+      display: none;
+    }
+  }
+}
+
+/* Let the User Area elements breathe */
+[class^="panels"] > [class^="container"] {
+  height: unset !important;
+  align-items: unset !important;
+  padding: 6px 8px !important;
+  flex-direction: column-reverse !important;
+  gap: 2px !important;
+}
+
+[class^="avatarWrapper"] {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  padding-left: 4px !important;
+}
+
+[class^="container"] > [class*="buttons"] {
+  justify-content: space-evenly !important;
+}
+
+/* Hide chatbox when no access */
+[class^="channelTextAreaDisabled"] {
+  display: none !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  height: 0px !important;
+  width: 0px !important;
+  z-index: 0 !important;
+}
+
+/* Fix long ass profiles */
+[class*="userPopoutOverlayBackground"] {
+  max-height: 60vh;
+}
+
+/* Blurred Background while loading */
+[class*="container_"][class*="fixClipping_"] {
+  background: 0 0;
+  backdrop-filter: blur(5px);
+}
+
+/* Remove stickers and gifting */
+button[aria-label|="Send a gift"] {
+  display: none;
+}
+button[aria-label|="Open sticker picker"] {
+  display: none;
+}
+button[aria-label|="Open GIF picker"] {
+  display: none;
+}
+
+/* Hide recent activity */
+[class^="membersGroup"]:has([role="button"]),
+[class^="member"] [class^="container"]:has([class*="badges"]) {
+  display: none;
+}
+
+/* Hide typing dots in chat bar */
+
+svg[class^="ellipsis"] {
+  display: none !important;
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
+/* Pin the Page Switcher in Finder */
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+/* makes profiles that are long \
+\  because of roles be smaller */
+[class^=mutuals] + [class^=root]:not(:has(>[aria-label="View All Roles"])) {
+    max-height: 20vh;
+}
+
+/* disable folder animations */
+[class*=edFolderIconWrapper] {
+    transform: translate3d(0,0,0) !important;
+}
+
+/* turn every text white on hover */
+*:hover { color: white !important }

@@ -1,0 +1,58 @@
+/**
+ * @name Hide User List
+ * @author Bates
+ * @version 0.0.1
+ * @source https://b4t3s.github.io/DiscordDarkNeon/css/hideUsers.css
+ * @website https://B4T3S.gitlab.io/bates-discord-theme/
+ * @donate https://www.paypal.com/paypalme/floriancegledi
+ * @patreon https://patreon.com/bates
+ * @description A theme to hide the user list when not focused on
+ * @authorId 137259132305539072
+ * @invite 6qd3SkP6Ch
+*/
+
+:root {
+  --HUP-hidden-user-width: 60px;
+  --HUP-user-width: 240px;
+  --HUP-transition-time: 0.75s;
+  --HUP-transition-timing: ease-in-out;
+}
+.container_cbd271,
+.membersWrap_cbd271 {
+  transition-duration: var(--HUP-transition-time);
+  transition-timing-function: var(--HUP-transition-timing);
+  justify-content: unset;
+  min-width: unset;
+  width: var(--HUP-hidden-user-width);
+}
+.membersGroup_cbd271 {
+  height: 0px;
+  transition-duration: var(--HUP-transition-time);
+  transition-timing-function: var(--HUP-transition-timing);
+  padding-top: 0px;
+  overflow: hidden;
+}
+.container_c64476 {
+  height: 0px;
+  transition-duration: var(--HUP-transition-time);
+  transition-timing-function: var(--HUP-transition-timing);
+  overflow: hidden;
+  padding: 0px;
+}
+.container_cbd271:hover .membersGroup_cbd271,
+.membersWrap_cbd271:hover .membersGroup_cbd271 {
+  height: 40px;
+  padding-top: 24px;
+}
+.container_cbd271:hover .container_c64476 {
+  height: 48px;
+  padding: 8px;
+}
+.container_cbd271:hover,
+.membersWrap_cbd271:hover {
+  width: var(--HUP-user-width);
+}
+.profilePanel-2PWEok {
+  transition-duration: var(--HUP-transition-time);
+  transition-timing-function: var(--HUP-transition-timing);
+}

@@ -1,0 +1,21 @@
+:root {
+    --bfhsl-make-folder-hover: 1 /* set to 1 if you want it to hover */
+}
+
+[class*=layer] > [class*=container]:has(> [aria-label="Servers sidebar"]) {
+    [class^=listItem]:has([class^=guildSeparator]) {
+        display: none;
+    }
+    [class^=folderEndWrapper] {
+        display: none;
+    }
+    > div > nav {
+        bottom: 100px;
+        transform: rotate(-90deg) translateX(-55px) !important;
+        z-index: 200;
+        box-shadow: calc(-10px * (0 + var(--bfhsl-make-folder-hover))) 0px calc(10px * (0 + var(--bfhsl-make-folder-hover))) 0 black;
+    }
+    &:has(> div > nav) > [class^=base] {
+        margin-top: calc(50px * (1 - var(--bfhsl-make-folder-hover))) !important;
+    }
+}
