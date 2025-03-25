@@ -1,0 +1,5 @@
+textarea[label="Custom CSS"] {
+    font-family: monospace;
+    white-space: pre;
+    height: 50vh;
+}
