@@ -1,4 +1,3 @@
-# themes/vencord
 Repository of the themes I use and have modified
 
 - [CSS Snipets](https://nspc911.github.io/themes/vencord/CSSSnippets.theme.css)
@@ -34,3 +33,5 @@ Repository of the themes I use and have modified
 I also have a couple CSS Snipoets that were sent in Vencord's [#css-snippets](https://discord.com/channels/1015060230222131221/1028106818368589824) channel
 
 ## [Link to my Snippets](https://nspc911.github.io/themes/vencord/snippets)
+
+[<kbd><sub>Go back</sub></kbd>](https://nspc911.github.io/themes)
