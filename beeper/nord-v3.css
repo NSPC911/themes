@@ -1,0 +1,125 @@
+:root {
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+    /* change to your liking */
+    --colormix: in oklab; /* recommend oklab, whatever your choice */
+    --beeper-theme-color: color-mix(var(--colormix), var(--nord9) 50%, var(--nord10) 50%);
+    --use-3d-toggles: 0; /* set to 1 to enable */
+    --transition-duration: 0.125s; /* set to 0 to disable */
+    --chatview__message_self__backgroundcolor: var(--nord10);
+    --chatview__backgroundcolor: var(--nord0);
+    --chatview__composer__backgroundcolor: var(--nord1);
+}
+
+.bp_TitleBar{
+    background-color: color-mix(var(--colormix), var(--nord0) 75%, var(--nord4) 25%);
+    &::after {
+        content: "Beeper";
+        position: absolute;
+        left: 0.5em;
+        top: 0.3em;
+    }
+}
+
+.bp_Button2Primary {
+    background: linear-gradient(to left, var(--nord10), var(--nord9));
+}
+.mx_MatrixChat > div:first-child { /* who came up with that name */
+    background-color: var(--nord1);
+    .bp_col {
+        background-color: var(--nord3);
+    }
+}
+.mx_RoomHeader {
+    background-color: color-mix(var(--colormix), var(--nord0) 90%, black 10%);
+}
+
+.bp_MainPanel {
+    background: var(--nord0);
+    background-color: var(--nord0);
+}
+.bp_LeftPanel {
+    background-color: var(--nord1) !important;
+}
+.mx_MainSplit {
+    background-color: var(--nord0);
+}
+.mx_Dialog {
+    background-color: var(--nord0) !important;
+    padding: 0px 15px;
+}
+.mx_Dialog_background {
+    opacity: 0.5 !important;
+}
+.mx_ToggleSwitch {
+    background-color: color-mix(var(--colormix), var(--nord0) 90%, black 10%) !important;
+    box-shadow: inset 0px 0px calc(10px * var(--use-3d-toggles)px) black;
+}
+.mx_TabbedView_tabLabel_active, .mx_ToggleSwitch {
+    background-color: var(--beeper-theme-color) !important;
+}
+.mx_StyledRadioButton > input + div {transform: translateY(-2px)}
+.mx_ToggleSwitch_on, .mx_StyledRadioButton_checked {
+    border-color: var(--beeper-theme-color);
+    > input + div {
+        border-color: var(--beeper-theme-color) !important;
+        > div {
+            background: var(--beeper-theme-color) !important;
+        }
+    }
+}
+.mx_AccessibleButton_hasKind:not([aria-disabled=true]) {
+    transition: box-shadow ease, transform ease-in-out;
+    transition-duration: var(--transition-duration);
+    transform: translateX(10%);
+    &:hover {
+        box-shadow: inset 0px 0px 0px 2px var(--nord10) !important; /* why are you using nord */
+        transform: scale(1.05) translateX(10%);
+    }
+}
+.mx_TabbedView_tabLabels > div {
+    transition: width ease, transform ease-in-out;
+    transition-duration: var(--transition-duration);
+    &:hover {
+        width: 95%;
+        transform: translateX(5%);
+    }
+}
+
+a:link {
+    color: var(--nord9) !important;
+}
+
+.mx_ContextualMenu {
+    background-color: color-mix(var(--colormix), var(--nord0) 62.5%, black 37.5%);
+}
+
+.mx_Dialog_header {
+    transform: translateY(5px);
+    .mx_Heading_h2 {
+        margin-top: 6px
+    }
+}
+
+.mx_SettingsDialog_content > div { margin-top: -10px }
+
+/* {
+   -webkit-text-security: square;
+}
+img, svg {
+    filter: blur(5px);
+}/**/
