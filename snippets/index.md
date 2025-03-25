@@ -1,6 +1,6 @@
 # Snippets
 
-- [Seamless Chat Bar](https://nspc911.github.io/vc-themes/SeamlessChatBar.theme.css)
+- [Seamless Chat Bar](https://nspc911.github.io/themes/vencord/SeamlessChatBar.theme.css)
 
   Moves `Someone is typing`, `Cooldown is active`, `Ypu are viewing older messages` and `Replying to someone` such that they are seamless with the message bar<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1322496323202715689)<br>`Variables`
   ```css
@@ -13,7 +13,7 @@
     --scb-border-radius: 8px; /* default = 8px */
 }
 ```
-- [HSL x Better Folders](https://nspc911.github.io/vc-themes/HSL-BF.theme.css)
+- [HSL x Better Folders](https://nspc911.github.io/themes/vencord/HSL-BF.theme.css)
 
   Fixes Horizontal Server List breaking the extra sidebar of Better Folders<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1326506110345023538)<br>`Variables`
   ```css
@@ -25,7 +25,7 @@
 
   Allows you to pin any server of your choice to replace the pinned Discovery icon. **The server must not be in a folder**<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1327967783778254868)<br>`Variables`<br>No variables, but you need to change `<server name>` to your server's name
 
-- [Client Theme for Visual Refresh](https://nspc911.github.io/vc-themes/VisualRefreshClientTheme.theme.css)
+- [Client Theme for Visual Refresh](https://nspc911.github.io/themes/vencord/VisualRefreshClientTheme.theme.css)
 
   Adds the compatibility for Client Theme to work on Visual Refresh (may change if Discord fixes the variables)<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1331976527545368646)
 
