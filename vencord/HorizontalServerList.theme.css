@@ -8,44 +8,69 @@
  * @website https://www.gibbu.me
 */
 
-@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
-
-/* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
-/*@import url("https://discordstyles.github.io/Addons/bottomhsl.css");*/
-
 :root {
-  --HSL-server-icon-size: 40px; /* Size of the server icons | DEFAULT: 40px */
-  --HSL-server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
-  --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+  --HSL-server-scale: 1; /* Scale of the server icons, decimals allowed. | DEFAULT: 1 */
+  --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
+  --HSL-server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
+  --__server-container: calc(
+    var(--custom-guild-list-width) * var(--HSL-server-scale)
+  );
+  --__server-y-padding: 10px;
 }
 
-/* Fix for Better Folders */
-[class*=layer] > [class*=container]:has(> [aria-label="Servers sidebar"]) {
-    &:has(> div > nav) [class^=itemsContainer] {
-        height: 54% !important;
-    }
-    [class^=folderEndWrapper] {
-        display: none;
-    }
-    [class^=listItem]:has([class^=guildSeparator]) {
-        display: none;
-    }
-    > div > nav {
-        bottom: 100px;
-        transform: rotate(-90deg) translateY(50%) !important;
-        z-index: 200;
-        [class^=itemsContainer] {
-            height: 49% !important;
-            border-radius: 25%;
-        }
-    }
+.content_c48ade {
+  margin-top: var(--__server-container);
+  overflow: visible;
+}
+
+#app-mount .sidebar_c48ade {
+  border-radius: 0;
+  overflow: visible;
+}
+#app-mount .guilds_c48ade {
+  transform-origin: top left;
+  rotate: -90deg;
+  scale: var(--HSL-server-scale);
+  height: 100vw !important;
+  bottom: unset;
+  position: absolute !important;
+  left: 0;
+}
+#app-mount .tree_ef3116 {
+  padding-top: var(--__server-y-padding);
+  padding-bottom: var(--__server-y-padding);
+}
+#app-mount .wrapper_cc5dd2 {
+  rotate: 90deg;
+}
+#app-mount .itemsContainer_ef3116,
+#app-mount .stack_dbd263 {
+  flex-direction: var(--HSL-server-direction);
+  justify-content: var(--HSL-server-alignment);
 }
 
 /* Move pill to bottom */
-[class*="guilds_"] [class*=pill] {
-    position: absolute !important;
-    transform: rotate(90deg) translateX(calc(var(--HSL-server-icon-size) + 16px)) translateY(-50%) !important;
-    span {
-        border-radius: 4px 0 0 4px !important;
-    }
+[class*="guilds_"] [class*="pill"] {
+  position: absolute !important;
+  transform: rotate(90deg) translateX(calc(var(--HSL-server-icon-size) + 16px))
+    translateY(-50%) !important;
+  span {
+    border-radius: 4px 0 0 4px !important;
+  }
 }
+
+/* Half Half */
+.container_c48ade > div:not(.base_c48ade) {
+    position: absolute;
+    z-index: 1000;
+    height: 48px;
+    transform: translateY(236%) translateX(60vh);
+    & + .base_c48ade .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
+      height: calc(46vh - (var(--bf-sidebar-show-extra-buttons)) * 10.5vh);
+      overflow-y: scroll;
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        display: none
+      }
+    }
+  }
