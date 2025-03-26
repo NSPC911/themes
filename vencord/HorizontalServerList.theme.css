@@ -61,16 +61,16 @@
 
 /* Half Half */
 .container_c48ade > div:not(.base_c48ade) {
-    position: absolute;
-    z-index: 1000;
-    height: 48px;
-    transform: translateY(236%) translateX(60vh);
-    & + .base_c48ade .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
-      height: calc(46vh - (var(--bf-sidebar-show-extra-buttons)) * 10.5vh);
-      overflow-y: scroll;
-      overflow-x: hidden;
-      &::-webkit-scrollbar {
-        display: none
-      }
+  position: absolute;
+  z-index: 1000;
+  height: 48px;
+  transform: translateY(235%) translateX(69vh);
+  & + .base_c48ade .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
+    height: calc(55vh - (var(--bf-sidebar-show-extra-buttons)) * 10.5vh);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
+}

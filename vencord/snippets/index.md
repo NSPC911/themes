@@ -13,14 +13,10 @@
     --scb-border-radius: 8px; /* default = 8px */
 }
 ```
-- [HSL x Better Folders](https://nspc911.github.io/themes/vencord/HSL-BF.theme.css)
+- HSL x Better Folders
 
-  Fixes Horizontal Server List breaking the extra sidebar of Better Folders<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1326506110345023538)<br>`Variables`
-  ```css
-:root {
-    --bfhsl-make-folder-hover: 1 /* set to 1 if you want the sidebar to 'hover' */
-}
-```
+  Fixes Horizontal Server List breaking the extra sidebar of Better Folders<br>Use my [HSL Version](https://nspc911.github.io/themes/vencord/HorizontalServerList.theme.css) instead
+
 - Pin a server
 
   Allows you to pin any server of your choice to replace the pinned Discovery icon. **The server must not be in a folder**<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1327967783778254868)<br>`Variables`<br>No variables, but you need to change `<server name>` to your server's name

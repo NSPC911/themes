@@ -15,7 +15,7 @@
   --scb-border-radius: 8px /* default = 8px */;
 }
 
-[class^="chatContent_"] {
+html:not(.visual-refresh) [class^="chatContent_"] {
   &:has([class^="channelTextAreaDisabled"]) {
     --scb-applauncher-padding: 0px; /* because you cant use them dumbass */
   }
@@ -58,7 +58,7 @@
     transform: translateY(-100%);
     box-shadow: none !important;
     width: -webkit-fill-available;
-    margin-right: 16px
+    margin-right: 16px;
   }
   [class^="scrollableContainer_"] {
     border-radius: var(--scb-border-radius);

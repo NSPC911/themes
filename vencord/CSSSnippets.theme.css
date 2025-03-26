@@ -43,13 +43,13 @@
 }
 
 [class*="member"][class*="container"] {
-    & > [class^=childContainer] {
-        padding: 0;
-        & > [class^=memberInner] {
-            padding: 0 8px;
-            width: unset
-        }
+  & > [class^="childContainer"] {
+    padding: 0;
+    & > [class^="memberInner"] {
+      padding: 0 8px;
+      width: unset;
     }
+  }
 }
 
 [class*="interactive"] [class^="link_"],
@@ -61,7 +61,7 @@
   );
   border-radius: var(--gDM-border-radius);
   transition: background 0.5s ease;
-  > [class^=childContainer] {
+  > [class^="childContainer"] {
     padding: 0;
   }
   &:has([aria-label*="Online"]) {
@@ -95,7 +95,7 @@
 }
 /* Gradient Reply/Mention messages
    From: https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1294823473390030890 */
-[class*=messageListItem_] {
+[class*="messageListItem_"] {
   margin-left: 5px;
 }
 div[class*="cozy_"][class*="wrapper_"] {
@@ -264,7 +264,8 @@ svg[class^="ellipsis"] {
 }
 
 /* Pin the Page Switcher in Finder */
-[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+[class^="searchResultsWrap_"]
+  [class^="container_"]:has([class^="pageControlContainer_"]) {
   position: sticky;
   bottom: 0px;
   z-index: 999;
@@ -273,14 +274,17 @@ svg[class^="ellipsis"] {
 
 /* makes profiles that are long \
 \  because of roles be smaller */
-[class^=mutuals] + [class^=root]:not(:has(>[aria-label="View All Roles"])) {
-    max-height: 20vh;
+[class^="mutuals"]
+  + [class^="root"]:not(:has(> [aria-label="View All Roles"])) {
+  max-height: 20vh;
 }
 
 /* disable folder animations */
-[class*=edFolderIconWrapper] {
-    transform: translate3d(0,0,0) !important;
+[class*="edFolderIconWrapper"] {
+  transform: translate3d(0, 0, 0) !important;
 }
 
 /* turn every text white on hover */
-*:hover { color: white !important }
+*:hover {
+  color: white !important;
+}

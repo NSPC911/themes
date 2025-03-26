@@ -173,5 +173,5 @@ li[id^="chat-messages"] {
 
 /* fix unread bar being unreadable for some unknown reason */
 [class*="unread_"] > [class^="text__"] {
-    color: #ccc
+  color: #ccc;
 }
