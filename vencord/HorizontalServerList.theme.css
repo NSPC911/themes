@@ -63,7 +63,7 @@
   position: absolute;
   z-index: 100;
   height: 48px;
-  transform: translateY(calc(113px + var(--vr-header-snippet-space))) translateX(69vh);
+  transform: translateY(113px) translateX(69vh);
   > nav {
     height: 40vh !important;
   }
