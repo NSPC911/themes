@@ -13,6 +13,11 @@
     --scb-border-radius: 8px; /* default = 8px */
 }
 ```
+
+- [Refreshed Seamless Chat Bar](https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css)
+
+  ^ but for Visual Refresh<br>No variables<br>[<kbd>Jump to message</kbd>]()
+
 - HSL x Better Folders
 
   Fixes Horizontal Server List breaking the extra sidebar of Better Folders<br>Use my [HSL Version](https://nspc911.github.io/themes/vencord/HorizontalServerList.theme.css) instead
