@@ -42,14 +42,12 @@
   }
 }
 
-[class*="member"][class*="container"] {
-  & > [class^="childContainer"] {
-    padding: 0;
-    & > [class^="memberInner"] {
-      padding: 0 8px;
-      width: unset;
-    }
-  }
+[class*="membersWrap"] 
+{
+    min-width: unset;
+    > [class*="members"] {
+    width: 225px
+}
 }
 
 [class*="interactive"] [class^="link_"],

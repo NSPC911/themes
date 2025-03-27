@@ -9,10 +9,6 @@ Repository of the themes I use and have modified
 
   From [NYRI4/Discolored](https://github.com/NYRI4/Discolored)
 
-- [HideUserList](https://nspc911.github.io/themes/vencord/HideUserList.theme.css)
-
-  Dark Neon's Hide Channel List theme
-
 - [Horizontal Server List](https://nspc911.github.io/themes/vencord/HorizontalServerList.theme.css)
 
   Originally from [DiscordStyles/HorizontalServerList](https://github.com/DiscordStyles/HorizontalServerList), just with my variable preferences
