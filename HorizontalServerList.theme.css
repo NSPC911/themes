@@ -62,7 +62,7 @@
 /* Half Half */
 .container_c48ade > div:not(.base_c48ade) {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   height: 48px;
   transform: translateY(235%) translateX(69vh);
   & + .base_c48ade .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
