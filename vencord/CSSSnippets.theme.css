@@ -157,7 +157,7 @@ div[class*="repliedMessageSpine_"] {
 
 /* Make the App Launcher disappear among a sea of butterflies */
 [class*="channelAppLauncher_"] {
-  display: none;
+  display: none !important;
 }
 
 /* Mordernize Audio Attachements 
