@@ -12,11 +12,16 @@
     /* border radius of bar */
     --scb-border-radius: 8px; /* default = 8px */
 }
-```
+  ```
 
 - [Refreshed Seamless Chat Bar](https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css)
 
-  ^ but for Visual Refresh<br>No variables<br>[<kbd>Jump to message</kbd>]()
+  ^ but for Visual Refresh<br>No variables<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1354738654148427786)
+
+- [Chat Related Alerts at Top](https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css)
+
+  Moves the `x number of new messages` and `You are viewing old messages` to the top and make them seamless with each other (down to the button style)
+  <br>[<kbd>Jump to message</kbd>]()
 
 - HSL x Better Folders
 
