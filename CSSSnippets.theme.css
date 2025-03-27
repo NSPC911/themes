@@ -33,6 +33,7 @@
 [class^="memberInner"] {
   border-radius: var(--gDM-border-radius);
   transition: background 1s ease-in-out;
+  padding: 5px !important;
 }
 
 [class*="interactive"] {
@@ -42,12 +43,11 @@
   }
 }
 
-[class*="membersWrap"] 
-{
-    min-width: unset;
-    > [class*="members"] {
+[class*="membersWrap"] {
+  min-width: unset;
+  > [class*="members"] {
     width: 225px
-}
+  }
 }
 
 [class*="interactive"] [class^="link_"],
