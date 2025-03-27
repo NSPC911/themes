@@ -23,7 +23,7 @@
 
 - [Client Theme for Visual Refresh](https://nspc911.github.io/themes/vencord/VisualRefreshClientTheme.theme.css)
 
-  Adds the compatibility for Client Theme to work on Visual Refresh (may change if Discord fixes the variables)<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1331976527545368646)
+  Adds the compatibility for Client Theme to work on Visual Refresh (may change if Discord fixes the variables)<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1331976527545368646)<br>This snippet will be archived after the fix has been merged.
 
 - No Favourite Channel Icon
 
