@@ -1,0 +1,21 @@
+/**
+ * @name Anti-Refresh
+ * @author NSPG911
+ * @version 1.0.0
+ * @description Snippets to unrefresh Discord's Visual Refresh
+ * @source https://github.com/NSPC911/themes
+*/
+
+[class*="closedFolderIconWrapper_"] > [class*="guildIcon_"],
+[data-list-item-id*="guildsnav_"] > [class*="icon_"] {
+  border-radius: 50% !important;
+}
+
+span[class*="timestampInline_"] time::before {
+  content: attr(aria-label);
+  font-size: 12px;
+}
+
+span[class*="timestampInline_"] {
+  font-size: 0px !important;
+}
