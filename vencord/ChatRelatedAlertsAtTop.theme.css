@@ -1,0 +1,46 @@
+/**
+ * @name Chat Related Alerts at Top
+ * @author NSPG911
+ * @version 1.0.0
+ * @description Seamlessly blends both the `New Messages` and `Viewing Old Messages` at the top of the chat panel
+ * @source https://github.com/NSPC911/vc-themes
+*/
+
+.jumpToPresentBar__0f481 {
+  width: calc(100% - 24px) !important;
+  min-width: unset !important;
+  left: -8px !important;
+  top: 0px;
+  bottom: unset !important;
+  border-radius: 0 0 15px 15px !important;
+  z-index: 5;
+}
+
+.newMessagesBar__0f481 {
+  background-color: var(--background-surface-highest);
+  border: 1px solid var(--border-normal);
+  > button:not([aria-label*=message]) {
+    background-color: var(--button-filled-brand-background);
+    height: 22px;
+    width: 133px;
+    padding: 0 14.6px;
+    font-weight: 500 !important;
+    font-size: small;
+    transform: translateX(2px);
+    text-align: center;
+    border: 1px solid var(--button-filled-brand-border);
+    color: var(--button-filled-brand-text);
+    &:hover {
+      background-color: var(--button-filled-brand-background-hover);
+      border: 1px solid var(--button-filled-brand-border);
+    }
+  }
+  ~ .jumpToPresentBar__0f481 {
+    top: 32px;
+    border-top-color: transparent !important
+  }
+  &:has(~ .jumpToPresentBar__0f481) {
+    border-radius: 0 !important;
+    border-bottom-color: transparent !important;
+  }
+}
