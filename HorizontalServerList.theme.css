@@ -31,7 +31,6 @@
   transform-origin: top left;
   rotate: -90deg;
   scale: var(--HSL-server-scale);
-  height: 100vw !important;
   bottom: unset;
   position: absolute !important;
   left: 0;
@@ -64,7 +63,10 @@
   position: absolute;
   z-index: 100;
   height: 48px;
-  transform: translateY(235%) translateX(69vh);
+  transform: translateY(113px) translateX(69vh);
+  > nav {
+    height: 40vh !important;
+  }
   & + .base_c48ade .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
     height: calc(55vh - (var(--bf-sidebar-show-extra-buttons)) * 10.5vh);
     overflow-y: scroll;
