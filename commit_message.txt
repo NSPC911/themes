@@ -1,0 +1,4 @@
+fix codeblock markdown in snippets/index.md
+
+Co-authored-by: Kre0lidge <149087292+Cirkutry@users.noreply.github.com>
+
