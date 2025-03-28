@@ -41,13 +41,13 @@ jobs:
         id: get_commit_info
         run: |
           BRANCH_NAME=${GITHUB_REF#refs/heads/}
-          MESSAGE=$(git log origin/$BRANCH_NAME -1 --pretty=%B)
-          echo "message=$MESSAGE" >> $GITHUB_ENV
+          git fetch origin $BRANCH_NAME
+          git log origin/$BRANCH_NAME -1 --pretty=%B > commit_message.txt
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "$message" --author="NSPC911 <87571998+NSPC911@users.noreply.github.com>" || exit 0
+          git commit --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>" -F commit_message.txt || exit 0
           git push origin main
