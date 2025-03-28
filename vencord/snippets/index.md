@@ -2,7 +2,7 @@
 
 - [Seamless Chat Bar](https://nspc911.github.io/themes/vencord/SeamlessChatBar.theme.css)
 
-  Moves `Someone is typing`, `Cooldown is active`, `Ypu are viewing older messages` and `Replying to someone` such that they are seamless with the message bar<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1322496323202715689)<br>`Variables`
+  Moves `Someone is typing`, `Cooldown is active`, `You are viewing older messages` and `Replying to someone` such that they are seamless with the message bar<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1322496323202715689)<br>`Variables`
   ```css
 :root {
     /* Use if your theme overwrites the color like Nocturnal
@@ -16,7 +16,13 @@
 
 - [Refreshed Seamless Chat Bar](https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css)
 
-  ^ but for Visual Refresh<br>No variables<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1354738654148427786)
+  ^ but for Visual Refresh<br>[<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1354738654148427786)<br>`Variables`
+  ```css
+:root {
+    /* change padding of the bar */
+     --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
+}
+  ```
 
 - [Chat Related Alerts at Top](https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css)
 

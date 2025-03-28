@@ -6,13 +6,17 @@
  * @source https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css
 */
 
+:root {
+    --rscb-chat-box-padding: 8px;
+}
+
 .messagesWrapper__36d07 > .scroller__36d07 {
   height: calc(100% + 10px);
 }
 .form_f75fb0 {
   display: flex;
   flex-direction: column;
-  padding: 0 12px 12px 12px !important;
+  padding: 0 var(--rscb-chat-box-padding) var(--rscb-chat-box-padding) var(--rscb-chat-box-padding) !important;
   /* Normal chatbar */
   .channelTextArea_f75fb0 {
     margin-bottom: 0;
@@ -28,7 +32,6 @@
     border-color: transparent !important;
     position: static;
     order: -1;
-    transition: border-color 0.2s ease;
     background: transparent !important;
     background-image: transparent !important;
     border: 1px solid var(--border-faint);
@@ -46,6 +49,7 @@
       border-radius: 8px 8px 0 0;
       border: 1px solid var(--border-faint) !important;
       border-bottom-color: transparent !important;
+      /* because they dont have the same position */
       &.typingDots_b88801 {
         transform: translateX(-1px);
         &:not(:has(span > strong)) {
