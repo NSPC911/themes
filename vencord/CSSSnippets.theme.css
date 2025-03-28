@@ -286,3 +286,8 @@ svg[class^="ellipsis"] {
 *:hover {
   color: white !important;
 }
+
+/* move the unread bar down (why the hell is it in the middle of nowhere */
+.unreadBottom__629e4 {
+    bottom: 0 !important;
+}

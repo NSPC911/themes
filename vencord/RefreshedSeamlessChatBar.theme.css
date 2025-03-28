@@ -7,7 +7,9 @@
 */
 
 :root {
+    /* Custom padding for the chat box */
     --rscb-chat-box-padding: 8px;
+    /* */
 }
 
 .messagesWrapper__36d07 > .scroller__36d07 {
