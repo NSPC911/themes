@@ -1,2 +1,2 @@
-removed discord logo i guess
+fixed stupid 10px thing in rscb
 
