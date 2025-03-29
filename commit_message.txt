@@ -1,2 +1,2 @@
-fixed stupid 10px thing in rscb
+0px instead of 0
 
