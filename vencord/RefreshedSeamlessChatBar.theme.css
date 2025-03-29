@@ -11,6 +11,14 @@
     --rscb-chat-box-padding: 8px;
 }
 
+/* fix the chat's wonky paddings and margins */
+.messagesWrapper__36d07 > .scroller__36d07  {
+    margin-bottom: calc(-48px - var(--rscb-chat-box-padding));
+    > .scrollerContent__36d07  {
+        margin-bottom: calc(48px + var(--rscb-chat-box-padding));
+    }
+}
+
 .form_f75fb0 {
   display: flex;
   flex-direction: column;

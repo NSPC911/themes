@@ -1,2 +1,2 @@
-fix that lovely margin on the right of open folders
+fix chat's wonky paddings and margins causing ocd
 
