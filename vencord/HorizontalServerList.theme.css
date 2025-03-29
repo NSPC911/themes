@@ -118,3 +118,8 @@
 .content_c48ade {
     margin-top: 56px;
 }
+
+/* fix that lovely margin on the right side of open folders */
+.expandedFolderBackground__48112 + .listItem__650eb > .folderIcon__48112 {
+  margin-bottom: 0 !important;
+}

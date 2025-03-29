@@ -1,2 +1,2 @@
-0px instead of 0
+fix that lovely margin on the right of open folders
 
