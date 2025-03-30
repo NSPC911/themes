@@ -46,7 +46,7 @@
 [class*="membersWrap"] {
   min-width: unset;
   > [class*="members"] {
-    width: 225px
+    width: 225px;
   }
 }
 

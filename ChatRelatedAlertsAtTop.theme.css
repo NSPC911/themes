@@ -7,13 +7,13 @@
 */
 
 :root {
-    /* Set to 1 if you want them to float  *\
+  /* Set to 1 if you want them to float  *\
     |*      Recommended while using        *|
     \*      Midnight/Rounded Themes        */
-    --craat-popout: 0; /* Default = 0 */
-    /* Change the border radius *\
+  --craat-popout: 0; /* Default = 0 */
+  /* Change the border radius *\
     \*      for the alerts      */
-    --craat-border-radius: 16px; /* default: 16px */
+  --craat-border-radius: 16px; /* default: 16px */
 }
 
 .jumpToPresentBar__0f481 {
@@ -22,7 +22,9 @@
   left: 0px !important;
   top: calc(8px * var(--craat-popout)) !important;
   bottom: unset !important;
-  border-radius: calc(var(--craat-border-radius) * var(--craat-popout)) calc(var(--craat-border-radius) * var(--craat-popout)) var(--craat-border-radius) var(--craat-border-radius);
+  border-radius: calc(var(--craat-border-radius) * var(--craat-popout))
+    calc(var(--craat-border-radius) * var(--craat-popout))
+    var(--craat-border-radius) var(--craat-border-radius);
   z-index: 5 !important;
 }
 
@@ -30,11 +32,13 @@
   border: 1px solid var(--border-normal);
   background-color: var(--background-surface-highest) !important;
   padding-top: 4px !important;
-  border-radius: calc(var(--craat-border-radius) * var(--craat-popout)) calc(var(--craat-border-radius) * var(--craat-popout)) var(--craat-border-radius) var(--craat-border-radius);
+  border-radius: calc(var(--craat-border-radius) * var(--craat-popout))
+    calc(var(--craat-border-radius) * var(--craat-popout))
+    var(--craat-border-radius) var(--craat-border-radius);
   top: calc(8px * var(--craat-popout)) !important;
   left: 8px !important;
   right: 8px !important;
-  > button:not([aria-label*=message]) {
+  > button:not([aria-label*="message"]) {
     background-color: var(--button-filled-brand-background);
     height: 22px;
     padding: 0 16px;
@@ -50,14 +54,17 @@
       border: 1px solid var(--button-filled-brand-border);
     }
   }
-  > button[aria-label*=message] > span { color: white }
+  > button[aria-label*="message"] > span {
+    color: white;
+  }
   ~ .jumpToPresentBar__0f481 {
     top: calc(36px + (8px * var(--craat-popout))) !important;
     border-top-color: transparent !important;
     border-radius: 0 0 var(--craat-border-radius) var(--craat-border-radius);
   }
   &:has(~ .jumpToPresentBar__0f481) {
-    border-radius: calc(var(--craat-border-radius) * var(--craat-popout)) calc(var(--craat-border-radius) * var(--craat-popout)) 0 0 !important;
+    border-radius: calc(var(--craat-border-radius) * var(--craat-popout))
+      calc(var(--craat-border-radius) * var(--craat-popout)) 0 0 !important;
     border-bottom-color: transparent !important;
   }
 }
