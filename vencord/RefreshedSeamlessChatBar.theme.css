@@ -7,14 +7,15 @@
 */
 
 :root {
-    /* Custom padding for the chat box */
-    --rscb-chat-box-padding: 8px;
+  /* Custom padding for the chat box */
+  --rscb-chat-box-padding: 8px;
 }
 
 .form_f75fb0 {
   display: flex;
   flex-direction: column;
-  padding: 4px var(--rscb-chat-box-padding) var(--rscb-chat-box-padding) var(--rscb-chat-box-padding) !important;
+  padding: 4px var(--rscb-chat-box-padding) var(--rscb-chat-box-padding)
+    var(--rscb-chat-box-padding) !important;
   /* Normal chatbar */
   .channelTextArea_f75fb0 {
     margin-bottom: 0px;
@@ -60,7 +61,7 @@
     }
   }
   .channelAttachmentArea_b77158 {
-    background-color: var(--chat-background-default)
+    background-color: var(--chat-background-default);
   }
   /* the stars of the show, the :has */
   /* check for typing thing */

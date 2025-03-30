@@ -9,131 +9,133 @@
 */
 
 :root {
-    --HSL-server-scale: 1;
-    --HSL-server-direction: column;
-    --HSL-server-alignment: flex-start;
-    --__server-container: calc(var(--custom-guild-list-width) * var(--HSL-server-scale));
-    --__server-y-padding: 10px;
+  --HSL-server-scale: 1;
+  --HSL-server-direction: column;
+  --HSL-server-alignment: flex-start;
+  --__server-container: calc(
+    var(--custom-guild-list-width) * var(--HSL-server-scale)
+  );
+  --__server-y-padding: 10px;
 }
 
 .content_c48ade {
-    margin-top: var(--__server-container);
-    overflow: visible;
+  margin-top: var(--__server-container);
+  overflow: visible;
 }
 
 #app-mount {
-    .sidebar_c48ade {
-        border-radius: 0;
-        overflow: visible;
-    }
+  .sidebar_c48ade {
+    border-radius: 0;
+    overflow: visible;
+  }
 
-    .guilds_c48ade {
-        transform-origin: top left;
-        rotate: -90deg;
-        scale: var(--HSL-server-scale);
-        position: absolute !important;
-    }
+  .guilds_c48ade {
+    transform-origin: top left;
+    rotate: -90deg;
+    scale: var(--HSL-server-scale);
+    position: absolute !important;
+  }
 
-    .xtree_ef3116 {
-        padding-top: var(--__server-y-padding);
-        padding-bottom: var(--__server-y-padding);
-    }
+  .xtree_ef3116 {
+    padding-top: var(--__server-y-padding);
+    padding-bottom: var(--__server-y-padding);
+  }
 
-    .wrapper_cc5dd2 {
-        rotate: 90deg
-    }
+  .wrapper_cc5dd2 {
+    rotate: 90deg;
+  }
 
-    .itemsContainer_ef3116,
-    .stack_dbd263 {
-        flex-direction: var(--HSL-server-direction);
-        justify-content: var(--HSL-server-alignment);
-    }
+  .itemsContainer_ef3116,
+  .stack_dbd263 {
+    flex-direction: var(--HSL-server-direction);
+    justify-content: var(--HSL-server-alignment);
+  }
 }
 
 .base_c48ade .guilds_c48ade {
-    left: 16px;
+  left: 16px;
 }
 
-.container_c48ade>div:not(.base_c48ade) {
-    position: absolute;
-    z-index: 101;
-    transform: translateY(52px);
-    margin-top: -12px;
+.container_c48ade > div:not(.base_c48ade) {
+  position: absolute;
+  z-index: 101;
+  transform: translateY(52px);
+  margin-top: -12px;
 
-    >nav {
-        height: calc(100vh - 52px) !important;
-        overflow-y: scroll;
+  > nav {
+    height: calc(100vh - 52px) !important;
+    overflow-y: scroll;
 
-        &::-webkit-scrollbar {
-            display: none
-        }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .wrapper_cc5dd2,
+  .guilds_c48ade {
+    rotate: 0deg !important;
+  }
+
+  & + .base_c48ade {
+    .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
-    .wrapper_cc5dd2,
     .guilds_c48ade {
-        rotate: 0deg !important
+      left: 0;
     }
 
-    &+.base_c48ade {
-        .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
-            overflow-y: scroll;
-            overflow-x: hidden;
-
-            &::-webkit-scrollbar {
-                display: none
-            }
-        }
-
-        .guilds_c48ade {
-            left: 0;
-        }
-
-        .content_c48ade {
-            margin-left: 72px
-        }
+    .content_c48ade {
+      margin-left: 72px;
     }
+  }
 }
 
 .base_c48ade {
-    margin-top: 0 !important
+  margin-top: 0 !important;
 }
 
 .bar_c38106 {
-    transform: translateY(-4px);
-    height: 16px;
+  transform: translateY(-4px);
+  height: 16px;
 
-    .title_c38106 {
-        justify-content: left;
-        margin-left: 4px;
-        margin-top: 6px;
-        height: 24px;
+  .title_c38106 {
+    justify-content: left;
+    margin-left: 4px;
+    margin-top: 6px;
+    height: 24px;
+  }
+
+  .recentsIcon_c99c29 > div {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .anchor_edefb8 {
+    display: none !important;
+  }
+
+  .trailing_c38106 > .winButtons_c38106 {
+    > .winButton_c38106 {
+      width: 24px;
+      height: 24px;
     }
 
-    .recentsIcon_c99c29>div {
-        width: 24px !important;
-        height: 24px !important;
+    &::before {
+      display: none !important;
     }
-
-    .anchor_edefb8 {
-        display: none !important
-    }
-
-    .trailing_c38106>.winButtons_c38106 {
-        >.winButton_c38106 {
-            width: 24px;
-            height: 24px;
-        }
-
-        &::before {
-            display: none !important
-        }
-    }
+  }
 }
 
 .content_c48ade {
-    margin-top: 60px
+  margin-top: 60px;
 }
 
 .expandedFolderBackground__48112 + .listItem__650eb > .folderIcon__48112 {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
