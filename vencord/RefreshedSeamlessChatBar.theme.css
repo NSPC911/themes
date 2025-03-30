@@ -59,6 +59,9 @@
       }
     }
   }
+  .channelAttachmentArea_b77158 {
+    background-color: var(--chat-background-default)
+  }
   /* the stars of the show, the :has */
   /* check for typing thing */
   .channelBottomBarArea_f75fb0:has(
