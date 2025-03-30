@@ -57,7 +57,8 @@
     rgba(var(--gDM-offline), var(--gDM-opacity)),
     transparent
   );
-  border-radius: var(--gDM-border-radius);
+  border-radius: var(--gDM-border-radius) 0 0 var(--gDM-border-radius);
+  width: -webkit-fill-available;
   transition: background 0.5s ease;
   > [class^="childContainer"] {
     padding: 0;
@@ -160,41 +161,6 @@ div[class*="repliedMessageSpine_"] {
   display: none !important;
 }
 
-/* Mordernize Audio Attachements 
-   I barely ever use this
-[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioMetadata"] {
-  margin-bottom: 24px;
-}
-[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  border-radius: 0px 0px 8px 8px;
-}
-
-/* Discord actually useable on low width windows
-   I dont really like it now
-@media (max-width: 1100px) {
-  [class*="sidebar_"] {
-    width: 200px;
-    .vc-typing-indicator,
-    .vc-channelemojis-emoji,
-    [class*="guildIconV2Container_"] {
-      display: none;
-    }
-    [class*="containerDefault_"] {
-      [role="img"] {
-        display: none;
-      }
-    }
-  }
-  [class*="chat_"] {
-    [class*="membersWrap_"] {
-      display: none;
-    }
-  }
-}
-
 /* Let the User Area elements breathe */
 [class^="panels"] > [class^="container"] {
   height: unset !important;
@@ -285,9 +251,4 @@ svg[class^="ellipsis"] {
 /* turn every text white on hover */
 *:hover {
   color: white !important;
-}
-
-/* move the unread bar down (why the hell is it in the middle of nowhere */
-.unreadBottom__629e4 {
-    bottom: 0 !important;
 }
