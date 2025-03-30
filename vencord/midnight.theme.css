@@ -155,69 +155,47 @@ body {
     --purple-5: hsl(311, 20%, 53%);
 }
 
+/* DESIGN CHOICES FIXES */
 
-div[class*="replying_"]:before {
-  background: transparent !important;
+:root {
+    --actual-height: calc(100vh - 32px - (var(--gap) * 2));
 }
-[class^="message"] {
-  padding-bottom: 0 !important;
-  padding-top: 0 !important;
-}
-
-[class^="base_"] {
-  margin-top: calc(var(--spacing)) !important;
-}
-
-[class^="channel"][class*="dm"] {
-  margin-left: 0 !important;
-}
-
-li[id^="chat-messages"] {
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    right: 0;
-    left: 0;
-    top: 0px;
-    bottom: 0px;
-    border-radius: var(--roundness-m);
-    pointer-events: none;
-  }
-  &:hover::after {
-    background: linear-gradient(to right, #ffffff08, transparent);
-  }
-}
-
-[class*="focused"] > [class^="searchBar"] {
-  box-shadow: 0 0 7.5px 2px var(--accent-1);
-}
-
-[class^="chatContent"] + [class^="container"] {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background-color: var(--bg-3);
-    left: calc(0px - var(--spacing));
-    right: 100%;
-    top: -2.5px;
-    bottom: 0;
-    border-radius: var(--roundness-xl);
-  }
-}
-
-[class^="newMessagesBar"] {
-  top: 0;
-  height: 32px;
-  &:hover {
-    top: 0;
-    height: 32px;
-  }
-}
-
 /* fix unread bar being unreadable for some unknown reason */
 [class*="unread_"] > [class^="text__"] {
   color: #ccc;
+}
+
+/* move the unread bar down (why the hell is it in the middle of nowhere) */
+.unreadBottom__629e4 {
+    bottom: 0 !important;
+}
+
+/* Stacked Server Folders */
+.container_c48ade > div:not(.base_c48ade) {
+  position: absolute;
+  z-index: 1000;
+  height: calc(37.5vh - var(--gap));
+  transform: translateY(50vh) translateX(var(--gap));
+  > nav {
+    padding-top: 0px;
+  }
+  & + .base_c48ade .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
+    height: 32.5vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      display: none
+    }
+  }
+}
+
+/* stupid width under the channels */
+[aria-label="Favorites (server)"] {
+    margin-bottom: -130px !important;
+}
+
+/* fix stupid members sidebar width */
+.container_c8ffbb {
+    min-width: unset !important;
+    width: 225px !important;
 }

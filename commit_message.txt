@@ -1,2 +1,2 @@
-hsl is so scuffed im going back to no hsl
+fix design choices in midnight + update csssnippet
 
