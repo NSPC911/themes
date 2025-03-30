@@ -3,43 +3,61 @@
  * @author NSPG911
  * @version 1.0.0
  * @description Seamlessly blends both the `New Messages` and `Viewing Old Messages` at the top of the chat panel
- * @source https://github.com/NSPC911/vc-themes
+ * @source https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css
 */
 
+:root {
+    /* Set to 1 if you want them to float  *\
+    |*      Recommended while using        *|
+    \*      Midnight/Rounded Themes        */
+    --craat-popout: 0; /* Default = 0 */
+    /* Change the border radius *\
+    \*      for the alerts      */
+    --craat-border-radius: 16px; /* default: 16px */
+}
+
 .jumpToPresentBar__0f481 {
-  width: calc(100% - 24px) !important;
+  width: calc(100% - 16px) !important;
   min-width: unset !important;
-  left: -8px !important;
-  top: 0px;
+  left: 0px !important;
+  top: calc(8px * var(--craat-popout)) !important;
   bottom: unset !important;
-  border-radius: 0 0 15px 15px !important;
-  z-index: 5;
+  border-radius: calc(var(--craat-border-radius) * var(--craat-popout)) calc(var(--craat-border-radius) * var(--craat-popout)) var(--craat-border-radius) var(--craat-border-radius);
+  z-index: 5 !important;
 }
 
 .newMessagesBar__0f481 {
-  background-color: var(--background-surface-highest);
   border: 1px solid var(--border-normal);
+  background-color: var(--background-surface-highest) !important;
+  padding-top: 4px !important;
+  border-radius: calc(var(--craat-border-radius) * var(--craat-popout)) calc(var(--craat-border-radius) * var(--craat-popout)) var(--craat-border-radius) var(--craat-border-radius);
+  top: calc(8px * var(--craat-popout)) !important;
+  left: 8px !important;
+  right: 8px !important;
   > button:not([aria-label*=message]) {
     background-color: var(--button-filled-brand-background);
     height: 22px;
-    padding: 0 14.6px;
+    padding: 0 16px;
     font-weight: 500 !important;
     font-size: small;
     transform: translateX(2px);
     text-align: center;
     border: 1px solid var(--button-filled-brand-border);
     color: var(--button-filled-brand-text);
+    margin-right: 6px;
     &:hover {
       background-color: var(--button-filled-brand-background-hover);
       border: 1px solid var(--button-filled-brand-border);
     }
   }
+  > button[aria-label*=message] > span { color: white }
   ~ .jumpToPresentBar__0f481 {
-    top: 32px;
-    border-top-color: transparent !important
+    top: calc(36px + (8px * var(--craat-popout))) !important;
+    border-top-color: transparent !important;
+    border-radius: 0 0 var(--craat-border-radius) var(--craat-border-radius);
   }
   &:has(~ .jumpToPresentBar__0f481) {
-    border-radius: 0 !important;
+    border-radius: calc(var(--craat-border-radius) * var(--craat-popout)) calc(var(--craat-border-radius) * var(--craat-popout)) 0 0 !important;
     border-bottom-color: transparent !important;
   }
 }
