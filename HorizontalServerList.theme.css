@@ -70,7 +70,7 @@
     height: calc(100vh / var(--display-ratio-height) * var(--display-ratio-width) / 2) !important;
   }
   & + .base_c48ade .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
-    height: calc(100vh / var(--display-ratio-height) * var(--display-ratio-width) / 2 - 130px);
+    height: calc(100vh / var(--display-ratio-height) * var(--display-ratio-width) / 2 - 120px);
     overflow-y: scroll;
     overflow-x: hidden;
     &::-webkit-scrollbar {
