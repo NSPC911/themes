@@ -22,7 +22,6 @@
   > button:not([aria-label*=message]) {
     background-color: var(--button-filled-brand-background);
     height: 22px;
-    width: 133px;
     padding: 0 14.6px;
     font-weight: 500 !important;
     font-size: small;
