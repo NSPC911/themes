@@ -1,2 +1,2 @@
-fix chat's wonky paddings and margins causing ocd
+screw that, move the bg up
 
