@@ -201,7 +201,7 @@ body {
 /* Stacked Server Folders */
 .container_c48ade > div:not(.base_c48ade) {
   position: absolute;
-  z-index: 1000;
+  z-index: 101;
   height: calc(37.5vh - var(--gap));
   transform: translateY(50vh) translateX(var(--gap));
   > nav {
