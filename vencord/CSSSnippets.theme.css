@@ -44,9 +44,9 @@
 }
 
 [class*="membersWrap"] {
-  min-width: unset;
+  min-width: unset !important;
   > [class*="members"] {
-    width: 225px;
+    width: 225px !important;
   }
 }
 
