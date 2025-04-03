@@ -198,25 +198,6 @@ body {
   bottom: 0 !important;
 }
 
-/* Stacked Server Folders */
-.container_c48ade > div:not(.base_c48ade) {
-  position: absolute;
-  z-index: 101;
-  height: calc(37.5vh - var(--gap));
-  transform: translateY(50vh) translateX(var(--gap));
-  > nav {
-    padding-top: 0px;
-  }
-  & + .base_c48ade .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
-    height: 32.5vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-}
-
 /* stupid width under the channels */
 [aria-label="Favorites (server)"] {
   margin-bottom: -130px !important;
