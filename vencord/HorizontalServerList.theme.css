@@ -9,9 +9,9 @@
 */
 
 @property --extra-margin {
-    syntax: "<length>";
-    inherits: true;
-    initial-value: 0px;
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
 }
 
 :root {
@@ -64,10 +64,10 @@
   > nav {
     height: 50vw !important;
     > ul {
-        padding-top: 0 !important;
-        > div > div {
-            padding-top: 8px !important;
-        }
+      padding-top: 0 !important;
+      > div > div {
+        padding-top: 8px !important;
+      }
     }
   }
   & + .base_c48ade .wrapper_ef3116.guilds_c48ade .stack_dbd263 .stack_dbd263 {
