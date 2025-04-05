@@ -11,7 +11,7 @@
   --rscb-chat-box-padding: 8px;
 }
 
-.form_f75fb0 {
+.visual-refresh .form_f75fb0 {
   display: flex;
   flex-direction: column;
   padding: 4px var(--rscb-chat-box-padding) var(--rscb-chat-box-padding)
@@ -65,15 +65,12 @@
   }
   /* the stars of the show, the :has */
   /* check for typing thing */
-  .channelBottomBarArea_f75fb0:has(
-      + .typing_b88801 > .typingDots_b88801 span > strong
-    )
+  &:has(> .typing_b88801 > .typingDots_b88801 > span > strong)
     .channelTextArea_f75fb0 {
     border-top-left-radius: 0 !important;
   }
   /* check for cooldown thing */
-  .channelBottomBarArea_f75fb0:has(+ .typing_b88801 > .cooldownWrapper_b21699)
-    .channelTextArea_f75fb0 {
+  &:has(> .typing_b88801 > .cooldownWrapper_b21699) .channelTextArea_f75fb0 {
     border-top-right-radius: 0 !important;
   }
 }
