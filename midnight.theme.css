@@ -205,6 +205,6 @@ body {
 
 /* fix stupid members sidebar width */
 .container_c8ffbb {
-  min-width: unset !important;
+  min-width: 225px !important;
   width: 225px !important;
 }
