@@ -62,9 +62,11 @@
 }
 
 .guilds_c48ade {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    &::-webkit-scrollbar { display: none !important }
+  overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
 }
 
 /* Half Half */
@@ -85,13 +87,17 @@
   }
 }
 .sidebar_c48ade:not(:has(> [style$=";"])) > .wrapper_ef3116.guilds_c48ade {
-    height: calc(100vw - (var(--gap) * 2)) !important;
+  height: calc(100vw - (var(--gap) * 2)) !important;
 }
 .sidebar_c48ade:has(> [style$=";"]) > .wrapper_ef3116.guilds_c48ade {
   height: calc(50vw) !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  .stack_dbd263.scroller_ef3116 > :is(.listItem__650eb:has(> .listItemWrapper__91816), .tutorialContainer__650eb:has(> .wrapper_d144f8)) {
+  .stack_dbd263.scroller_ef3116
+    > :is(
+      .listItem__650eb:has(> .listItemWrapper__91816),
+      .tutorialContainer__650eb:has(> .wrapper_d144f8)
+    ) {
     display: none !important;
   }
 }
