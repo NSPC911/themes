@@ -54,6 +54,23 @@
 
   [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1354756324285743216)
 
+- Blurry Backdrops
+
+  Make backdrops formed from full screen elements be blurry
+  
+  `Variables`
+  
+    ```css
+    :root {
+      /* The blur radius, can be *\
+      \*   any types of length   */
+      --blrbg-blur-by: 2px;
+      /* how dim you want the bg *\
+      \*   aside from the blur   */
+      --blrbg-dimmness: 25;
+    }
+    ```
+
 - HSL x Better Folders 🔃
 
   Fixes Horizontal Server List breaking the extra sidebar of Better Folders

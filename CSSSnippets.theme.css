@@ -43,15 +43,6 @@
   }
 }
 
-[class*="membersWrap"] {
-  min-width: 225px !important;
-  max-width: 225px !important;
-  > [class*="members"] {
-    width: 225px !important;
-    min-width: 225px !important;
-  }
-}
-
 .clickable__91a9d:hover .childContainer__91a9d {
   background-color: transparent !important;
   cursor: pointer;
@@ -204,8 +195,8 @@ div[class*="repliedMessageSpine_"] {
 
 /* Blurred Background while loading */
 [class*="container_"][class*="fixClipping_"] {
-  background: 0 0;
-  backdrop-filter: blur(5px);
+  background: 0 0 !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 /* Remove stickers and gifting */
@@ -226,7 +217,6 @@ button[aria-label|="Open GIF picker"] {
 }
 
 /* Hide typing dots in chat bar */
-
 svg[class^="ellipsis"] {
   display: none !important;
   & + span {
@@ -250,11 +240,6 @@ svg[class^="ellipsis"] {
   max-height: 20vh;
 }
 
-/* disable folder animations */
-[class*="edFolderIconWrapper"] {
-  transform: translate3d(0, 0, 0) !important;
-}
-
 /* turn every text white on hover */
 *:hover {
   color: white !important;
@@ -262,8 +247,14 @@ svg[class^="ellipsis"] {
 
 /* Comfy Quick Switcher */
 .quickswitcher_ac6cb0 {
-  background: none;
+  background: 0 0 !important;
   padding: 10px;
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+  > * {
+    background: inherit !important;
+    background-color: inherit !important;
+  }
 }
 .quickswitcher_ac6cb0 .scroller_ac6cb0 {
   margin: 0;
@@ -280,32 +271,9 @@ svg[class^="ellipsis"] {
 .quickswitcher_ac6cb0 .input_ac6cb0:not([value=""]) {
   border-radius: 8px 8px 0 0;
 }
-.quickswitcher_ac6cb0 .input_ac6cb0[value=""] + .scroller_ac6cb0,
 .quickswitcher_ac6cb0 .protip_ac6cb0 {
   display: none;
 }
 .backdrop__1a911:has(+ .layer_bc663c .quickswitcher_ac6cb0) {
   opacity: 0;
-}
-
-/* Username Bubble */
-.username_c19a55,
-.base_b88801 .text_b88801 strong,
-.name__841c8,
-.mention.interactive,
-[class^="repliedMessage_"] > .username_c19a55,
-.member__5d473 .username_d272d6 {
-  filter: brightness(1.2);
-  background: color-mix(in srgb, currentColor 20%, transparent);
-  border: calc(1px * var(--enable-border)) solid;
-  /*font-weight: bold;*/
-  margin-right: 4px;
-  padding: 0 6px;
-  border-radius: 6px;
-  display: inline-flex;
-
-  &:hover {
-    text-decoration: none;
-    background: color-mix(in srgb, currentColor 40%, transparent);
-  }
 }

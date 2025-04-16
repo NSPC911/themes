@@ -28,7 +28,7 @@ body {
 
   /* top bar options */
   --move-top-bar-buttons: off; /* turn on to move inbox button to the server list (recommend setting top bar height to 24px) */
-  --custom-app-top-bar-height: 32px; /* height of the titlebar/top bar (default is 36px)*/
+  --custom-app-top-bar-height: 28px; /* height of the titlebar/top bar (default is 36px)*/
 
   /* window controls */
   --custom-window-controls: on; /* turn off to use discord default window controls */
@@ -63,7 +63,7 @@ body {
   --transparency-tweaks: off; /* turn on to remove some elements for better transparency */
   --remove-bg-layer: off; /* turn on to remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
   --panel-blur: off; /* turn on to blur the background of panels */
-  --blur-amount: 12px; /* amount of blur */
+  --blur-amount: 5px; /* amount of blur */
   --bg-floating: var(
     --bg-3
   ); /* you can set this to a more opaque color if floating panels look too transparent */
@@ -74,7 +74,7 @@ body {
   --chatbar-padding: 8px; /* padding of the chatbar */
 
   /* other options */
-  --small-user-panel: off; /* turn on to make the user panel smaller like in old discord */
+  --small-user-panel: on; /* turn on to make the user panel smaller like in old discord */
 }
 
 /* color options */
@@ -183,11 +183,6 @@ body {
   --purple-5: hsl(311, 20%, 53%);
 }
 
-/* DESIGN CHOICES FIXES */
-
-:root {
-  --actual-height: calc(100vh - 32px - (var(--gap) * 2));
-}
 /* fix unread bar being unreadable for some unknown reason */
 [class*="unread_"] > [class^="text__"] {
   color: #ccc;
@@ -201,10 +196,4 @@ body {
 /* stupid width under the channels */
 [aria-label="Favorites (server)"] {
   margin-bottom: -130px !important;
-}
-
-/* fix stupid members sidebar width */
-.container_c8ffbb {
-  min-width: 225px !important;
-  width: 225px !important;
 }
