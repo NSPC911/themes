@@ -101,3 +101,14 @@
     display: none !important;
   }
 }
+
+/* support for midnights stupid grid changes */
+.visual-refresh .panels_c48ade {
+  max-width: calc(
+    var(--custom-guild-sidebar-width) - var(--__server-container) + 1px
+  );
+  margin-left: var(--gap);
+}
+.visual-refresh .actionButtons_e131a9 button {
+  padding: 0 !important;
+}
