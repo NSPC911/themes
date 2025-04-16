@@ -54,7 +54,7 @@
 
   [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1354756324285743216)
 
-- Blurry Backdrops
+- [Blurry Backdrop](https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css) 🔃
 
   Make backdrops formed from full screen elements be blurry
   
