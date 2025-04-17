@@ -1,0 +1,136 @@
+/**
+ * @name Blurry Settings Modal
+ * @author NSPG911
+ * @version 1.0.0
+ * @description Extension for the.rabbit.disabler's SettingsModal to make everything blurry!!
+ * @source https://nspc911.github.io/themes/vencord/snippets
+*/
+
+:root {
+  --blrsm-blur-by: 5px;
+  --blrsm-dimmness: 25;
+}
+
+.standardSidebarView__23e6b {
+  /* more elements transparent! */
+  .cardPrimary__73069,
+  .fieldList__1fed1,
+  .scroller__53543,
+  .item__001a7[role="radio"][aria-checked="false"] {
+    background-color: transparent;
+  }
+  .item__001a7[role="radio"][aria-checked="false"]:hover {
+    background-color: var(--background-modifier-selected) !important;
+  }
+  .item__001a7[role="radio"][aria-checked="true"] {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--background-mod-subtle)
+    ) !important;
+  }
+  :not([aria-orientation="horizontal"])
+    > .item_b3f026[role="tab"]:is(
+      [aria-selected="true"],
+      [aria-selected="false"]:hover
+    ) {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--button-secondary-background)
+    ) !important;
+  }
+  .searchBar_c7e907,
+  .input__0f084,
+  .bioTextAreaContainer__6a919,
+  .bioTextArea__6a919,
+  .select__3f413,
+  .searchContainer__50a54 > .container_a45028,
+  .searchBar_cdb2b0 {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--input-background)
+    ) !important;
+  }
+  .accountProfileCard__1fed1,
+  .metadataContainer_c7f964,
+  .review_a9b452 {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--background-tertiary)
+    ) !important;
+  }
+  .background__1fed1,
+  .card__5cea9,
+  .settingCard__1a4ef,
+  .notice_a9b452,
+  .onboardingStepContainer__28e57,
+  .descriptionBox__981f7,
+  .sidebar__23e6b::before {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--background-secondary)
+    ) !important;
+  }
+  .header__5cea9,
+  .recommendedServerCard__51537 {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--background-secondary-alt)
+    ) !important;
+  }
+  .toolsContainer__23e6b {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--background-primary)
+    ) !important;
+  }
+  .vc-addon-card,
+  .auditLog__43dab,
+  .scrollerContainer_cdb2b0,
+  .upsellContainer__4cfe2 {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--card-primary-bg)
+    ) !important;
+  }
+  .headerExpanded__43dab {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--card-secondary-bg)
+    ) !important;
+  }
+  .authedAppV2__50a54,
+  .connectContainer_c7f964,
+  .connectionHeader_c7f964 {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--bg-surface-raised)
+    ) !important;
+  }
+  .headerV2__50a54,
+  .connectionsContainer_c7f964 > div > button,
+  .connection_c7f964 {
+    background-color: color-mix(
+      in srgb,
+      transparent 50%,
+      var(--bg-mod-subtle)
+    ) !important;
+  }
+  .contentRegionScroller__23e6b {
+    margin-top: 46px !important;
+  }
+}
+
+.layer__960e4[aria-hidden="true"] + .layer__960e4 {
+  background-color: rgba(0,0,0,calc(var(--blrsm-dimmness)/100) !important;
+  backdrop-filter: blur(var(--blrsm-blur-by));
+}

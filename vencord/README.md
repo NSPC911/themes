@@ -23,8 +23,7 @@ Repository of the themes I use and have modified
 
 - [Settings Modal](https://nspc911.github.io/themes/vencord/SettingsModal.theme.css)
 
-  Originally from [mwittrien/BetterDiscordAddons](https://github.com/mwittrien/BetterDiscordAddons/). Only HorizontalServerList was added to my list.
-
+  From [#🎨css-snippets](https://discord.com/channels/1015060230222131221/1028106818368589824/1353097168214425693) with some slight modifications that only work with [BlurrySettingsModal](https://nspc911.github.io/themes/vencord/BlurrySettingsModal.theme.css)
 
 I also have a couple CSS Snipoets that were sent in Vencord's [#css-snippets](https://discord.com/channels/1015060230222131221/1028106818368589824) channel
 
