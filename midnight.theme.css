@@ -197,3 +197,7 @@ body {
 [aria-label="Favorites (server)"] {
   margin-bottom: -130px !important;
 }
+
+.visual-refresh ::placeholder {
+  color: var(--text-4);
+}

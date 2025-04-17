@@ -70,6 +70,24 @@
       --blrbg-dimmness: 25;
     }
     ```
+  [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1362083384829935920)
+
+- [BlurrySettingsModal](https://nspc911.github.io/themes/vencord/BlurrySettingsModal.theme.css) 🔃
+
+  Makes `the.rabbit.disabler`'s '[Make Settings a window](https://discord.com/channels/1015060230222131221/1028106818368589824/1353097168214425693)' snippet have the settings and options background be transparent (i mean literally every element except toggles and buttons :3)
+
+  `Variables`
+
+    ```css
+    :root {
+      /* The blur radius, can be *\
+      \*   any types of length   */
+      --blrsm-blur-by: 5px;
+      /* how dim you want the bg *\
+      \*   aside from the blur   */
+      --blrsm-dimmness: 25;
+    }
+    ```
 
 - HSL x Better Folders 🔃
 

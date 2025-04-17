@@ -1,25 +1,173 @@
 /**
  * @name SettingsModal
  * @description Turns Settings Windows like User-/Channel-/Serversettings and Boost Overview into Modals
- * @author DevilBro
- * @version 1.0.1
- * @authorId 278543574059057154
- * @invite Jx3TjNS
- * @donate https://www.paypal.me/MircoWittrien
- * @patreon https://www.patreon.com/MircoWittrien
- * @website https://mwittrien.github.io/
- * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModal/
- * @updateUrl https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.theme.css
- *
- * @var range settingswidth_s "Settings Width: [default] = 960px" [960, 540, 3840, 20]
- * @var range settingsheight_s "Settings Height: [default] = 80vh" [80, 20, 100, 5]
- * @var text settingsbackground_s "Settings Background: lowest BG Color of changed Windows, change it in case another Theme turns them transparent [default] = transparent" transparent
+ * @author the.rabbit.disabler
+ * @version 1.0.0
  */
 
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
-
 :root {
-  --settingswidth: 960; /* default: 960px (width of the settings modal, px) */
-  --settingsheight: 80; /* default: 80vh (height of the settings modal, vh) */
-  --settingsbackground: transparent; /* default: transparent (lowest BG Color of changed Windows, change it in case another Theme turns them transparent) */
+  --sm-width: 87.5vw;
+  --sm-sidebar-width: 17.5vw;
+  --sm-height: 87.5vh;
+}
+
+.standardSidebarView__23e6b {
+  position: absolute;
+  width: var(--sm-width);
+  max-width: var(--sm-width) !important;
+  height: 87.5vh;
+  z-index: 4000;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+
+  .contentRegion__23e6b {
+    width: calc(var(--sm-width) - var(--sm-sidebar-width));
+    display: block;
+    flex: none;
+
+    .toolsContainer__23e6b {
+      margin: 0;
+      position: absolute;
+      right: 0px;
+      top: 0;
+      flex: none;
+      background-color: var(--background-primary);
+      padding: 0px;
+      height: 46px;
+      width: 100%;
+      box-shadow: var(--elevation-low);
+
+      .tools__23e6b {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 5000;
+
+        .container_c2b141 {
+          .keybind_c2b141 {
+            display: none;
+          }
+
+          .closeButton_c2b141 {
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            height: 25px !important;
+            width: 25px !important;
+            border: none;
+            flex: none;
+
+            > svg {
+              margin: 9px 0px 0px 9px;
+              width: 18px !important;
+              height: 18px !important;
+              overflow: visible;
+
+              > path {
+                margin-left: 20px;
+                d: path(
+                  "M0.00380648 0.00268555H1.50315H1.55C1.93069 0.0202563 2.31724 0.19596 2.5808 0.47123L6.00117 3.8916L9.4684 0.47123C9.86666 0.125678 10.1361 0.0143984 10.4992 0.00268555H11.9985V1.50203C11.9985 1.92957 11.9458 2.32784 11.6237 2.62653L8.20333 6.0469L11.5768 9.42042C11.858 9.70155 11.9985 10.0998 11.9985 10.4981V11.9974H10.4992C10.1009 11.9974 9.70267 11.8569 9.42154 11.5757L6.00117 8.15535L2.5808 11.5757C2.29967 11.8569 1.90141 11.9974 1.50315 11.9974H0.00380648V10.4981C0.00380648 10.0998 0.14437 9.70155 0.425496 9.42042L3.84587 6.0469L0.425496 2.62653C0.109228 2.33369 -0.0313351 1.92372 0.00380648 1.50203V0.00268555Z"
+                );
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contentColumn__23e6b:not([id*="vencord"], [id*="vesktop"]) {
+      /* vencord tabs excluded because they are literally the only ones that break lmfao */
+      min-width: 0px !important;
+      width: 100%;
+      padding: 0px 20px;
+
+      > .settingsPage_f131e9 {
+        > div {
+          padding-top: 66px;
+        }
+
+        > h3 {
+          font-size: 16px;
+          z-index: 5000;
+          align-content: center;
+          text-align: center;
+          width: calc(var(--sm-width) - var(--sm-sidebar-width) - 50px);
+          position: fixed;
+          top: calc(
+            100vh - var(--sm-height) - (var(--custom-app-top-bar-height) / 2)
+          );
+        }
+      }
+
+      > div > h2[data-text-variant="heading-lg/semibold"],
+      > div > .sectionTitle__7bffb > h2,
+      > h2[data-text-variant="heading-lg/semibold"] {
+        font-size: 16px;
+        z-index: 100;
+        height: 46px;
+        align-content: center;
+        text-align: center;
+        width: calc(var(--sm-width) - var(--sm-sidebar-width) - 50px);
+        position: fixed;
+        pointer-events: none;
+      }
+
+      > div > .children__7bffb,
+      .tabBar_d6f9e9,
+      .vc-settings-tab-bar,
+      .vc-special-card,
+      > div > .h5_b717a1 {
+        margin-top: 66px;
+      }
+
+      .headerContainer__6a750 {
+        justify-content: center;
+      }
+    }
+  }
+
+  .sidebarRegion__23e6b {
+    flex: none;
+
+    .sidebar__23e6b {
+      width: var(--sm-sidebar-width);
+      padding: 0;
+      overflow: visible !important;
+
+      &::before {
+        content: "Settings";
+        font-size: 16px;
+        font-weight: 600;
+        z-index: 100;
+        height: 46px;
+        align-content: center;
+        text-align: center;
+        border-top-left-radius: 16px;
+        width: calc(var(--sm-sidebar-width) + 8px);
+        position: fixed;
+        pointer-events: none;
+        background-color: var(--background-secondary);
+        box-shadow: var(--elevation-low);
+        color: white;
+      }
+
+      .side_b3f026 {
+        overflow: visible !important;
+        padding: 60px 8px 60px 16px;
+      }
+    }
+  }
+}
+
+.layer__960e4[aria-hidden="true"] + .layer__960e4 {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.baseLayer__960e4 {
+  opacity: 1 !important;
+  transform: scale(1) !important;
 }
