@@ -7,7 +7,7 @@
 */
 
 :root {
-  --blrsm-blur-by: 5px;
+  --blrsm-blur-by: 2px;
   --blrsm-dimmness: 25;
 }
 
@@ -131,6 +131,6 @@
 }
 
 .layer__960e4[aria-hidden="true"] + .layer__960e4 {
-  background-color: rgba(0,0,0,calc(var(--blrsm-dimmness)/100) !important;
+  background-color: rgba(0,0,0,calc(var(--blrsm-dimmness)/100)) !important;
   backdrop-filter: blur(var(--blrsm-blur-by));
 }
