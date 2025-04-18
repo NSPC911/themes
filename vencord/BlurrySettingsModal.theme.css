@@ -9,11 +9,14 @@
 :root {
   --blrsm-blur-by: 2px;
   --blrsm-dimmness: 25;
+  --panel-backdrop-filter: none !important;
 }
 
 .standardSidebarView__23e6b {
   background: none !important;
   /* more elements transparent! */
+  .contentRegion__23e6b,
+  .sidebarRegionScroller__23e6b,
   .cardPrimary__73069,
   .fieldList__1fed1,
   .scroller__53543,
@@ -128,6 +131,7 @@
   }
   .contentRegionScroller__23e6b {
     margin-top: 46px !important;
+    background-color: transparent !important;
   }
 }
 
