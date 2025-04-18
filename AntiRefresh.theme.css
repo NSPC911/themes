@@ -15,7 +15,3 @@ span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
   font-size: 12px;
 }
-
-span[class*="timestampInline_"] {
-  font-size: 0px !important;
-}
