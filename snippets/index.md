@@ -72,7 +72,7 @@
     ```
   [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1362083384829935920)
 
-- [BlurrySettingsModal](https://nspc911.github.io/themes/vencord/BlurrySettingsModal.theme.css) 🔃
+- [Blurry Settings Modal](https://nspc911.github.io/themes/vencord/BlurrySettingsModal.theme.css) 🔃
 
   Makes `the.rabbit.disabler`'s '[Make Settings a window](https://discord.com/channels/1015060230222131221/1028106818368589824/1353097168214425693)' snippet have the settings and options background be transparent (i mean literally every element except toggles and buttons :3)
 
@@ -88,6 +88,14 @@
       --blrsm-dimmness: 25;
     }
     ```
+
+  [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1362419625945464852)
+
+- Blurry Quick Switcher 🔃
+
+  Makes Quick Switcher have a blurry background. What more did you expect.
+
+  [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1362656483770372219)
 
 - HSL x Better Folders 🔃
 

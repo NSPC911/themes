@@ -195,7 +195,7 @@ body {
 
 /* stupid width under the channels */
 [aria-label="Favorites (server)"] {
-  margin-bottom: -130px !important;
+  margin-bottom: -105px !important;
 }
 
 .visual-refresh ::placeholder {

@@ -22,14 +22,17 @@
   --gDM-border-radius: 50px;
   --gDM-opacity: 0.5;
 }
+
 #app-mount .mentioned_d5deea:before {
   background-color: transparent !important;
   width: 0px;
   border: none;
 }
+
 [class*="interactiveSelected"] {
   background: transparent !important;
 }
+
 [class^="memberInner"] {
   border-radius: var(--gDM-border-radius);
   transition: background 1s ease-in-out;
@@ -38,6 +41,7 @@
 
 [class*="interactive"] {
   transform: translateX(3px);
+
   [class^="layout"] {
     transform: translateX(-3px);
   }
@@ -58,9 +62,11 @@
   border-radius: var(--gDM-border-radius) 0 0 var(--gDM-border-radius);
   width: -webkit-fill-available;
   transition: background 0.5s ease;
+
   > [class^="childContainer"] {
     padding: 0;
   }
+
   &:has([aria-label*="Online"]) {
     background: linear-gradient(
       to right,
@@ -68,6 +74,7 @@
       transparent
     ) !important;
   }
+
   &:has([aria-label*="Do Not Disturb"]) {
     background: linear-gradient(
       to right,
@@ -75,6 +82,7 @@
       transparent
     ) !important;
   }
+
   &:has([aria-label*="Idle"]) {
     background: linear-gradient(
       to right,
@@ -82,6 +90,7 @@
       transparent
     ) !important;
   }
+
   &:has([aria-label*="Streaming"]) {
     background: linear-gradient(
       to right,
@@ -90,19 +99,23 @@
     ) !important;
   }
 }
+
 /* Gradient Reply/Mention messages
    From: https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1294823473390030890 */
 [class*="messageListItem_"] {
   margin-left: 5px;
 }
+
 div[class*="cozy_"][class*="wrapper_"] {
   border-radius: 8px;
 }
+
 li[id^="chat-messages"]:has([class*="mentioned_"]),
 li[id^="chat-messages"]:has([class*="replying_"]) {
   position: relative;
   border-radius: 8px;
 }
+
 li[id^="chat-messages"]:has([class*="mentioned_"])::before,
 li[id^="chat-messages"]:has([class*="replying_"])::before {
   content: "";
@@ -117,10 +130,12 @@ li[id^="chat-messages"]:has([class*="replying_"])::before {
   width: 100%;
   pointer-events: none;
 }
+
 li[id^="chat-messages"]:has([class*="mentioned_"]):hover:before,
 li[id^="chat-messages"]:has([class*="replying_"]):hover:before {
   opacity: 0.5;
 }
+
 li[id^="chat-messages"]:has([class*="mentioned_"])::before {
   background: linear-gradient(
     to right,
@@ -129,6 +144,7 @@ li[id^="chat-messages"]:has([class*="mentioned_"])::before {
   ) !important;
   border-left: 0px solid var(--info-warning-foreground);
 }
+
 li[id^="chat-messages"]:has([class*="replying_"])::before {
   background: linear-gradient(
     to right,
@@ -137,9 +153,11 @@ li[id^="chat-messages"]:has([class*="replying_"])::before {
   );
   border-left: 0px solid var(--brand-500);
 }
+
 li[id^="chat-messages"] [class^="message"] {
   background: none !important;
 }
+
 div[class*="repliedMessageSpine_"] {
   transition: none;
 }
@@ -149,6 +167,7 @@ div[class*="repliedMessageSpine_"] {
 [class^="avatar_"] svg > :is(rect, mask) {
   display: none;
 }
+
 [class^="avatar_"] foreignObject {
   border-radius: 100%;
   mask: none;
@@ -203,9 +222,11 @@ div[class*="repliedMessageSpine_"] {
 button[aria-label|="Send a gift"] {
   display: none;
 }
+
 button[aria-label|="Open sticker picker"] {
   display: none;
 }
+
 button[aria-label|="Open GIF picker"] {
   display: none;
 }
@@ -219,6 +240,7 @@ button[aria-label|="Open GIF picker"] {
 /* Hide typing dots in chat bar */
 svg[class^="ellipsis"] {
   display: none !important;
+
   & + span {
     margin-left: 5px !important;
   }
@@ -250,30 +272,103 @@ svg[class^="ellipsis"] {
   background: 0 0 !important;
   padding: 10px;
   background-color: transparent !important;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   > * {
     background: inherit !important;
     background-color: inherit !important;
   }
-}
-.quickswitcher_ac6cb0 .scroller_ac6cb0 {
-  margin: 0;
-  border-radius: 0 0 8px 8px;
-  scrollbar-width: none;
-  padding: 8px !important;
-}
-.quickswitcher_ac6cb0 .input_ac6cb0 {
-  height: 50px;
-}
-.quickswitcher_ac6cb0 .input_ac6cb0[value=""] {
-  border-radius: 8px;
-}
-.quickswitcher_ac6cb0 .input_ac6cb0:not([value=""]) {
-  border-radius: 8px 8px 0 0;
-}
-.quickswitcher_ac6cb0 .protip_ac6cb0 {
-  display: none;
+  .scroller_ac6cb0 {
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+    scrollbar-width: none;
+    padding: 4px !important;
+  }
+  .input_ac6cb0 {
+    height: 50px;
+  }
+  .input_ac6cb0[value=""] {
+    border-radius: 8px;
+  }
+  .input_ac6cb0:not([value=""]) {
+    border-radius: 8px 8px 0 0;
+  }
+  .protip_ac6cb0 {
+    /* screw the protips */
+    display: none;
+  }
+  .result__71961 {
+    border-radius: 8px;
+  }
+  .content__99f8c > div:not(.result__71961):not([aria-hidden=true]) > .content__71961 {
+    height: 20px;
+    line-height: 20px;
+    > .header__71961 {
+      line-height: 20px;
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+  }
 }
 .backdrop__1a911:has(+ .layer_bc663c .quickswitcher_ac6cb0) {
   opacity: 0;
+}
+
+/* Memberlist Hover Visual Refresh*/
+.container_c8ffbb,
+[class*="membersWrap_"] {
+  justify-content: unset;
+  min-width: unset !important;
+  width: calc(60px - var(--gap) - var(--gap));
+  right: 0;
+}
+
+.container_c8ffbb {
+  overflow: visible !important;
+}
+
+[class*="member_"] {
+  right: 3px;
+}
+
+.memberInner__5d473,
+.content__91a9d,
+.membersGroup_c8ffbb {
+  margin-left: 3px;
+}
+
+.memberInner__5d473 {
+  margin-left: -6px;
+}
+
+[class*="membersWrap_"] [class*="members_"] {
+  transition: transform var(--hover-animation-speed);
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+}
+
+[class*="membersWrap_"]:hover [class*="members_"] {
+  transform: translateX(-196px);
+}
+
+[class*="membersWrap_"] [class*="membersGroup_"]::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: #949ba4;
+  position: absolute;
+  left: -36px;
+  top: 24px;
+  margin-left: 2px;
+}
+
+[class*="membersWrap_"]:hover [class*="membersGroup_"] {
+  transform: translateX(-3px);
+}
+
+[class*="membersWrap_"] [class*="membersGroup_"] {
+  cursor: default;
+  transform: translateX(45px);
+  transition: transform var(--hover-animation-speed);
+  overflow: visible;
 }
