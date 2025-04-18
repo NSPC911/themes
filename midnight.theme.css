@@ -201,3 +201,7 @@ body {
 .visual-refresh ::placeholder {
   color: var(--text-4);
 }
+
+.content_f75fb0 > .membersWrap_c8ffbb {
+    overflow: visible !important;
+}
