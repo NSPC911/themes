@@ -9,6 +9,8 @@
 :root {
   /* Custom padding for the chat box */
   --rscb-chat-box-padding: 8px;
+  /* Whether you want the chat to not move up and down when someone starts typing */
+  --rscb-no-jump-chat: 0;
 }
 
 .visual-refresh .form_f75fb0 {
@@ -73,4 +75,8 @@
   &:has(> .typing_b88801 > .cooldownWrapper_b21699) .channelTextArea_f75fb0 {
     border-top-right-radius: 0 !important;
   }
+}
+
+.messagesWrapper__36d07:not(:has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)) .scrollerContent__36d07  {
+    padding-bottom: calc(var(--rscb-no-jump-chat) * 25px);
 }

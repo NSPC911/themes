@@ -31,6 +31,8 @@
 	:root {
 	  /* change padding of the bar */
 	  --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
+      /* Whether you want the chat to not move up and down when someone starts typing */
+      --rscb-no-jump-chat: 0;
 	}
 	```
 
