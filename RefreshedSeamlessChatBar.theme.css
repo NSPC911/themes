@@ -77,6 +77,9 @@
   }
 }
 
-.messagesWrapper__36d07:not(:has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)) .scrollerContent__36d07  {
-    padding-bottom: calc(var(--rscb-no-jump-chat) * 25px);
+.messagesWrapper__36d07:not(
+    :has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
+  )
+  .scrollerContent__36d07 {
+  padding-bottom: calc(var(--rscb-no-jump-chat) * 25px);
 }
