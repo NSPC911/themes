@@ -299,7 +299,9 @@ svg[class^="ellipsis"] {
   .result__71961 {
     border-radius: 8px;
   }
-  .content__99f8c > div:not(.result__71961):not([aria-hidden=true]) > .content__71961 {
+  .content__99f8c
+    > div:not(.result__71961):not([aria-hidden="true"])
+    > .content__71961 {
     height: 20px;
     line-height: 20px;
     > .header__71961 {
