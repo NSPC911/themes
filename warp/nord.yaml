@@ -1,0 +1,25 @@
+name: Nord # Name for the theme
+accent: '#ffffff' # Accent color for UI elements
+cursor: '#d8dee9' # Input cursor color (optional; defaults to accent color if omitted)
+background: '#2e3440' # Terminal background color
+foreground: '#5c566a' # The foreground color
+details: darker # Whether the theme is lighter or darker
+terminal_colors: # Ansi escape colors
+  bright:
+    black: '#3e4450'
+    blue: '#6e91bc'
+    cyan: '#98d0e0'
+    green: '#9fcccb'
+    magenta: '#c49ebd'
+    red: '#cf717a'
+    white: '#fcffff'
+    yellow: '#fbdb9b'
+  normal:
+    black: '#2e3440'
+    blue: '#5e81ac'
+    cyan: '#88c0d0'
+    green: '#8fbcbb'
+    magenta: '#b48ead'
+    red: '#bf616a'
+    white: '#eceff4'
+    yellow: '#ebcb8b'
