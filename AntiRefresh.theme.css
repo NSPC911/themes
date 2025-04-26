@@ -15,3 +15,7 @@ span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
   font-size: 12px;
 }
+
+[id^=message-timestamp] {
+  font-size: 0px;
+}

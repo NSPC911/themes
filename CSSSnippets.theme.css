@@ -374,3 +374,61 @@ svg[class^="ellipsis"] {
   transition: transform var(--hover-animation-speed);
   overflow: visible;
 }
+
+/* Yapping so hard, chatting isnt a thing
+   From: https://discord.com/channels/1015060230222131221/1028106818368589824/1364793119886938175 */
+.typingDots_b88801>.ellipsis_b88801+.text_b88801 {
+  font-size: 0;
+  height: 16px;
+
+  &>strong {
+    font-size: 12px;
+
+    &::after {
+      color: var(--text-muted);
+    }
+
+    &:last-child::after {
+      content: " is yapping...";
+      font-weight: 500;
+    }
+
+    &:last-child:not(:first-child)::after {
+      content: " are yapping...";
+      font-weight: 500;
+    }
+
+    &:not(:last-child):nth-last-child(2)::after {
+      content: " and "
+    }
+
+    &:not(:last-child)::after {
+      content: ", ";
+      font-weight: 500;
+    }
+  }
+
+  &:not(:has(>strong))::after {
+    font-size: 12px;
+    content: "Several people are yapping...";
+  }
+}
+
+/* Smaller banner */
+.notice__6e2b9 {
+  z-index: 102;
+  height: fit-content;
+}
+
+/* dont remember what this was for */
+form>div.focusLock__49fc1>div.rootWithShadow__49fc1 {
+  background-color: color-mix(in srgb, transparent 50%, var(--modal-background));
+
+  .horizontalReverse__7c0ba {
+    background-color: color-mix(in srgb, transparent 50%, var(--modal-footer-background))
+  }
+
+  .input__0f084 {
+    background-color: color-mix(in srgb, transparent 50%, var(--input-background));
+  }
+}
