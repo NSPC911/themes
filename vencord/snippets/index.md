@@ -8,16 +8,16 @@
 
   `Variables`
 
-	```css
-	:root {
-	  /* Use if your theme overwrites the color like Nocturnal
-	  --channeltextarea-background: var(--backgroundColor01);*/
-	  /* set to 0px if no applauncher */
-	  --scb-applauncher-padding: -52px; /* default = -52px */
-	  /* border radius of bar */
-	  --scb-border-radius: 8px; /* default = 8px */
-		}
-	```
+    ```css
+    :root {
+      /* Use if your theme overwrites the color like Nocturnal
+      --channeltextarea-background: var(--backgroundColor01);*/
+      /* set to 0px if no applauncher */
+      --scb-applauncher-padding: -52px; /* default = -52px */
+      /* border radius of bar */
+      --scb-border-radius: 8px; /* default = 8px */
+    }
+    ```
 
 - [Refreshed Seamless Chat Bar](https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css) 🔃
 
@@ -28,13 +28,17 @@
   `Variables`
 
     ```css
-	:root {
-	  /* change padding of the bar */
-	  --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
-      /* Whether you want the chat to not move up and down when someone starts typing */
-      --rscb-no-jump-chat: 0;
-	}
-	```
+    :root {
+     /* change padding of the bar */
+     --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
+     /* Whether you want the chat to not move up *\
+     \*    and down when someone starts typing   */
+     --rscb-no-jump-chat: 0;
+      /* Whether you want the messages to clip through *\
+      \*  the gap between slowmode and typing people   */
+      --rscb-clip-chat-through-typing-bar: 0;
+    }
+    ```
 
 - [Chat Related Alerts at Top](https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css) 🔃
 
@@ -43,15 +47,15 @@
   `Variables`
 
     ```css
-	:root {
-	  /* Set to 1 if you want them to float  *\
-	  |*      Recommended while using        *|
-	  \*      Midnight/Rounded Themes        */
+    :root {
+      /* Set to 1 if you want them to float  *\
+      |*      Recommended while using        *|
+      \*      Midnight/Rounded Themes        */
       --craat-popout: 0; /* Default = 0 */
-	  /* Change the border radius *\
-	  \*      for the alerts      */
+      /* Change the border radius *\
+      \*      for the alerts      */
       --craat-border-radius: 16px; /* default: 16px */
-	}
+    }
     ```
 
   [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1354756324285743216)
@@ -59,9 +63,9 @@
 - [Blurry Backdrop](https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css) 🔃
 
   Make backdrops formed from full screen elements be blurry
-  
+
   `Variables`
-  
+
     ```css
     :root {
       /* The blur radius, can be *\

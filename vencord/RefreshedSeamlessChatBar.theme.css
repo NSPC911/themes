@@ -9,8 +9,12 @@
 :root {
   /* Custom padding for the chat box */
   --rscb-chat-box-padding: 8px;
-  /* Whether you want the chat to not move up and down when someone starts typing */
+  /* Whether you want the chat to not move up *\
+  \*    and down when someone starts typing   */
   --rscb-no-jump-chat: 0;
+  /* Whether you want the messages to clip through *\
+  \*  the gap between slowmode and typing people   */
+  --rscb-clip-chat-through-typing-bar: 0;
 }
 
 .visual-refresh .form_f75fb0 {
@@ -82,4 +86,10 @@
   )
   .scrollerContent__36d07 {
   padding-bottom: calc(var(--rscb-no-jump-chat) * 25px);
+}
+.scrollerInner__36d07 {
+  padding-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * 25px);
+}
+.scroller__36d07 {
+  margin-bottom: calc(0 - (var(--rscb-clip-chat-through-typing-bar) * 25px));
 }
