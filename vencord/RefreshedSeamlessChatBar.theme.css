@@ -91,5 +91,5 @@
   padding-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * 25px);
 }
 .scroller__36d07 {
-  margin-bottom: calc(0 - (var(--rscb-clip-chat-through-typing-bar) * 25px));
+  margin-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * (0px - 25px));
 }
