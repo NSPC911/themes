@@ -66,6 +66,10 @@
       }
     }
   }
+  .threadSuggestionBar__841c8 {
+    /* fix a certain pixel issue that bugged me to oblivion */
+    border-top: unset !important;
+  }
   .channelAttachmentArea_b77158 {
     background-color: var(--chat-background-default);
   }
