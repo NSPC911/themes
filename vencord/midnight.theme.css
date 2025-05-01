@@ -227,7 +227,7 @@ body {
       transform-origin: center;
       rotate: -90deg;
       transform: translate(
-        -15px,
+        -14.5px,
         calc(var(--window-control-size) - (var(--gap) * 2))
       );
       background: var(--background-base-lowest);
