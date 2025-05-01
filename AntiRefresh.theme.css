@@ -6,11 +6,17 @@
  * @source https://github.com/NSPC911/themes
 */
 
-[class*="closedFolderIconWrapper_"] > [class*="guildIcon_"],
-[data-list-item-id*="guildsnav_"] > [class*="icon_"] {
+/* Fix folder icons */
+.folderHeaderSmall__48112 {
+  --custom-folder-preview-padding: 4px;
+}
+.folderPreviewGuildIcon__48112 {
   border-radius: 50% !important;
+  font-size: 6px !important;
+  line-height: 16px;
 }
 
+/* Fix compact timestamps */
 span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
   font-size: 12px;
