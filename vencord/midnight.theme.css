@@ -2,7 +2,7 @@
  * @name midnight
  * @description a dark, customizable discord theme.
  * @author refact0r
- * @version 2.1.0
+ * @version 2.1.1
  * @invite nz87hXyvcy
  * @website https://github.com/refact0r/midnight-discord
  * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
@@ -14,9 +14,10 @@
 @import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
 
 body {
-  /* font, change to '' for default discord font */
-  --font: "figtree";
-  font-weight: 400 /* normal text font weight. DOES NOT AFFECT BOLD TEXT */;
+  /* font options */
+  --font: "figtree"; /* change to '' for default discord font */
+  --code-font: "CaskaydiaCove NF"; /* change to '' for default discord font */
+  font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
 
   /* sizes */
   --gap: 4px; /* spacing between panels */
@@ -27,13 +28,18 @@ body {
   --animations: off; /* turn off to disable all midnight animations/transitions */
   --list-item-transition: 0.2s ease; /* transition for list items */
   --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+  --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
 
   /* top bar options */
-  --move-top-bar-buttons: off; /* turn on to move inbox button to the server list (recommend setting top bar height to 24px) */
-  --custom-app-top-bar-height: 28px; /* height of the titlebar/top bar (default is 36px)*/
+  --top-bar-height: var(
+    36px
+  ); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+  --top-bar-button-position: off; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
+  --top-bar-title-position: hide; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
+  --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
 
   /* window controls */
-  --custom-window-controls: on; /* turn off to use discord default window controls */
+  --custom-window-controls: on; /* off: default window controls, on: custom window controls */
   --window-control-size: 14px; /* size of custom window controls */
 
   /* dms button options */
@@ -183,29 +189,87 @@ body {
   --purple-5: hsl(311, 20%, 53%);
 }
 
-/* fix unread bar being unreadable for some unknown reason */
-[class*="unread_"] > [class^="text__"] {
-  color: #ccc;
-}
+.visual-refresh #app-mount {
+  /* fix unread bar being unreadable for some unknown reason */
+  [class*="unread_"] > [class^="text__"] {
+    color: #ccc;
+  }
 
-/* move the unread bar down (why the hell is it in the middle of nowhere) */
-.unreadBottom__629e4 {
-  bottom: 0 !important;
-}
+  /* move the unread bar down (why the hell is it in the middle of nowhere) */
+  .unreadBottom__629e4 {
+    bottom: 0 !important;
+  }
 
-/* stupid width under the channels */
-[aria-label="Favorites (server)"] {
-  margin-bottom: -105px !important;
-}
+  /* stupid width under the channels */
+  [aria-label="Favorites (server)"] {
+    margin-bottom: -105px !important;
+  }
 
-.visual-refresh ::placeholder {
-  color: var(--text-4);
-}
+  .visual-refresh ::placeholder {
+    color: var(--text-4);
+  }
 
-.content_f75fb0 > .membersWrap_c8ffbb {
+  .content_f75fb0 > .membersWrap_c8ffbb {
     overflow: visible !important;
-}
+  }
 
-.wrapper__44df5 {
+  .wrapper__44df5 {
     z-index: 0;
+  }
+  .toolbar__9293f {
+    padding-right: 0 !important;
+  }
+  /* move controls to server bar in hsl (must need!!) */
+  .bar_c38106 {
+    -webkit-app-region: no-drag;
+    .winButtons_c38106 {
+      position: relative;
+      transform-origin: center;
+      rotate: -90deg;
+      transform: translate(
+        -15px,
+        calc(var(--window-control-size) - (var(--gap) * 2))
+      );
+      background: var(--background-base-lowest);
+      width: calc(var(--window-control-size) * 4);
+      border-radius: 0 0 16px 16px;
+      -webkit-app-region: drag;
+      padding: var(--window-control-size) var(--gap) 0px var(--gap);
+      border: var(--border-thickness) solid var(--border);
+      &::before {
+        display: none !important;
+      }
+      .winButton_c38106 {
+        width: 100%;
+        -webkit-app-region: no-drag;
+      }
+    }
+    .recentsIcon_c99c29, [href="https://support.discord.com"]
+    {
+      display: none;
+    }
+  }
+  /* nuke bar */
+  .base_c48ade {
+    grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
+    padding-top: calc(var(--gap) * 2);
+  }
+  .stack_dbd263::after {
+    height: var(--window-control-size);
+  }
+  /* nuke extra bar that i cant bother to fix */
+  > .bar_c38106 {
+    display: none !important;
+  }
+  /* update hsl stuff */
+  .content_c48ade {
+    margin-top: calc(var(--__server-container) + var(--gap));
+    .guilds_c48ade {
+      transform: translateX(var(--gap));
+    }
+  }
+  /* fix misalignment */
+  .page_c48ade {
+    padding-bottom: 0;
+  }
 }
