@@ -16,6 +16,6 @@ span[class*="timestampInline_"] time::before {
   font-size: 12px;
 }
 
-[id^=message-timestamp] {
+[id^="message-timestamp"] {
   font-size: 0px;
 }
