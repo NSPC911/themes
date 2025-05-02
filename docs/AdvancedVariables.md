@@ -1,6 +1,6 @@
 # Advanced Variables
 
-<sub>This has been inferred from <a href="https://discord.com/channels/1015060230222131221/1134844326933954622/1355074670713372804">Vencord > #theme-development > 💬</sub>
+<sub>This has been inferred from <a href="https://discord.com/channels/1015060230222131221/1134844326933954622/1355074670713372804">Vencord > #theme-development > 💬</a></sub>
 
 According to [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@property/syntax#browser_compatibility), this part is a recent addition to Firefox, and has existed on Chromium/Electron a long time back.
 
