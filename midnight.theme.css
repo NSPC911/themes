@@ -272,4 +272,11 @@ body {
   .page_c48ade {
     padding-bottom: 0;
   }
+
+  /* fix disappeared window controls in hsl */
+  .sidebar_c48ade > [style*="betterFoldersSidebar"] > nav {
+    height: calc(50vw - 47px) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
 }
