@@ -33,6 +33,10 @@
   background: transparent !important;
 }
 
+[class*="member"][class*="selected"] > div {
+  background: transparent !important;
+}
+
 [class^="memberInner"] {
   border-radius: var(--gDM-border-radius);
   transition: background 1s ease-in-out;
@@ -443,4 +447,9 @@ form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
       var(--input-background)
     );
   }
+}
+
+/* I prefer my font */
+.visual-refresh #app-mount :is(pre, code, [class^="codeLine"]) {
+  font-family: "CaskaydiaCove NF" !important;
 }
