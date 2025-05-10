@@ -347,5 +347,7 @@ body {
   /* fix hsl clipping through window controls */
   .vc-betterFolders-sidebar .guilds_c48ade {
     height: calc(50vw - 48px) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
   }
 }
