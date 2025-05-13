@@ -223,15 +223,13 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* Remove stickers and gifting */
+.expression-picker-chat-input-button.buttonContainer__74017:has(
+    > button:is(
+        button[aria-label="Open GIF picker"],
+        button[aria-label="Open sticker picker"]
+      )
+  ),
 button[aria-label|="Send a gift"] {
-  display: none;
-}
-
-button[aria-label|="Open sticker picker"] {
-  display: none;
-}
-
-button[aria-label|="Open GIF picker"] {
   display: none;
 }
 
