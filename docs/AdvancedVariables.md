@@ -5,6 +5,7 @@
 According to [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@property/syntax#browser_compatibility), this part is a recent addition to Firefox, and has existed on Chromium/Electron a long time back.
 
 Usually, when allowing a user to set a CSS variable, you are forced to use either of the following
+
 ```css
 :root {
   --var-1: 0; /* set to 1 to toggle */
@@ -12,6 +13,7 @@ Usually, when allowing a user to set a CSS variable, you are forced to use eithe
   --var-3: #000000; /* allows hex values */
 }
 ```
+
 for which all of them use some sort of commenting. What if you could use JSON Schema-like objects but for CSS Variables?
 
 Introducing `@property`
@@ -20,14 +22,16 @@ Introducing `@property`
 
 ```css
 @property --var-1 {
-  syntax: 'on | off';
+  syntax: "on | off";
   inherits: false;
   initial-value: off;
 }
 ```
+
 In the above scenario, the variable `--var-1` can only be set to either <kbd>on</kbd> or <kbd>off</kbd>, and anything else will be rejected. Moreover, the variable cannot be inherited by child elements due to `inherits: false`, which means it is a lot more easier to handle such variables
 
 How about other syntaxes?
+
 ```css
 /* Accepts only a color */
 syntax: "<color>";
@@ -49,7 +53,9 @@ syntax: "<length> | auto";
 /* Allows everything */
 syntax: "*";
 ```
+
 What about other accepted types?
+
 ```css
 /* Accepts an angle like 90deg */
 syntax: "<angle>";
@@ -106,11 +112,11 @@ Thats where `@container` comes.
 }
 @container bodyContainered style(--highlight-on-hover: on) {
   *:hover {
-    color: white !important
+    color: white !important;
   }
 }
 body {
-  container-name: bodyContainered
+  container-name: bodyContainered;
 }
 ```
 
