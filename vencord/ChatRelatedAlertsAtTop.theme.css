@@ -32,25 +32,25 @@
     padding: 0 10px;
   }
   &:has(
-      ~ .messagesWrapper__36d07
-        > :is(
-          .jumpToPresentBar__0f481,
-          .newMessagesBar__0f481,
-          .topicsPillContainer__0f481,
-          .newTopicsBarContainer__0f481
-        )
-    ) {
+    ~ .messagesWrapper__36d07
+      > :is(
+        .jumpToPresentBar__0f481,
+        .newMessagesBar__0f481,
+        .topicsPillContainer__0f481,
+        .newTopicsBarContainer__0f481
+      )
+  ) {
     border-radius: calc(var(--craat-border-radius) * var(--craat-popout))
       calc(var(--craat-border-radius) * var(--craat-popout)) 0 0;
   }
   & ~ .messagesWrapper__36d07 {
     margin-top: -1px;
     > :is(
-        .jumpToPresentBar__0f481,
-        .newMessagesBar__0f481,
-        .topicsPillContainer__0f481,
-        .newTopicsBarContainer__0f481
-      ) {
+      .jumpToPresentBar__0f481,
+      .newMessagesBar__0f481,
+      .topicsPillContainer__0f481,
+      .newTopicsBarContainer__0f481
+    ) {
       border-top-left-radius: 0 !important;
       border-top-right-radius: 0 !important;
     }

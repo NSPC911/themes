@@ -299,4 +299,7 @@ body {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
   }
+  .primary__6af3a {
+    background: var(--blue-3);
+  }
 }
