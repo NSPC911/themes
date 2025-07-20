@@ -371,6 +371,7 @@ svg[class^="ellipsis"] {
   transition: transform var(--hover-animation-speed);
   background-color: transparent;
   backdrop-filter: blur(2px);
+  border-radius: var(--radius-lg);
 }
 
 [class*="membersWrap_"]:hover [class*="members_"] {
