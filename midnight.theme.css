@@ -228,6 +228,7 @@ body {
     -webkit-app-region: no-drag;
 
     .winButtons_c38106 {
+      z-index: 9999;
       position: relative;
       transform-origin: center;
       rotate: -90deg;
@@ -249,6 +250,7 @@ body {
       .winButton_c38106 {
         width: 100%;
         -webkit-app-region: no-drag;
+        z-index: 9999;
       }
     }
 
@@ -296,9 +298,8 @@ body {
 
   /* fix hsl clipping through window controls */
   .vc-betterFolders-sidebar .guilds_c48ade {
-    height: calc(50vw - 54px) !important;
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
+    height: calc(50vw - var(--gap) * 2) !important;
+    z-index: 200;
   }
   .primary__6af3a {
     background: var(--blue-3);
