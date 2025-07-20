@@ -380,7 +380,7 @@ ytmusic-app-layout[player-visible] > [slot="player-bar"] {
   width: calc(100% - 18px) !important;
   border: 1px solid var(--cust-ytmusic-border) !important;
   border-radius: 8px !important;
-  overflow: hidden !important;
+  overflow: visible !important;
   bottom: 0;
 }
 #guide-wrapper {
@@ -484,4 +484,11 @@ tp-yt-paper-listbox.ytmusic-menu-popup-renderer,
 .ytmusic-menu-popup-renderer {
   border-radius: 12px !important;
   padding: 0 !important;
+}
+html ytmusic-search-box[is-bauhaus-sidenav-enabled] {
+  --ytmusic-search-background: var(--cust-ytmusic-dark-secondary-background);
+}
+* {
+  transition-property: all;
+  transition-duration: 0s;
 }
