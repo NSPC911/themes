@@ -190,6 +190,8 @@ body {
 }
 
 .visual-refresh #app-mount {
+  /* extra other colors that need to be changed */
+  --button-filled-brand-text: hsl(from var(--bg-4) h s l / 100%) !important;
   /* fix unread bar being unreadable for some unknown reason */
   [class*="unread_"] > [class^="text__"] {
     color: #ccc;
