@@ -66,7 +66,7 @@ body {
 
   /* transparency/blur options */
   /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
-  --transparency-tweaks: off; /* off: no changes, on: remove some elements for better transparency */
+  --transparency-tweaks: on; /* off: no changes, on: remove some elements for better transparency */
   --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
   --panel-blur: off; /* off: no changes, on: blur the background of panels */
   --blur-amount: 12px; /* amount of blur */
@@ -98,8 +98,8 @@ body {
   /* background and dark colors */
   --bg-1: #434c5e; /* dark buttons when clicked */
   --bg-2: #3b4252; /* dark buttons */
-  --bg-3: #272b35; /* spacing, secondary elements */
-  --bg-4: #2e3440; /* main background color */
+  --bg-3: #272b3540; /* spacing, secondary elements */
+  --bg-4: #2e344040; /* main background color */
   --hover: hsla(220, 20%, 50%, 0.1); /* channels and buttons when hovered */
   --active: hsla(
     220,
@@ -221,7 +221,7 @@ body {
     padding-right: 0 !important;
   }
 
-  /* move controls to server bar in hsl (must need!!) */
+  /* move controls to server bar in horizontalserverlist (must need!!) */
   .bar_c38106 {
     -webkit-app-region: no-drag;
 
@@ -275,7 +275,6 @@ body {
   /* update hsl stuff */
   .content_c48ade {
     margin-top: calc(var(--__server-container) + var(--gap));
-
     .guilds_c48ade {
       transform: translateX(var(--gap));
     }
@@ -295,11 +294,15 @@ body {
 
   /* fix hsl clipping through window controls */
   .vc-betterFolders-sidebar .guilds_c48ade {
-    height: calc(50vw - 48px) !important;
+    height: calc(50vw - 54px) !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
   }
   .primary__6af3a {
     background: var(--blue-3);
+  }
+
+  .jumpToPresentBar__0f481 > .button__6af3a {
+    color: black;
   }
 }

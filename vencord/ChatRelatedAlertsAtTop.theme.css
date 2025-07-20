@@ -16,7 +16,11 @@
   --craat-border-radius: 16px; /* default: 16px */
 }
 
-.visual-refresh .chatHeaderBar_dc83f5 {
+.visual-refresh #app-mount .jumpToPresentBar__0f481 > button {
+  height: 32px;
+}
+
+.visual-refresh #app-mount .chatHeaderBar_dc83f5 {
   width: calc(100% - 45px) !important;
   border-bottom-color: transparent !important;
   min-width: unset !important;
