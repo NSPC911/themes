@@ -367,37 +367,44 @@ svg[class^="ellipsis"] {
 }
 
 [class*="membersWrap_"] [class*="members_"] {
-  transition: transform var(--hover-animation-speed);
   background-color: transparent;
-  backdrop-filter: blur(2px);
   border-radius: var(--radius-lg);
 }
 
 [class*="membersWrap_"]:hover [class*="members_"] {
   transform: translateX(-196px);
-}
-
-[class*="membersWrap_"] [class*="membersGroup_"]::after {
-  content: "";
-  width: 30px;
-  height: 3px;
-  border-radius: 50px;
-  background-color: #949ba4;
-  position: absolute;
-  left: -36px;
-  top: 24px;
-  margin-left: 2px;
+  backdrop-filter: blur(2px);
 }
 
 [class*="membersWrap_"]:hover [class*="membersGroup_"] {
-  transform: translateX(-3px);
+  overflow: visible;
 }
 
 [class*="membersWrap_"] [class*="membersGroup_"] {
   cursor: default;
-  transform: translateX(45px);
-  transition: transform var(--hover-animation-speed);
-  overflow: visible;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 0 !important;
+  height: 1.25em;
+  margin-top: 0.5em;
+  > span[class^="hidden"] {
+    display: block !important;
+    order: 1 !important;
+    height: fit-content !important;
+    width: fit-content !important;
+    overflow: visible !important;
+    clip: unset !important;
+    clip-path: unset !important;
+    margin-left: 16px;
+    &:has(+ span[aria-hidden="true"] > *) {
+      margin-left: 36px;
+    }
+  }
+  > span[aria-hidden="true"] {
+    order: 0 !important;
+    margin-left: 16px;
+  }
 }
 
 /* Yapping so hard, chatting isnt a thing
