@@ -383,28 +383,6 @@ svg[class^="ellipsis"] {
 [class*="membersWrap_"] [class*="membersGroup_"] {
   cursor: default;
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  padding: 0 !important;
-  height: 1.25em;
-  margin-top: 0.5em;
-  > span[class^="hidden"] {
-    display: block !important;
-    order: 1 !important;
-    height: fit-content !important;
-    width: fit-content !important;
-    overflow: visible !important;
-    clip: unset !important;
-    clip-path: unset !important;
-    margin-left: 16px;
-    &:has(+ span[aria-hidden="true"] > *) {
-      margin-left: 36px;
-    }
-  }
-  > span[aria-hidden="true"] {
-    order: 0 !important;
-    margin-left: 16px;
-  }
 }
 
 /* Yapping so hard, chatting isnt a thing

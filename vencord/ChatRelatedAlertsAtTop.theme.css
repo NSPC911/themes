@@ -71,6 +71,10 @@
       calc(var(--craat-border-radius) * var(--craat-popout))
       var(--craat-border-radius) var(--craat-border-radius);
     z-index: 5 !important;
+    > button > .buttonChildrenWrapper__6af3a {
+      min-height: unset !important;
+      height: 20px !important;
+    }
   }
 
   .newMessagesBar__0f481,
@@ -85,6 +89,7 @@
     top: calc(8px * var(--craat-popout)) !important;
     left: 8px !important;
     right: 8px !important;
+    box-shadow: unset !important;
     > button:not([aria-label*="message"]) {
       background-color: var(--button-filled-brand-background);
       height: 22px;
@@ -105,7 +110,7 @@
       color: white;
     }
     ~ .jumpToPresentBar__0f481 {
-      top: calc(36px + (8px * var(--craat-popout))) !important;
+      transform: translateY(calc(100% - 2px));
       border-top-color: transparent !important;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -155,6 +160,7 @@
       border-top-left-radius: 0 !important;
       border-top-right-radius: 0 !important;
       border-top-color: transparent !important;
+      padding-top: 0 !important;
     }
   }
   /* Fix misalignment */
