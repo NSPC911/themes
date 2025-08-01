@@ -88,7 +88,7 @@ body {
   --colors: on; /* off: discord default colors, on: midnight custom colors */
 
   /* text colors */
-  --text-0: var(--bg-3); /* text on colored elements */
+  --text-0: hsl(from var(--bg-3) h s l / 100%); /* text on colored elements */
   --text-1: #eceff4; /* other normally white text */
   --text-2: #e5e9f0; /* headings and important text */
   --text-3: #d8dee9; /* normal text */
@@ -236,18 +236,24 @@ body {
         -14.5px,
         calc(var(--window-control-size) - (var(--gap) * 2))
       );
-      background: transparent;
-      width: calc(var(--window-control-size) * 4);
-      border-radius: 0 0 16px 16px;
-      -webkit-app-region: drag;
-      padding: var(--window-control-size) var(--gap) 0px var(--gap);
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+      -webkit-app-region: no-drag;
+      padding: 0px var(--gap);
       border: var(--border-thickness) solid var(--border);
       border-top: none;
+      width: calc(var(--custom-guild-list-width) - (2 * var(--gap))) !important;
+      height: calc(var(--window-control-size) + (4 * var(--gap)));
+      border: none;
+      transform: translate(
+        -14.5px,
+        calc(var(--window-control-size))
+      ) !important;
+      background: var(--bg-4) !important;
       &::before {
         display: none !important;
       }
 
-      .winButton_c38106 {
+      > .winButton_c38106 {
         width: 100%;
         -webkit-app-region: no-drag;
         z-index: 9999;
@@ -290,16 +296,24 @@ body {
   }
 
   /* fix disappeared window controls in hsl */
-  .sidebar_c48ade > [style*="betterFoldersSidebar"] > nav {
-    height: calc(50vw - 47px) !important;
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
+  .sidebar_c48ade:has(> .vc-betterFolders-sidebar)
+    > .wrapper_ef3116[aria-label="Servers sidebar"] {
+    height: calc(50vw - var(--gap)) !important;
+  }
+  .sidebar_c48ade > .wrapper_ef3116[aria-label="Servers sidebar"] {
+    height: calc(
+      100vw - var(--gap) * 3.5 - var(--window-control-size) * 2
+    ) !important;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
 
   /* fix hsl clipping through window controls */
   .vc-betterFolders-sidebar .guilds_c48ade {
-    height: calc(50vw - var(--gap) * 2) !important;
+    height: calc(
+      50vw - ((var(--gap) * 1.75 + var(--window-control-size)) * 2)
+    ) !important;
     z-index: 200;
+    border-radius: 0 !important;
   }
   .primary__6af3a {
     background: var(--blue-3);
@@ -307,20 +321,5 @@ body {
 
   .jumpToPresentBar__0f481 > .button__6af3a {
     color: black;
-  }
-  .wrapper__6e9f8[data-list-item-id="guildsnav___home"]:hover
-    > .childWrapper__6e9f8::before,
-  .wrapper__6e9f8[data-list-item-id="guildsnav___home"].selected__6e9f8
-    > .childWrapper__6e9f8::before {
-    background: hsl(from var(--bg-4) h s l / 100%);
-  }
-  .wrapper__6e9f8[data-list-item-id="guildsnav___favorites"].selected__6e9f8
-    path,
-  .circleIconButton__5bc7e[data-list-item-id="guildsnav___guild-discover-button"].selected__5bc7e
-    path {
-    fill: hsl(from var(--bg-4) h s l / 100%);
-  }
-  .selectedChannel_c69b6d .iconContainerWithGuildIcon__2ea32 path {
-    fill: hsl(from var(--bg-4) h s l / 100%);
   }
 }
