@@ -89,11 +89,12 @@
     :has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
   )
   .scrollerContent__36d07 {
-  padding-bottom: calc(var(--rscb-no-jump-chat) * 25px);
+  padding-bottom: calc(var(--rscb-no-jump-chat) * 24px);
 }
-.scrollerInner__36d07 {
-  padding-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * 25px);
+.messagesWrapper__36d07:has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
+  .scrollerInner__36d07 {
+  padding-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * 24px);
 }
-.scroller__36d07 {
-  margin-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * (0px - 25px));
+:has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801) .scroller__36d07 {
+  margin-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * (0px - 24px));
 }

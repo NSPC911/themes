@@ -322,4 +322,9 @@ body {
   .jumpToPresentBar__0f481 > .button__6af3a {
     color: black;
   }
+  /* fix favourites v2 */
+  .modeSelected__2ea32 .iconWithGuildIcon__2ea32,
+  .modeSelected__2ea32:hover .iconWithGuildIcon__2ea32 {
+    color: var(--text-0);
+  }
 }
