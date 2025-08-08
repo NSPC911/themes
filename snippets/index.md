@@ -104,6 +104,23 @@
 
   [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1362656483770372219)
 
+- Bordered Embeds 🔃
+
+  Adds borders to embeded contents, like webhooks and previews. Need I say more?
+
+  `Variables`
+
+  ```css
+  :root {
+    /* Border width for the embeds */
+    --wh-border-width: 4px;
+    /* Background opacity. The higher it is, the more of the border color seeps through */
+    --wh-background-opacity: 0%;
+    /* Default background color. Relative color is used for those who use transparent themes */
+    --wh-default-background: hsl(from var(--background-surface-high) h s l / 100%);
+  }
+  ```
+
 - HSL x Better Folders 🔃
 
   Fixes Horizontal Server List breaking the extra sidebar of Better Folders
