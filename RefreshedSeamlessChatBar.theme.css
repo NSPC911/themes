@@ -57,6 +57,7 @@
       /* because they dont have the same position */
       &.typingDots_b88801 {
         transform: translateX(-1px);
+        flex: unset !important; /* latest build uses flex for some fucking reason */
         &:not(:has(span > strong)) {
           display: none !important;
         }
