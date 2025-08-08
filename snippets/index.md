@@ -121,6 +121,8 @@
   }
   ```
 
+  [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1402181676007821324)
+
 - HSL x Better Folders 🔃
 
   Fixes Horizontal Server List breaking the extra sidebar of Better Folders
