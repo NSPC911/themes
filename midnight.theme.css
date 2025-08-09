@@ -153,8 +153,9 @@ body {
   --offline: var(--text-4); /* change to #83838b for default offline color */
 
   /* border colors */
-  --border-light: hsla(220, 20%, 50%, 0.05); /* light border color */
-  --border: hsla(220, 20%, 50%, 0.1); /* normal border color */
+  --border-light: hsla(from var(--blue-5) h s l / 50%); /* light border color */
+  --border-hover: var(--border-light);
+  --border: hsla(from var(--blue-3) h s l / 37.5%); /* normal border color */
   --button-border: hsl(0, 0%, 100%, 0.1); /* neutral border color of buttons */
 
   /* base colors */
@@ -240,10 +241,11 @@ body {
       -webkit-app-region: no-drag;
       padding: 0px var(--gap);
       border: var(--border-thickness) solid var(--border);
-      border-top: none;
-      width: calc(var(--custom-guild-list-width) - (2 * var(--gap))) !important;
+      width: calc(
+        var(--custom-guild-list-width) -
+          (2 * (var(--gap) + var(--border-thickness)))
+      ) !important;
       height: calc(var(--window-control-size) + (4 * var(--gap)));
-      border: none;
       transform: translate(
         -14.5px,
         calc(var(--window-control-size))
