@@ -104,7 +104,7 @@
 
   [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1362656483770372219)
 
-- [Bordered Embeds](https://nspg911.github.io/themes/vencord/BorderedEmbeds.theme.css) 🔃
+- [Bordered Embeds](https://nspc911.github.io/themes/vencord/BorderedEmbeds.theme.css) 🔃
 
   Adds borders to embeded contents, like webhooks and previews. Need I say more?
 
