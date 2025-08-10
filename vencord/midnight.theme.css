@@ -329,4 +329,35 @@ body {
   .modeSelected__2ea32:hover .iconWithGuildIcon__2ea32 {
     color: var(--text-0);
   }
+  /* search area fixes */
+  .toolbar__9293f {
+    gap: 0;
+    > .search__49676 {
+      margin: 0;
+    }
+  }
+  .search__97492:not(.open__97492) .searchBar__97492 {
+    width: unset;
+    background: none;
+    border: none;
+    > .DraftEditor-root {
+      width: 32px;
+      > .public-DraftEditorPlaceholder-root {
+        color: transparent !important;
+      }
+    }
+    > .icon__97492 {
+      width: 32px;
+      position: absolute;
+      pointer-events: none;
+      transform: scale(1.3) translateY(5%);
+    }
+  }
+  /* codeblock shiki fix */
+  .vc-shiki-container {
+    background: hsla(from var(--background-base-lowest) h s l / 25%);
+    .vc-shiki-root {
+      background-color: transparent !important;
+    }
+  }
 }
