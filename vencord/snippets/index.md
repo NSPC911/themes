@@ -104,7 +104,7 @@
 
   [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1362656483770372219)
 
-- Bordered Embeds 🔃
+- [Bordered Embeds](https://nspg911.github.io/themes/vencord/BorderedEmbeds.theme.css) 🔃
 
   Adds borders to embeded contents, like webhooks and previews. Need I say more?
 
@@ -118,6 +118,8 @@
     --wh-background-opacity: 0%;
     /* Default background color. Relative color is used for those who use transparent themes */
     --wh-default-background: hsl(from var(--background-surface-high) h s l / 100%);
+    /* Whether to keep the Suppress Embed button shown, or hide when not hovered on */
+    --wh-always-show-suppress-embed-button: 0
   }
   ```
 
