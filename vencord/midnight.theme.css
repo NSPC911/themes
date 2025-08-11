@@ -362,13 +362,16 @@ body {
   }
 
   /* nicer profile area when in vc */
+  .panels_c48ade:not(:has(> .containerRtcOpened__37e49)) {
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  }
   .panels_c48ade:has(> .containerRtcOpened__37e49) {
     background-color: transparent;
     border: transparent;
     backdrop-filter: unset;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: var(--gap);
     > * {
       background-color: var(--background-base-lower);
       border: var(--border-thickness) solid var(--border-subtle);
@@ -401,23 +404,29 @@ body {
       > .showToolbar__9293f {
         display: flex;
         flex-direction: row;
-        gap: 4px;
-      }
-      > .showToolbar__9293f > div {
-        background-color: var(--background-base-lower);
-        border: var(--border-thickness) solid var(--border-subtle);
-        backdrop-filter: var(--panel-backdrop-filter);
-        box-sizing: border-box;
-        &.children__9293f {
-          padding-left: 16px;
-          border-radius: var(--radius-lg) 0 0 var(--radius-lg);
-        }
-        &.toolbar__9293f {
-          padding-right: 8px !important;
-          border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+        gap: var(--gap);
+        > div {
+          background-color: var(--background-base-lower);
+          border: var(--border-thickness) solid var(--border-subtle);
+          backdrop-filter: var(--panel-backdrop-filter);
+          box-sizing: border-box;
+          &:hover {
+            border-color: var(--border-light);
+          }
+          &.children__9293f {
+            padding-left: 16px;
+            border-top-left-radius: var(--radius-lg);
+          }
+          &.toolbar__9293f {
+            padding-right: 8px !important;
+            border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+          }
         }
       }
     }
+  }
+  .chatContent_f75fb0 {
+    border-top-left-radius: 0;
   }
   /* better channel sidebar */
   .sidebarList_c48ade {
@@ -426,29 +435,38 @@ body {
     backdrop-filter: unset;
     transition: none;
     overflow: visible;
-    > .container__2637a {
+    > nav {
       margin-left: 0;
       margin-right: calc(0px - var(--border-thickness));
       display: flex;
       flex-direction: column;
-      > div:is(.scroller__629e4, .container_f37cb1) {
+      > div:is(.scroller__629e4, .container_f37cb1, .searchBar__35e86) {
         background-color: var(--background-base-lower);
         border: var(--border-thickness) solid var(--border-subtle);
         backdrop-filter: var(--panel-backdrop-filter);
         box-sizing: border-box;
-        &.scroller__629e4 {
-          border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+        &:hover {
+          border-color: var(--border-light);
         }
-        &.container_f37cb1 {
-          margin-bottom: 4px;
+        &.container_f37cb1,
+        &.searchBar__35e86 {
+          height: 40px;
+          min-height: 40px;
+          margin-top: 0;
+          margin-bottom: var(--gap);
           border-radius: var(--radius-lg) var(--radius-lg) 0 0;
           > header {
             border-bottom: none;
             height: 40px;
             padding: 0 6px 0 8px;
+            min-height: unset;
           }
         }
       }
     }
+  }
+  /* fix better channel sidebar for favourites server */
+  .container__2637a[aria-label="Favorites (server)"] {
+    padding-bottom: calc(var(--custom-app-panels-height) + (2.5 * var(--gap)));
   }
 }
