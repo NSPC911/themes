@@ -204,7 +204,7 @@ div[class*="repliedMessageSpine_"] {
 /* space out the vc buttons */
 .visual-refresh #app-mount [class*="voiceButtonsContainer"] {
   flex-direction: column;
-  margin-left: 0;
+  margin-left: var(--gap);
   margin-right: var(--gap);
 
   > button {
