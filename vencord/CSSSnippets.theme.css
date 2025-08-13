@@ -51,7 +51,8 @@
   }
 }
 
-.clickable__91a9d:hover .childContainer__91a9d {
+.clickable__91a9d:hover .childContainer__91a9d,
+.interactive__972a0:hover {
   background-color: transparent !important;
   cursor: pointer;
 }
@@ -71,31 +72,32 @@
     padding: 0;
   }
 
-  &:has(> div > [aria-label*="Online"]) {
+  &:has(> div > [aria-label$="Online"]),
+  &:has(> div > div > [aria-label$="Online"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-online), var(--gDM-opacity)),
       transparent
     ) !important;
   }
-
-  &:has(> div > [aria-label*="Do Not Disturb"]) {
+  &:has(> div > div > [aria-label*="Do Not Disturb"])
+    &:has(> div > [aria-label*="Do Not Disturb"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-dnd), var(--gDM-opacity)),
       transparent
     ) !important;
   }
-
-  &:has(> div > [aria-label*="Idle"]) {
+  &:has(> div > div > [aria-label*="Idle"])
+    &:has(> div > [aria-label*="Idle"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-idle), var(--gDM-opacity)),
       transparent
     ) !important;
   }
-
-  &:has(> div > [aria-label*="Streaming"]) {
+  &:has(> div > div > [aria-label*="Streaming"])
+    &:has(> div > [aria-label*="Streaming"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-streaming), var(--gDM-opacity)),
