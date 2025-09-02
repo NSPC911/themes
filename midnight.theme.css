@@ -220,10 +220,6 @@ body {
     z-index: 0;
   }
 
-  .toolbar__9293f {
-    padding-right: 0 !important;
-  }
-
   /* move controls to server bar in horizontalserverlist (must need!!) */
   .bar_c38106 {
     -webkit-app-region: no-drag;
@@ -350,7 +346,7 @@ body {
       width: 32px;
       position: absolute;
       pointer-events: none;
-      transform: scale(1.3) translateY(5%);
+      transform: scale(1.3) translateY(-6%);
     }
   }
   /* codeblock shiki fix */
@@ -363,7 +359,7 @@ body {
 
   /* nicer profile area when in vc */
   .panels_c48ade:not(:has(> .containerRtcOpened__37e49)) {
-    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    border-radius: var(--radius-lg);
   }
   .panels_c48ade:has(> .containerRtcOpened__37e49) {
     background-color: transparent;
@@ -390,100 +386,5 @@ body {
     .container_e131a9 {
       border-bottom: none;
     }
-  }
-  /* nicer channel bar */
-  .subtitleContainer_f75fb0,
-  .container__133bf {
-    border: none;
-    background: transparent;
-    backdrop-filter: unset;
-    min-height: unset;
-    > section {
-      padding: 0;
-      height: 40px;
-      min-height: unset;
-      border: none;
-      background: transparent;
-      backdrop-filter: unset;
-      min-height: unset;
-      > .showToolbar__9293f {
-        display: flex;
-        flex-direction: row;
-        gap: var(--gap);
-        > div {
-          background-color: var(--background-base-lower);
-          border: var(--border-thickness) solid var(--border-subtle);
-          backdrop-filter: var(--panel-backdrop-filter);
-          box-sizing: border-box;
-          &:hover {
-            border-color: var(--border-light);
-          }
-          &.children__9293f {
-            padding-left: 16px;
-            border-top-left-radius: var(--radius-lg);
-          }
-          &.toolbar__9293f {
-            padding-right: 8px !important;
-            border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-          }
-        }
-      }
-    }
-  }
-  .chatContent_f75fb0,
-  .peopleColumn__133bf {
-    border-top-left-radius: 0;
-  }
-  /* better channel sidebar */
-  .sidebarList_c48ade {
-    background-color: transparent;
-    border: none;
-    backdrop-filter: unset;
-    transition: none;
-    overflow: visible;
-    > nav {
-      margin-left: 0;
-      margin-right: calc(0px - var(--border-thickness));
-      display: flex;
-      flex-direction: column;
-      > div:is(
-          .scroller__629e4,
-          .container_f37cb1,
-          .searchBar__35e86,
-          .scroller__99e7c
-        ) {
-        background-color: var(--background-base-lower);
-        border: var(--border-thickness) solid var(--border-subtle);
-        backdrop-filter: var(--panel-backdrop-filter);
-        box-sizing: border-box;
-        &:hover {
-          border-color: var(--border-light);
-        }
-        &.container_f37cb1,
-        &.searchBar__35e86 {
-          height: 40px;
-          min-height: 40px;
-          margin-top: 0;
-          margin-bottom: var(--gap);
-          border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-          > header {
-            border-bottom: none;
-            height: 40px;
-            padding: 0 6px 0 8px;
-            min-height: unset;
-          }
-        }
-      }
-    }
-  }
-  /* fix banners */
-  .animatedContainer_f37cb1,
-  .headerEllipseForeground_f37cb1 {
-    display: none;
-  }
-  /* fix better channel sidebar for favourites server */
-  .container__2637a[aria-label="Favorites (server)"] {
-    padding-bottom: 0;
-    margin-bottom: 0 !important;
   }
 }
