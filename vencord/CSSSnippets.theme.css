@@ -80,24 +80,24 @@
       transparent
     ) !important;
   }
-  &:has(> div > div > [aria-label*="Do Not Disturb"])
-    &:has(> div > [aria-label*="Do Not Disturb"]) {
+  &:has(> div > [aria-label*="Do Not Disturb"]),
+  &:has(> div > div > [aria-label*="Do Not Disturb"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-dnd), var(--gDM-opacity)),
       transparent
     ) !important;
   }
-  &:has(> div > div > [aria-label*="Idle"])
-    &:has(> div > [aria-label*="Idle"]) {
+  &:has(> div > [aria-label*="Idle"]),
+  &:has(> div > div > [aria-label*="Idle"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-idle), var(--gDM-opacity)),
       transparent
     ) !important;
   }
-  &:has(> div > div > [aria-label*="Streaming"])
-    &:has(> div > [aria-label*="Streaming"]) {
+  &:has(> div > [aria-label*="Streaming"]),
+  &:has(> div > div > [aria-label*="Streaming"]) {
     background: linear-gradient(
       to right,
       rgba(var(--gDM-streaming), var(--gDM-opacity)),
@@ -277,64 +277,6 @@ svg[class^="ellipsis"] {
 /* turn every text white on hover */
 *:hover {
   color: white !important;
-}
-
-/* Comfy Quick Switcher */
-.quickswitcher_ac6cb0 {
-  background: 0 0 !important;
-  padding: 10px;
-  background-color: transparent !important;
-  backdrop-filter: blur(20px);
-
-  > * {
-    background: inherit !important;
-    background-color: inherit !important;
-  }
-
-  .scroller_ac6cb0 {
-    margin: 0;
-    border-radius: 0 0 8px 8px;
-    scrollbar-width: none;
-    padding: 4px !important;
-  }
-
-  .input_ac6cb0 {
-    height: 50px;
-  }
-
-  .input_ac6cb0[value=""] {
-    border-radius: 8px;
-  }
-
-  .input_ac6cb0:not([value=""]) {
-    border-radius: 8px 8px 0 0;
-  }
-
-  .protip_ac6cb0 {
-    /* screw the protips */
-    display: none;
-  }
-
-  .result__71961 {
-    border-radius: 8px;
-  }
-
-  .content__99f8c
-    > div:not(.result__71961):not([aria-hidden="true"])
-    > .content__71961 {
-    height: 20px;
-    line-height: 20px;
-
-    > .header__71961 {
-      line-height: 20px;
-      margin-top: 0;
-      margin-bottom: 4px;
-    }
-  }
-}
-
-.backdrop__1a911:has(+ .layer_bc663c .quickswitcher_ac6cb0) {
-  opacity: 0;
 }
 
 /* Memberlist Hover Visual Refresh*/

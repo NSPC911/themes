@@ -105,3 +105,15 @@
 .visual-refresh .actionButtons_e131a9 button {
   padding: 0 !important;
 }
+.vc-toolbox-btn {
+  position: fixed;
+  top: calc(var(--guildbar-folder-size) + 36px);
+  right: calc(1em - 5px);
+  transform: scale(1.1);
+}
+.toolbar__9293f {
+  margin-right: 30px;
+  > [class^="dot"] {
+    display: none;
+  }
+}
