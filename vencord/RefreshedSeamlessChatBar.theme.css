@@ -9,9 +9,6 @@
 :root {
   /* Custom padding for the chat box */
   --rscb-chat-box-padding: 8px;
-  /* Whether you want the chat to not move up *\
-  \*    and down when someone starts typing   */
-  --rscb-no-jump-chat: 0;
   /* Whether you want the messages to clip through *\
   \*  the gap between slowmode and typing people   */
   --rscb-clip-chat-through-typing-bar: 0;
@@ -42,9 +39,8 @@
     border: 1px solid var(--border-faint);
     border-bottom: none;
     border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-    .typing_b88801 {
-      border-color: transparent !important;
-    }
+    padding-left: 0 !important;
+    transform: translateX(-1px);
     .typingDots_b88801,
     .cooldownText_b21699 {
       background-color: var(--chat-background-default);
@@ -56,8 +52,8 @@
       border-bottom-color: transparent !important;
       /* because they dont have the same position */
       &.typingDots_b88801 {
-        transform: translateX(-1px);
         flex: unset !important; /* latest build uses flex for some fucking reason */
+        margin-left: 0 !important;
         &:not(:has(span > strong)) {
           display: none !important;
         }
@@ -86,16 +82,27 @@
   }
 }
 
+.chatGradientBase__36d07 {
+  display: none !important;
+}
+
 .messagesWrapper__36d07:not(
-    :has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
-  )
-  .scrollerContent__36d07 {
-  padding-bottom: calc(var(--rscb-no-jump-chat) * 24px);
+  :has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
+) {
+  margin-bottom: 24px;
 }
-.messagesWrapper__36d07:has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
+.messagesWrapper__36d07:has(
+  + .formWithLoadedChatInput_f75fb0 > .typing_b88801
+) {
   .scrollerInner__36d07 {
-  padding-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * 24px);
+    padding-bottom: calc(
+      12px - var(--rscb-clip-chat-through-typing-bar) * 24px
+    );
+  }
+  .scroller__36d07 {
+    margin-bottom: calc(12px - var(--rscb-clip-chat-through-typing-bar) * 24px);
+  }
 }
-:has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801) .scroller__36d07 {
-  margin-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * (0px - 24px));
+.scrollerSpacer__36d07 {
+  height: 7px !important;
 }
