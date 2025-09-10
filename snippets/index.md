@@ -31,9 +31,12 @@
   :root {
     /* change padding of the bar */
     --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
-    /* Whether you want the chat to not move up *\
-   \*    and down when someone starts typing   */
+    /* Whether you want the chat to clip typing status *\
+    \*   thorough the bar when someone starts typing   */
     --rscb-clip-chat-through-typing-bar: 0;
+    /* use a fixed upload button if your *\
+    \*      find it not aligned          */
+    --rscb-use-fixed-attach-button: 0;
   }
   ```
 
