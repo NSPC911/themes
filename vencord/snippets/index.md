@@ -33,9 +33,6 @@
     --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
     /* Whether you want the chat to not move up *\
    \*    and down when someone starts typing   */
-    --rscb-no-jump-chat: 0;
-    /* Whether you want the messages to clip through *\
-    \*  the gap between slowmode and typing people   */
     --rscb-clip-chat-through-typing-bar: 0;
   }
   ```
