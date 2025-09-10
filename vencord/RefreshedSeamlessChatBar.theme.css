@@ -89,7 +89,7 @@
 .messagesWrapper__36d07:not(
   :has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
 ) {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 .messagesWrapper__36d07:has(
   + .formWithLoadedChatInput_f75fb0 > .typing_b88801
@@ -103,4 +103,7 @@
 }
 .scrollerSpacer__36d07 {
   height: 7px !important;
+}
+.align-chat-input .attachWrapper__0923f {
+  padding: 7px 10px;
 }
