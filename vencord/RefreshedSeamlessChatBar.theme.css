@@ -12,6 +12,9 @@
   /* Whether you want the messages to clip through *\
   \*  the gap between slowmode and typing people   */
   --rscb-clip-chat-through-typing-bar: 0;
+  /* certain older themes havent been *\
+  \* updated, use this if necessary   */
+  --rscb-use-fixed-attach-button: 0;
 }
 
 .visual-refresh .form_f75fb0 {
@@ -106,4 +109,12 @@
 }
 .align-chat-input .attachWrapper__0923f {
   padding: 7px 10px;
+  padding: calc(
+      var(--space-12) * (1 - var(--rscb-use-fixed-attach-button)) +
+        (7px * var(--rscb-use-fixed-attach-button))
+    )
+    calc(
+      (var(--space-md) - 6px) * (1 - var(--rscb-use-fixed-attach-button)) +
+        (10px * var(--rscb-use-fixed-attach-button))
+    );
 }
