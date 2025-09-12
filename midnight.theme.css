@@ -264,6 +264,11 @@ body {
   .panels_c48ade:not(:has(> .containerRtcOpened__37e49)) {
     border-radius: var(--radius-lg);
   }
+  .panels_c48ade:has(> .activityPanel_c48ade)
+    > div:is(.wrapper_e131a9, .container__37e49) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
   .panels_c48ade:has(> .containerRtcOpened__37e49) {
     background-color: transparent;
     border: transparent;
