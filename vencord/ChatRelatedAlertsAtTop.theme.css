@@ -31,9 +31,18 @@
   left: 8.5px !important;
   right: 8px !important;
   z-index: 5 !important;
-  padding: 10px 12px 10px 16px !important;
+  padding: 7.5px 12px 7.5px 16px !important;
+  position: absolute;
   > button {
-    padding: 0 10px;
+    padding: 0;
+    > div {
+      padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px);
+      min-height: unset !important;
+      max-height: unset !important;
+    }
+  }
+  &::after {
+    display: none !important;
   }
   &:has(
     ~ .messagesWrapper__36d07
