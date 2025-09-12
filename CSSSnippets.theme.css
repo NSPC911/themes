@@ -212,6 +212,15 @@ div[class*="repliedMessageSpine_"] {
   }
 }
 
+/* fix vc buttons area */
+.align-chat-input .rtcConnectionStatus__06d62,
+.align-chat-input .connection_e131a9 {
+  max-height: unset !important;
+}
+.ping__06d62 {
+  display: none !important;
+}
+
 /* Hide chatbox when no access */
 [class^="channelTextAreaDisabled"] {
   display: none !important;
