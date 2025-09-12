@@ -83,6 +83,13 @@
   &:has(> .typing_b88801 > .cooldownWrapper_b21699) .channelTextArea_f75fb0 {
     border-top-right-radius: 0 !important;
   }
+  .cooldownWrapper_b21699 {
+    padding: 3px 0px 3px 8px;
+    transform: translateX(1px);
+    .slowModeIcon_b21699 {
+      margin-left: 0px;
+    }
+  }
 }
 
 .chatGradientBase__36d07 {
