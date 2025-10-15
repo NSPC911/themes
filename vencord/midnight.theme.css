@@ -260,39 +260,7 @@ body {
     }
   }
 
-  /* nicer profile area when in vc */
-  .panels_c48ade:not(:has(> .containerRtcOpened__37e49)) {
-    border-radius: var(--radius-lg);
-  }
-  .panels_c48ade:has(> .activityPanel_c48ade)
-    > div:is(.wrapper_e131a9, .container__37e49) {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  .panels_c48ade:has(> .containerRtcOpened__37e49) {
-    background-color: transparent;
-    border: transparent;
-    backdrop-filter: unset;
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
-    > * {
-      background-color: var(--background-base-lower);
-      border: var(--border-thickness) solid var(--border-subtle);
-      backdrop-filter: var(--panel-backdrop-filter);
-      box-sizing: border-box;
-      &.wrapper_e131a9 {
-        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-      }
-      &.container__37e49 {
-        border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-      }
-      &:hover {
-        border-color: var(--border-light);
-      }
-    }
-    .container_e131a9 {
-      border-bottom: none;
-    }
+  .attachWrapper__0923f {
+    padding: 8px var(--space-xs);
   }
 }
