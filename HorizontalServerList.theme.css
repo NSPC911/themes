@@ -56,7 +56,7 @@
   rotate: 90deg;
 }
 #app-mount .itemsContainer_ef3116,
-#app-mount .stack_dbd263 {
+#app-mount .unreadMentionsIndicatorTop_ef3116 + ul .stack_dbd263 {
   flex-direction: var(--HSL-server-direction);
   justify-content: var(--HSL-server-alignment);
 }
@@ -86,10 +86,10 @@
     }
   }
 }
-.sidebar_c48ade:not(:has(> [style$=";"])) > .wrapper_ef3116.guilds_c48ade {
+.sidebar_c48ade:not(:has(> .vc-betterFolders-sidebar)) > .wrapper_ef3116.guilds_c48ade {
   height: calc(100vw - (var(--gap) * 2)) !important;
 }
-.sidebar_c48ade:has(> [style$=";"]) > .wrapper_ef3116.guilds_c48ade {
+.sidebar_c48ade:has(> .vc-betterFolders-sidebar) > .wrapper_ef3116.guilds_c48ade {
   height: calc(50vw) !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -183,7 +183,7 @@
     padding-top: calc(var(--gap) * 2);
   }
 
-  .stack_dbd263::after {
+  .unreadMentionsIndicatorTop_ef3116 + ul .stack_dbd263::after {
     height: var(--window-control-size);
   }
 
