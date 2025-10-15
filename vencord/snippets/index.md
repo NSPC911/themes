@@ -60,6 +60,10 @@
 
   [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1354756324285743216)
 
+- [ChatRelatedToastsAtTopv2](https://nspc911.github.io/themes/vencord/ChatRelatedToastsAtTopv2.theme.css)
+
+  Improves the original Chat Related Alerts at Top snippet by reducing the `:has` selector usage as much as possible
+
 - [Blurry Backdrop](https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css) 🔃
 
   Make backdrops formed from full screen elements be blurry
