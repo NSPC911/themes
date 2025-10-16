@@ -21,7 +21,7 @@ span[class*="timestampInline_"] time {
   font-size: 0px;
 }
 
-[class^="timestamp"] > span[class^="hiddenVisually"] {
+h3 > [class^="timestamp"] > span[class^="hiddenVisually"] {
   clip: unset;
   clip-path: unset;
   overflow: hidden;
