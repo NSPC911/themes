@@ -16,12 +16,15 @@
   line-height: 16px;
 }
 
-/* Fix compact timestamps */
-span[class*="timestampInline_"] time::before {
-  content: attr(aria-label);
-  font-size: 12px;
-}
-
+/* fix gone timestamps */
 span[class*="timestampInline_"] time {
   font-size: 0px;
+}
+
+[class^="timestamp"] > span[class^="hiddenVisually"] {
+  clip: unset;
+  clip-path: unset;
+  overflow: hidden;
+  height: fit-content;
+  position: relative;
 }

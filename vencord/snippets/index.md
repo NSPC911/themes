@@ -1,5 +1,7 @@
 # Snippets
 
+reminder that some may not work. i dont use the v1 snippets and the non-visual refresh snippets do not work
+
 - [Seamless Chat Bar](https://nspc911.github.io/themes/vencord/SeamlessChatBar.theme.css) 🗝
 
   Moves `Someone is typing`, `Cooldown is active`, `You are viewing older messages` and `Replying to someone` such that they are seamless with the message bar
@@ -63,6 +65,14 @@
 - [ChatRelatedToastsAtTopv2](https://nspc911.github.io/themes/vencord/ChatRelatedToastsAtTopv2.theme.css)
 
   Improves the original Chat Related Alerts at Top snippet by reducing the `:has` selector usage as much as possible
+
+- [midnight island chat status](https://nspc911.github.io/themes/vencord/MidnightIslandChatStatus.theme.css)
+
+  turns the `x is typing` and `slowmode is enabled` into their seperate pills that hover over the chat bat
+
+- [MembersHideUnlessHover](https://nspc911.github.io/themes/vencord/MembersHideUnlessHover.theme.css)
+
+  hide the members list until you hover on it
 
 - [Blurry Backdrop](https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css) 🔃
 

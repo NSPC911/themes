@@ -41,22 +41,23 @@
   border-radius: var(--radius-sm);
   z-index: 10;
   box-shadow: unset;
-  transition: top 0.5s cubic-bezier(.47,1.64,.41,.8);
+  transition: top 0.5s cubic-bezier(0.47, 1.64, 0.41, 0.8);
   button {
     border: none;
   }
-  [class*=buttonChildrenWrapper] {
+  [class*="buttonChildrenWrapper"] {
     padding: var(--space-4) var(--space-8) !important;
     min-height: unset !important;
     box-shadow: unset;
     border: unset;
   }
   &:not(:hover) .barButtonMain__0f481 {
-    color: var(--control-text-primary-default)
+    color: var(--control-text-primary-default);
   }
 }
 .newMessagesBar__0f481 {
   box-shadow: unset !important;
+  z-index: 10;
 }
 .newMessagesBar__0f481 ~ .jumpToPresentBar__0f481 {
   top: 39px;
@@ -65,7 +66,11 @@
 .chatHeaderBar_dc83f5 ~ .messagesWrapper__36d07 > .jumpToPresentBar__0f481 {
   top: 43px;
 }
-.chatHeaderBar_dc83f5:hover ~ .messagesWrapper__36d07 > .jumpToPresentBar__0f481,
-.chatHeaderBar_dc83f5 ~ .messagesWrapper__36d07 > .jumpToPresentBar__0f481:hover {
+.chatHeaderBar_dc83f5:hover
+  ~ .messagesWrapper__36d07
+  > .jumpToPresentBar__0f481,
+.chatHeaderBar_dc83f5
+  ~ .messagesWrapper__36d07
+  > .jumpToPresentBar__0f481:hover {
   top: 50px;
 }
