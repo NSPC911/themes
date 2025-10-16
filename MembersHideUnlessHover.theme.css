@@ -1,0 +1,23 @@
+/**
+ * @name Members List shorten unless hover
+ * @author NSPG911
+ * @version 1.0.0
+ * @description Makes the members list less wide while not hovered on, and brings it to its full width once hovered on
+ * @source https://github.com/NSPC911/vc-themes
+*/
+
+.chatContent_f75fb0 + :is(.membersWrap_c8ffbb, .container_c8ffbb) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transform: translateX(calc(100% - 55px));
+  transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+  &:hover {
+    transform: translateX(0);
+  }
+}
+
+.chatContent_f75fb0:has(+ .membersWrap_c8ffbb, + .container_c8ffbb) {
+  margin-right: calc(55px + var(--gap));
+}

@@ -86,10 +86,12 @@
     }
   }
 }
-.sidebar_c48ade:not(:has(> .vc-betterFolders-sidebar)) > .wrapper_ef3116.guilds_c48ade {
+.sidebar_c48ade:not(:has(> .vc-betterFolders-sidebar))
+  > .wrapper_ef3116.guilds_c48ade {
   height: calc(100vw - (var(--gap) * 2)) !important;
 }
-.sidebar_c48ade:has(> .vc-betterFolders-sidebar) > .wrapper_ef3116.guilds_c48ade {
+.sidebar_c48ade:has(> .vc-betterFolders-sidebar)
+  > .wrapper_ef3116.guilds_c48ade {
   height: calc(50vw) !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;

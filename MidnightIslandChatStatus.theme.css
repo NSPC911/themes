@@ -1,0 +1,47 @@
+/**
+ * @name midnight island chat status
+ * @author NSPG911
+ * @version 1.0.0
+ * @description like seamless chat bar, but each has their own pill
+ * @source https://github.com/NSPC911/vc-themes
+*/
+
+.chatGradientBase__36d07 {
+  display: none !important;
+}
+
+.typing_b88801 {
+  &.inTextChannel_b88801 {
+    padding: 0;
+    margin-left: var(--space-xs);
+    margin-right: var(--space-xs);
+    transform: translateY(calc(0px - var(--gap)));
+    gap: var(--gap);
+  }
+  > div {
+    background: var(--chat-background-default);
+    height: 24px;
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-md);
+  }
+  .typingDots_b88801 {
+    margin-left: 0;
+    transition:
+      transform 1s cubic-bezier(0.4, 1, 0.5, 1.5),
+      opacity 1s cubic-bezier(0.4, 1, 0.5, 1.5);
+    flex: unset;
+    padding-right: 1ch;
+    &:not(:has(> svg)) {
+      transform: translateY(calc(24px + var(--gap)));
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  .cooldownWrapper_b21699 {
+    padding: 0px 8px 0px 4px;
+    min-width: 138px;
+  }
+}
+.scrollerSpacer__36d07 {
+  height: calc(40px + var(--gap));
+}
