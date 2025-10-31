@@ -31,16 +31,16 @@
   --extra-margin: 0px;
 }
 
-.content_c48ade {
+.content__5e434 {
   margin-top: var(--__server-container);
   overflow: visible;
 }
 
-#app-mount .sidebar_c48ade {
+#app-mount .sidebar__5e434 {
   border-radius: 0;
   overflow: visible;
 }
-#app-mount .guilds_c48ade {
+#app-mount .guilds__5e434 {
   transform-origin: top left;
   rotate: -90deg;
   scale: var(--HSL-server-scale);
@@ -61,7 +61,7 @@
   justify-content: var(--HSL-server-alignment);
 }
 
-.guilds_c48ade {
+.guilds__5e434 {
   overflow-x: hidden;
   overflow-y: scroll;
   &::-webkit-scrollbar {
@@ -70,7 +70,7 @@
 }
 
 /* Half Half */
-.sidebar_c48ade > [style$=";"] {
+.sidebar__5e434 > [style$=";"] {
   position: fixed;
   z-index: 101;
   transform: translateX(50vw);
@@ -86,12 +86,12 @@
     }
   }
 }
-.sidebar_c48ade:not(:has(> .vc-betterFolders-sidebar))
-  > .wrapper_ef3116.guilds_c48ade {
+.sidebar__5e434:not(:has(> .vc-betterFolders-sidebar))
+  > .wrapper_ef3116.guilds__5e434 {
   height: calc(100vw - (var(--gap) * 2)) !important;
 }
-.sidebar_c48ade:has(> .vc-betterFolders-sidebar)
-  > .wrapper_ef3116.guilds_c48ade {
+.sidebar__5e434:has(> .vc-betterFolders-sidebar)
+  > .wrapper_ef3116.guilds__5e434 {
   height: calc(50vw) !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -157,11 +157,11 @@
     }
   }
   /* fix disappeared window controls in hsl */
-  .sidebar_c48ade:has(> .vc-betterFolders-sidebar)
+  .sidebar__5e434:has(> .vc-betterFolders-sidebar)
     > .wrapper_ef3116[aria-label="Servers sidebar"] {
     height: calc(50vw - var(--gap)) !important;
   }
-  .sidebar_c48ade > .wrapper_ef3116[aria-label="Servers sidebar"] {
+  .sidebar__5e434 > .wrapper_ef3116[aria-label="Servers sidebar"] {
     height: calc(
       100vw - var(--gap) * 3.5 - var(--window-control-size) * 2
     ) !important;
@@ -169,18 +169,18 @@
   }
 
   /* fix hsl clipping through window controls */
-  .vc-betterFolders-sidebar .guilds_c48ade {
+  .vc-betterFolders-sidebar .guilds__5e434 {
     height: calc(
       50vw - ((var(--gap) * 1.75 + var(--window-control-size)) * 2)
     ) !important;
     z-index: 200;
     border-radius: 0 !important;
   }
-  .primary__6af3a {
+  .primary_a22cb0 {
     background: var(--blue-3);
   }
   /* nuke bar */
-  .base_c48ade {
+  .base__5e434 {
     grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
     padding-top: calc(var(--gap) * 2);
   }
@@ -195,15 +195,15 @@
   }
 
   /* update hsl stuff */
-  .content_c48ade {
+  .content__5e434 {
     margin-top: calc(var(--__server-container) + var(--gap));
-    .guilds_c48ade {
+    .guilds__5e434 {
       transform: translateX(var(--gap));
     }
   }
 
   /* fix misalignment */
-  .page_c48ade {
+  .page__5e434 {
     padding-bottom: 0;
   }
 
