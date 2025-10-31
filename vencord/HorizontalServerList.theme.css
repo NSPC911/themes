@@ -156,7 +156,7 @@
   /* fix disappeared window controls in hsl */
   .sidebar__5e434:has(> .vc-betterFolders-sidebar)
     > .wrapper_ef3116[aria-label="Servers sidebar"] {
-    height: calc(50vw - (2 * var(--gap))) !important;
+    height: calc(50vw - var(--gap)) !important;
   }
   .sidebar__5e434 > .wrapper_ef3116[aria-label="Servers sidebar"] {
     height: calc(
