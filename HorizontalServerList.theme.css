@@ -34,6 +34,7 @@
 .content__5e434 {
   margin-top: var(--__server-container);
   overflow: visible;
+  margin-right: var(--gap)
 }
 
 #app-mount .sidebar__5e434 {
@@ -75,7 +76,7 @@
   z-index: 101;
   transform: translateX(50vw);
   > nav {
-    height: calc(50vw - (var(--gap) * 2)) !important;
+    height: calc(50vw - (var(--gap) * 3)) !important;
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
     > ul {
@@ -88,7 +89,7 @@
 }
 .sidebar__5e434:not(:has(> .vc-betterFolders-sidebar))
   > .wrapper_ef3116.guilds__5e434 {
-  height: calc(100vw - (var(--gap) * 2)) !important;
+  height: calc(100vw - (var(--gap) * 3)) !important;
 }
 .sidebar__5e434:has(> .vc-betterFolders-sidebar)
   > .wrapper_ef3116.guilds__5e434 {
@@ -110,7 +111,7 @@
   }
   .trailing_c38106 {
     gap: 0;
-    padding-right: calc(var(--window-control-size) + (7 * var(--gap)));
+    padding-right: calc(var(--window-control-size) + (8 * var(--gap)));
   }
   /* move controls to server bar in horizontalserverlist (must need!!) */
   .bar_c38106 {
@@ -121,22 +122,18 @@
       position: absolute;
       transform-origin: center;
       rotate: -90deg;
-      transform: translate(
-        -14.5px,
-        calc(var(--window-control-size) - (var(--gap) * 2))
-      );
       border-radius: 0 0 var(--radius-lg) var(--radius-lg);
       -webkit-app-region: no-drag;
       padding: 0px var(--gap);
       border: var(--border-thickness) solid var(--border);
       width: calc(
         var(--custom-guild-list-width) -
-          (2 * (var(--gap) + var(--border-thickness)))
+          (1.6 * (var(--gap) + var(--border-thickness)))
       ) !important;
       height: calc(var(--window-control-size) + (4 * var(--gap)));
       transform: translate(
         -14.5px,
-        calc(var(--window-control-size) * 2 + (7 * var(--gap)))
+        calc(var(--window-control-size) * 2 + (8 * var(--gap)))
       ) !important;
       background: var(--bg-4) !important;
       &::before {
@@ -163,7 +160,7 @@
   }
   .sidebar__5e434 > .wrapper_ef3116[aria-label="Servers sidebar"] {
     height: calc(
-      100vw - var(--gap) * 3.5 - var(--window-control-size) * 2
+      100vw - var(--gap) * 4.5 - var(--window-control-size) * 2
     ) !important;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }

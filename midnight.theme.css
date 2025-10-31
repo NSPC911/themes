@@ -263,4 +263,36 @@ body {
   .attachWrapper__0923f {
     padding: 8px var(--space-xs);
   }
+  /* new update fixes */
+  .sidebarList__5e434 {
+    margin-bottom: 80px;
+  }
+  .wrapper_ef3116 {
+    border: var(--border-thickness) var(--border) solid;
+  }
+
+  .page__5e434 {
+    border-inline-start: none !important;
+  }
+
+  .sidebar__5e434 {
+    border: 1px solid var(--border);
+    border-radius: 8px !important;
+    margin-bottom: var(--gap);
+    margin-right: var(--gap);
+    margin-left: var(--gap);
+    background: var(--bg-4);
+    &::after {
+      display: none;
+    }
+  }
+
+  .container__2637a {
+    border: none !important;
+  }
+
+  .sidebarList__5e434 {
+    border-top: none;
+    border-inline-start: none;
+  }
 }
