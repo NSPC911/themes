@@ -20,13 +20,13 @@
   .cardPrimary__73069,
   .fieldList__1fed1,
   .scroller__53543,
-  .item__001a7[role="radio"][aria-checked="false"] {
+  .item__88a69[role="radio"][aria-checked="false"] {
     background-color: transparent;
   }
-  .item__001a7[role="radio"][aria-checked="false"]:hover {
+  .item__88a69[role="radio"][aria-checked="false"]:hover {
     background-color: var(--background-modifier-selected) !important;
   }
-  .item__001a7[role="radio"][aria-checked="true"] {
+  .item__88a69[role="radio"][aria-checked="true"] {
     background-color: color-mix(
       in srgb,
       transparent 50%,
@@ -34,7 +34,7 @@
     ) !important;
   }
   :not([aria-orientation="horizontal"])
-    > .item_b3f026[role="tab"]:is(
+    > .item_aa8da2[role="tab"]:is(
       [aria-selected="true"],
       [aria-selected="false"]:hover
     ) {
@@ -45,7 +45,7 @@
     ) !important;
   }
   .searchBar_c7e907,
-  .input__0f084,
+  .input__0ed4f,
   .bioTextAreaContainer__6a919,
   .bioTextArea__6a919,
   .select__3f413,
@@ -96,8 +96,8 @@
   }
   .vc-addon-card,
   .auditLog__43dab,
-  .scrollerContainer_cdb2b0,
-  .upsellContainer__4cfe2 {
+  .scrollerContainer__4b8d8,
+  .upsellContainer__73000 {
     background-color: color-mix(
       in srgb,
       transparent 50%,

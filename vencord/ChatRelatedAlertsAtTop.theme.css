@@ -80,7 +80,7 @@
       calc(var(--craat-border-radius) * var(--craat-popout))
       var(--craat-border-radius) var(--craat-border-radius);
     z-index: 5 !important;
-    > button > .buttonChildrenWrapper__6af3a {
+    > button > .buttonChildrenWrapper_a22cb0 {
       min-height: unset !important;
       height: 20px !important;
     }
