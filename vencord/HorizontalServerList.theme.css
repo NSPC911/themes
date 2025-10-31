@@ -127,13 +127,12 @@
       padding: 0px var(--gap);
       border: var(--border-thickness) solid var(--border);
       width: calc(
-        var(--custom-guild-list-width) -
-          (1.6 * (var(--gap) + var(--border-thickness)))
+        var(--custom-guild-list-width) - (2.5 * var(--gap))
       ) !important;
       height: calc(var(--window-control-size) + (4 * var(--gap)));
       transform: translate(
-        -14.5px,
-        calc(var(--window-control-size) * 2 + (8 * var(--gap)))
+        -15.5px,
+        calc(var(--window-control-size) * 2 + (7.5 * var(--gap)))
       ) !important;
       background: var(--bg-4) !important;
       &::before {
@@ -156,7 +155,7 @@
   /* fix disappeared window controls in hsl */
   .sidebar__5e434:has(> .vc-betterFolders-sidebar)
     > .wrapper_ef3116[aria-label="Servers sidebar"] {
-    height: calc(50vw - var(--gap)) !important;
+    height: calc(50vw - (1.5 * var(--gap))) !important;
   }
   .sidebar__5e434 > .wrapper_ef3116[aria-label="Servers sidebar"] {
     height: calc(
