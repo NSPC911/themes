@@ -6,18 +6,23 @@
  * @source https://github.com/NSPC911/vc-themes
 */
 
-.chatContent_f75fb0 + :is(.membersWrap_c8ffbb, .container_c8ffbb) {
+:is(.chatContent_f75fb0, .container_f369db) + :is(.membersWrap_c8ffbb, .container_c8ffbb) {
   position: absolute;
   right: 0;
   bottom: 0;
   top: 0;
   transform: translateX(calc(100% - 55px));
-  transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+  transition-duration: 0.5s;
+  transition-property: transform, border !important;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
   &:hover {
     transform: translateX(0);
   }
 }
 
-.chatContent_f75fb0:has(+ .membersWrap_c8ffbb, + .container_c8ffbb) {
+:is(.chatContent_f75fb0, .container_f369db):has(+ .membersWrap_c8ffbb, + .container_c8ffbb) {
   margin-right: calc(55px + var(--gap));
+}
+.header_f369db {
+  z-index: 0;
 }
