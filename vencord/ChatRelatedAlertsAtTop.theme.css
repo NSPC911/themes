@@ -100,26 +100,26 @@
     right: 8px !important;
     box-shadow: unset !important;
     > button:not([aria-label*="message"]) {
-      background-color: var(--button-filled-brand-background);
+      background-color: var(--control-primary-background-default);
       height: 22px;
-      padding: 0 16px;
+      padding: 0 11px;
       font-weight: 500 !important;
       font-size: small;
       transform: translateX(2px);
       text-align: center;
-      border: 1px solid var(--button-filled-brand-border);
-      color: var(--button-filled-brand-text);
-      margin-right: 6px;
+      border: 1px solid var(--control-primary-border-default);
+      color: var(--control-primary-text-default);
+      margin-right: 2px;
       &:hover {
-        background-color: var(--button-filled-brand-background-hover);
-        border: 1px solid var(--button-filled-brand-border);
+        background-color: var(--control-primary-background-hover);
+        border: 1px solid transparent;
       }
     }
     > button[aria-label*="message"] > span {
       color: white;
     }
     ~ ._0f481cbbd7530492-jumpToPresentBar {
-      transform: translateY(calc(100% - 2px));
+      transform: translateY(calc(100% - 3px));
       border-top-color: transparent !important;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -149,14 +149,14 @@
       padding: 0 16px;
       margin-right: 8px;
       border-radius: 8px /* taken from newMessagesBar */;
-      color: var(--button-filled-brand-text);
-      background-color: var(--button-filled-brand-background);
-      border: 1px solid var(--button-filled-brand-border);
+      color: var(--control-primary-text-default);
+      background-color: var(--control-primary-background-default);
+      border: 1px solid var(--control-primary-border-default);
       font-weight: 500;
       font-size: 14px;
       &:hover {
-        background-color: var(--button-filled-brand-background-hover);
-        border: 1px solid var(--button-filled-brand-border);
+        background-color: var(--control-primary-border-hover);
+        border: 1px solid transparent;
       }
     }
     &:has(~ ._0f481cbbd7530492-jumpToPresentBar) {
