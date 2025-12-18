@@ -16,11 +16,11 @@
   --craat-border-radius: 16px; /* default: 16px */
 }
 
-.visual-refresh #app-mount .jumpToPresentBar__0f481 > button {
+.visual-refresh #app-mount ._0f481cbbd7530492-jumpToPresentBar > button {
   height: 32px;
 }
 
-.visual-refresh #app-mount .chatHeaderBar_dc83f5 {
+.visual-refresh #app-mount .dc83f5490ab160ad-chatHeaderBar {
   width: calc(100% - 45px) !important;
   border-bottom-color: transparent !important;
   min-width: unset !important;
@@ -45,32 +45,32 @@
     display: none !important;
   }
   &:has(
-    ~ .messagesWrapper__36d07
+    ~ ._36d072eab2b2e737-messagesWrapper
       > :is(
-        .jumpToPresentBar__0f481,
-        .newMessagesBar__0f481,
-        .topicsPillContainer__0f481,
-        .newTopicsBarContainer__0f481
+        ._0f481cbbd7530492-jumpToPresentBar,
+        ._0f481cbbd7530492-newMessagesBar,
+        ._0f481cbbd7530492-topicsPillContainer,
+        ._0f481cbbd7530492-newTopicsBarContainer
       )
   ) {
     border-radius: calc(var(--craat-border-radius) * var(--craat-popout))
       calc(var(--craat-border-radius) * var(--craat-popout)) 0 0;
   }
-  & ~ .messagesWrapper__36d07 {
+  & ~ ._36d072eab2b2e737-messagesWrapper {
     margin-top: -1px;
     > :is(
-      .jumpToPresentBar__0f481,
-      .newMessagesBar__0f481,
-      .topicsPillContainer__0f481,
-      .newTopicsBarContainer__0f481
+      ._0f481cbbd7530492-jumpToPresentBar,
+      ._0f481cbbd7530492-newMessagesBar,
+      ._0f481cbbd7530492-topicsPillContainer,
+      ._0f481cbbd7530492-newTopicsBarContainer
     ) {
       border-top-left-radius: 0 !important;
       border-top-right-radius: 0 !important;
     }
   }
 }
-.visual-refresh #app-mount .chatContent_f75fb0 .messagesWrapper__36d07 {
-  .jumpToPresentBar__0f481 {
+.visual-refresh #app-mount .f75fb00fb7356cbe-chatContent ._36d072eab2b2e737-messagesWrapper {
+  ._0f481cbbd7530492-jumpToPresentBar {
     width: calc(100% - 16px) !important;
     min-width: unset !important;
     left: 0px !important;
@@ -80,14 +80,14 @@
       calc(var(--craat-border-radius) * var(--craat-popout))
       var(--craat-border-radius) var(--craat-border-radius);
     z-index: 5 !important;
-    > button > .buttonChildrenWrapper_a22cb0 {
+    > button > .a22cb0c66246f5d3-buttonChildrenWrapper {
       min-height: unset !important;
       height: 20px !important;
     }
   }
 
-  .newMessagesBar__0f481,
-  .topicsPillContainer__0f481 {
+  ._0f481cbbd7530492-newMessagesBar,
+  ._0f481cbbd7530492-topicsPillContainer {
     border: 1px solid var(--border-normal);
     background-color: var(--background-surface-highest) !important;
     padding: 4px 8px 4px 12px !important;
@@ -100,37 +100,37 @@
     right: 8px !important;
     box-shadow: unset !important;
     > button:not([aria-label*="message"]) {
-      background-color: var(--control-primary-background-default);
+      background-color: var(--button-filled-brand-background);
       height: 22px;
-      padding: 0 11px;
+      padding: 0 16px;
       font-weight: 500 !important;
       font-size: small;
       transform: translateX(2px);
       text-align: center;
-      border: 1px solid var(--control-primary-border-default);
-      color: var(--control-primary-text-default);
-      margin-right: 2px;
+      border: 1px solid var(--button-filled-brand-border);
+      color: var(--button-filled-brand-text);
+      margin-right: 6px;
       &:hover {
-        background-color: var(--control-primary-background-hover);
-        border: 1px solid transparent;
+        background-color: var(--button-filled-brand-background-hover);
+        border: 1px solid var(--button-filled-brand-border);
       }
     }
     > button[aria-label*="message"] > span {
       color: white;
     }
-    ~ .jumpToPresentBar__0f481 {
-      transform: translateY(calc(100% - 3px));
+    ~ ._0f481cbbd7530492-jumpToPresentBar {
+      transform: translateY(calc(100% - 2px));
       border-top-color: transparent !important;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
-    &:has(~ .jumpToPresentBar__0f481) {
+    &:has(~ ._0f481cbbd7530492-jumpToPresentBar) {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       border-bottom-color: transparent !important;
     }
   }
-  .newTopicsBarContainer__0f481 {
+  ._0f481cbbd7530492-newTopicsBarContainer {
     border: 1px solid var(--border-normal);
     background-color: var(--background-surface-highest) !important;
     color: var(--text-default);
@@ -142,29 +142,29 @@
     top: calc(8px * var(--craat-popout)) !important;
     left: 8px !important;
     right: 8px !important;
-    .newTopicsBarText__0f481 {
+    ._0f481cbbd7530492-newTopicsBarText {
       color: var(--text-default);
     }
-    .barButtonAlt__0f481 {
+    ._0f481cbbd7530492-barButtonAlt {
       padding: 0 16px;
       margin-right: 8px;
       border-radius: 8px /* taken from newMessagesBar */;
-      color: var(--control-primary-text-default);
-      background-color: var(--control-primary-background-default);
-      border: 1px solid var(--control-primary-border-default);
+      color: var(--button-filled-brand-text);
+      background-color: var(--button-filled-brand-background);
+      border: 1px solid var(--button-filled-brand-border);
       font-weight: 500;
       font-size: 14px;
       &:hover {
-        background-color: var(--control-primary-border-hover);
-        border: 1px solid transparent;
+        background-color: var(--button-filled-brand-background-hover);
+        border: 1px solid var(--button-filled-brand-border);
       }
     }
-    &:has(~ .jumpToPresentBar__0f481) {
+    &:has(~ ._0f481cbbd7530492-jumpToPresentBar) {
       border-bottom-left-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
       border-bottom-color: transparent !important;
     }
-    ~ .jumpToPresentBar__0f481 {
+    ~ ._0f481cbbd7530492-jumpToPresentBar {
       transform: translateY(calc(100% - 3px));
       border-top-left-radius: 0 !important;
       border-top-right-radius: 0 !important;
@@ -173,7 +173,7 @@
     }
   }
   /* Fix misalignment */
-  .topicsPillCarets__0f481 {
+  ._0f481cbbd7530492-topicsPillCarets {
     top: 0;
   }
 }

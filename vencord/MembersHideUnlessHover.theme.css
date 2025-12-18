@@ -6,7 +6,7 @@
  * @source https://github.com/NSPC911/vc-themes
 */
 
-:is(.chatContent_f75fb0, .container_f369db) + :is(.membersWrap_c8ffbb, .container_c8ffbb) {
+:is(.f75fb00fb7356cbe-chatContent, .f369dba7416c67f0-container) + :is(.c8ffbb79449f399c-membersWrap, .c8ffbb79449f399c-container) {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -20,9 +20,9 @@
   }
 }
 
-:is(.chatContent_f75fb0, .container_f369db):has(+ .membersWrap_c8ffbb, + .container_c8ffbb) {
+:is(.f75fb00fb7356cbe-chatContent, .f369dba7416c67f0-container):has(+ .c8ffbb79449f399c-membersWrap, + .c8ffbb79449f399c-container) {
   margin-right: calc(55px + var(--gap));
 }
-.header_f369db {
+.f369dba7416c67f0-header {
   z-index: 0;
 }

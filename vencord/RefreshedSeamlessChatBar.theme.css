@@ -17,23 +17,23 @@
   --rscb-use-fixed-attach-button: 0;
 }
 
-.visual-refresh .form_f75fb0 {
+.visual-refresh .f75fb00fb7356cbe-form {
   display: flex;
   flex-direction: column;
   padding: 4px var(--rscb-chat-box-padding) var(--rscb-chat-box-padding)
     var(--rscb-chat-box-padding) !important;
   /* Normal chatbar */
-  .channelTextArea_f75fb0 {
+  .f75fb00fb7356cbe-channelTextArea {
     margin-bottom: 0px;
     margin-right: 1px;
     /* reply bar */
-    .stackedBars__74017 {
+    ._740174f3d6a2c8fe-stackedBars {
       border-bottom-color: transparent !important;
       background-color: var(--chat-background-default);
     }
   }
   /* slowmode bar + typing indicator */
-  .base_b88801 {
+  .b8880176888cc928-base {
     border-color: transparent !important;
     position: static;
     order: -1;
@@ -44,8 +44,8 @@
     border-radius: var(--radius-sm) var(--radius-sm) 0 0;
     padding-left: 0 !important;
     transform: translateX(-1px);
-    .typingDots_b88801,
-    .cooldownText_b21699 {
+    .b8880176888cc928-typingDots,
+    .b216994de061a9e2-cooldownText {
       background-color: var(--chat-background-default);
       height: 24px;
       padding-right: 8px;
@@ -54,67 +54,67 @@
       border: 1px solid var(--border-faint) !important;
       border-bottom-color: transparent !important;
       /* because they dont have the same position */
-      &.typingDots_b88801 {
+      &.b8880176888cc928-typingDots {
         flex: unset !important; /* latest build uses flex for some fucking reason */
         margin-left: 0 !important;
         &:not(:has(span > strong)) {
           display: none !important;
         }
       }
-      &.cooldownText_b21699 {
+      &.b216994de061a9e2-cooldownText {
         transform: translateY(1px);
       }
     }
   }
-  .threadSuggestionBar__841c8 {
+  ._841c8f861f7b2704-threadSuggestionBar {
     /* fix a certain pixel issue that bugged me to oblivion */
     border-top: unset !important;
   }
-  .channelAttachmentArea_b77158 {
+  .b77158512e0ab116-channelAttachmentArea {
     background-color: var(--chat-background-default);
   }
   /* the stars of the show, the :has */
   /* check for typing thing */
-  &:has(> .typing_b88801 > .typingDots_b88801 > span > strong)
-    .channelTextArea_f75fb0 {
+  &:has(> .b8880176888cc928-typing > .b8880176888cc928-typingDots > span > strong)
+    .f75fb00fb7356cbe-channelTextArea {
     border-top-left-radius: 0 !important;
   }
   /* check for cooldown thing */
-  &:has(> .typing_b88801 > .cooldownWrapper_b21699) .channelTextArea_f75fb0 {
+  &:has(> .b8880176888cc928-typing > .b216994de061a9e2-cooldownWrapper) .f75fb00fb7356cbe-channelTextArea {
     border-top-right-radius: 0 !important;
   }
-  .cooldownWrapper_b21699 {
+  .b216994de061a9e2-cooldownWrapper {
     padding: 3px 0px 3px 8px;
     transform: translateX(1px);
-    .slowModeIcon_b21699 {
+    .b216994de061a9e2-slowModeIcon {
       margin-left: 0px;
     }
   }
 }
 
-.chatGradientBase__36d07 {
+._36d072eab2b2e737-chatGradientBase {
   display: none !important;
 }
 
-.messagesWrapper__36d07:not(
-  :has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
+._36d072eab2b2e737-messagesWrapper:not(
+  :has(+ .f75fb00fb7356cbe-formWithLoadedChatInput > .b8880176888cc928-typing)
 ) {
   margin-bottom: 12px;
 }
-.messagesWrapper__36d07:has(
-  + .formWithLoadedChatInput_f75fb0 > .typing_b88801
+._36d072eab2b2e737-messagesWrapper:has(
+  + .f75fb00fb7356cbe-formWithLoadedChatInput > .b8880176888cc928-typing
 ) {
-  .scrollerInner__36d07 {
+  ._36d072eab2b2e737-scrollerInner {
     padding-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * 24px);
   }
-  .scroller__36d07 {
+  ._36d072eab2b2e737-scroller {
     margin-bottom: calc(12px - var(--rscb-clip-chat-through-typing-bar) * 24px);
   }
 }
-.scrollerSpacer__36d07 {
+._36d072eab2b2e737-scrollerSpacer {
   height: 7px !important;
 }
-.align-chat-input .attachWrapper__0923f {
+.align-chat-input ._0923f156a0410684-attachWrapper {
   padding: 7px 10px;
   padding: calc(
       var(--space-12) * (1 - var(--rscb-use-fixed-attach-button)) +

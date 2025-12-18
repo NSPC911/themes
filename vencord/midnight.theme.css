@@ -199,7 +199,7 @@ body {
   }
 
   /* move the unread bar down (why the hell is it in the middle of nowhere) */
-  .unreadBottom__629e4 {
+  ._629e4c86564a4ee7-unreadBottom {
     bottom: 0 !important;
   }
 
@@ -212,30 +212,30 @@ body {
     color: var(--text-4);
   }
 
-  .content_f75fb0 > .membersWrap_c8ffbb {
+  .f75fb00fb7356cbe-content > .c8ffbb79449f399c-membersWrap {
     overflow: visible !important;
   }
 
-  .wrapper__44df5 {
+  ._44df51b030bd5ece-wrapper {
     z-index: 0;
   }
 
-  .jumpToPresentBar__0f481 > .button_a22cb0 {
+  ._0f481cbbd7530492-jumpToPresentBar > .a22cb0c66246f5d3-button {
     color: black;
   }
   /* fix favourites v2 */
-  .modeSelected__2ea32 .iconWithGuildIcon__2ea32,
-  .modeSelected__2ea32:hover .iconWithGuildIcon__2ea32 {
+  ._2ea32c412048f708-modeSelected ._2ea32c412048f708-iconWithGuildIcon,
+  ._2ea32c412048f708-modeSelected:hover ._2ea32c412048f708-iconWithGuildIcon {
     color: var(--text-0);
   }
   /* search area fixes */
-  .toolbar__9293f {
+  ._9293f6b2fc12398a-toolbar {
     gap: 0;
-    > .search__49676 {
+    > ._496769951eb140fe-search {
       margin: 0;
     }
   }
-  .search__97492:not(.open__97492) .searchBar__97492 {
+  ._974928fe84ca9647-search:not(._974928fe84ca9647-open) ._974928fe84ca9647-searchBar {
     width: unset;
     background: none;
     border: none;
@@ -245,7 +245,7 @@ body {
         color: transparent !important;
       }
     }
-    > .icon__97492 {
+    > ._974928fe84ca9647-icon {
       width: 32px;
       position: absolute;
       pointer-events: none;
@@ -260,7 +260,7 @@ body {
     }
   }
 
-  .attachWrapper__0923f {
+  ._0923f156a0410684-attachWrapper {
     padding: 8px var(--space-xs);
   }
 }
