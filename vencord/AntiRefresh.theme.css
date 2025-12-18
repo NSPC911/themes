@@ -17,11 +17,11 @@
 }
 
 /* fix gone timestamps */
-span[class*="timestampInline_"] time {
+span.c19a557985eb7793-timestampInline time {
   font-size: 0px;
 }
 
-h3 > [class^="timestamp"] > span[class^="hiddenVisually"] {
+h3 > .c19a557985eb7793-timestamp > span.b18fe29d6fe8dd82-hiddenVisually {
   clip: unset;
   clip-path: unset;
   overflow: hidden;
