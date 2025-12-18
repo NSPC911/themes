@@ -23,7 +23,7 @@
   --gDM-opacity: 0.5;
 }
 
-#app-mount .mentioned__5126c:before {
+#app-mount ._5126c0cd07f243a0-mentioned:before {
   background-color: transparent !important;
   width: 0px;
   border: none;
@@ -51,8 +51,8 @@
   }
 }
 
-.clickable__91a9d:hover .childContainer__91a9d,
-.interactive__972a0:hover {
+._91a9d7f7e5248a56-clickable:hover ._91a9d7f7e5248a56-childContainer,
+._972a0d22c8afa7f0-interactive:hover {
   background-color: transparent !important;
   cursor: pointer;
 }
@@ -215,11 +215,11 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* fix vc buttons area */
-.align-chat-input .rtcConnectionStatus__06d62,
-.align-chat-input .connection_e131a9 {
+.align-chat-input ._06d6249a1f2584ac-rtcConnectionStatus,
+.align-chat-input .e131a99484292a19-connection {
   max-height: unset !important;
 }
-.ping__06d62 {
+._06d6249a1f2584ac-ping {
   display: none !important;
 }
 
@@ -245,8 +245,8 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* Remove stickers and gifting */
-.buttons__74017 > [aria-label="Send a gift"],
-.buttons__74017
+._740174f3d6a2c8fe-buttons > [aria-label="Send a gift"],
+._740174f3d6a2c8fe-buttons
   > div:has(
     > div[aria-label="Open GIF picker"],
     > div[aria-label="Open sticker picker"]
@@ -255,7 +255,7 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* Hide recent activity */
-.membersGroup_c8ffbb:has(> [role="button"]) {
+.c8ffbb79449f399c-membersGroup:has(> [role="button"]) {
   display: none;
   & + div:not([class]),
   & + div:not([class]) + div:not([class]),
@@ -294,7 +294,7 @@ svg[class^="ellipsis"] {
 }
 
 /* Memberlist Hover Visual Refresh
-.container_c8ffbb,
+.c8ffbb79449f399c-container,
 [class*="membersWrap_"] {
   justify-content: unset;
   min-width: unset !important;
@@ -302,7 +302,7 @@ svg[class^="ellipsis"] {
   right: 0;
 }
 
-.container_c8ffbb {
+.c8ffbb79449f399c-container {
   overflow: visible !important;
 }
 
@@ -310,13 +310,13 @@ svg[class^="ellipsis"] {
   right: 3px;
 }
 
-.memberInner__5d473,
-.content__91a9d,
-.membersGroup_c8ffbb {
+._5d473ecff348c314-memberInner,
+._91a9d7f7e5248a56-content,
+.c8ffbb79449f399c-membersGroup {
   margin-left: 3px;
 }
 
-.memberInner__5d473 {
+._5d473ecff348c314-memberInner {
   margin-left: -6px;
 }
 
@@ -341,7 +341,7 @@ svg[class^="ellipsis"] {
 
 /* Yapping so hard, chatting isnt a thing
    From: https://discord.com/channels/1015060230222131221/1028106818368589824/1364793119886938175 */
-.typingDots_b88801 > .ellipsis_b88801 + .text_b88801 {
+.b8880176888cc928-typingDots > .b8880176888cc928-ellipsis + .b8880176888cc928-text {
   font-size: 0;
   height: 16px;
   & > strong {
@@ -373,7 +373,7 @@ svg[class^="ellipsis"] {
 }
 
 /* Smaller banner */
-.notice__6e2b9 {
+._6e2b9359c6f84cfd-notice {
   z-index: 102;
   height: fit-content;
 }

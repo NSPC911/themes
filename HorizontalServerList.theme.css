@@ -31,17 +31,17 @@
   --extra-margin: 0px;
 }
 
-.content__5e434 {
+._5e434347c823b592-content {
   margin-top: var(--__server-container);
   overflow: visible;
   margin-right: var(--gap)
 }
 
-#app-mount .sidebar__5e434 {
+#app-mount ._5e434347c823b592-sidebar {
   border-radius: 0;
   overflow: visible;
 }
-#app-mount .guilds__5e434 {
+#app-mount ._5e434347c823b592-guilds {
   transform-origin: top left;
   rotate: -90deg;
   scale: var(--HSL-server-scale);
@@ -49,26 +49,26 @@
   position: absolute !important;
   left: 0;
 }
-#app-mount .tree_ef3116 {
+#app-mount .ef3116c2da186559-tree {
   padding-top: var(--__server-y-padding);
   padding-bottom: var(--__server-y-padding);
 }
-#app-mount .wrapper_cc5dd2 {
+#app-mount .cc5dd25190031396-wrapper {
   rotate: 90deg;
 }
-#app-mount .itemsContainer_ef3116,
-#app-mount .unreadMentionsIndicatorTop_ef3116 + ul .stack_dbd263 {
+#app-mount .ef3116c2da186559-itemsContainer,
+#app-mount .ef3116c2da186559-unreadMentionsIndicatorTop + ul .dbd2630aec71879b-stack {
   flex-direction: var(--HSL-server-direction);
   justify-content: var(--HSL-server-alignment);
 }
-#app-mount .icon__6e9f8 {
+#app-mount ._6e9f8dce4cc18de3-icon {
    rotate: -90deg;
 }
 
-#guild-list-unread-dms .icon__6e9f8 {
+#guild-list-unread-dms ._6e9f8dce4cc18de3-icon {
    rotate: 0deg;
 }
-.guilds__5e434 {
+._5e434347c823b592-guilds {
   overflow-x: hidden;
   overflow-y: scroll;
   &::-webkit-scrollbar {
@@ -77,7 +77,7 @@
 }
 
 /* Half Half */
-.sidebar__5e434 > [style$=";"] {
+._5e434347c823b592-sidebar > [style$=";"] {
   position: fixed;
   z-index: 101;
   transform: translateX(50vw);
@@ -93,37 +93,37 @@
     }
   }
 }
-.sidebar__5e434:not(:has(> .vc-betterFolders-sidebar))
-  > .wrapper_ef3116.guilds__5e434 {
+._5e434347c823b592-sidebar:not(:has(> .vc-betterFolders-sidebar))
+  > .ef3116c2da186559-wrapper._5e434347c823b592-guilds {
   height: calc(100vw - (var(--gap) * 3)) !important;
 }
-.sidebar__5e434:has(> .vc-betterFolders-sidebar)
-  > .wrapper_ef3116.guilds__5e434 {
+._5e434347c823b592-sidebar:has(> .vc-betterFolders-sidebar)
+  > .ef3116c2da186559-wrapper._5e434347c823b592-guilds {
   height: calc(50vw) !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  .stack_dbd263.scroller_ef3116
+  .dbd2630aec71879b-stack.ef3116c2da186559-scroller
     > :is(
-      .listItem__650eb:has(> .listItemWrapper__91816),
-      .tutorialContainer__650eb:has(> .wrapper_d144f8)
+      ._650eb104245d257b-listItem:has(> ._918165dab2b1e10b-listItemWrapper),
+      ._650eb104245d257b-tutorialContainer:has(> .d144f8d4075c78d6-wrapper)
     ) {
     display: none !important;
   }
 }
 
 .visual-refresh #app-mount {
-  .actionButtons_e131a9 button {
+  .e131a99484292a19-actionButtons button {
     padding: 0 !important;
   }
-  .trailing_c38106 {
+  .c38106a3f0c3ca76-trailing {
     gap: 0;
     padding-right: calc(var(--window-control-size) + (8 * var(--gap)));
   }
   /* move controls to server bar in horizontalserverlist (must need!!) */
-  .bar_c38106 {
+  .c38106a3f0c3ca76-bar {
     -webkit-app-region: no-drag;
 
-    .winButtons_c38106 {
+    .c38106a3f0c3ca76-winButtons {
       z-index: 9999;
       position: absolute;
       transform-origin: center;
@@ -145,7 +145,7 @@
         display: none !important;
       }
 
-      > .winButton_c38106 {
+      > .c38106a3f0c3ca76-winButton {
         width: 100%;
         -webkit-app-region: no-drag;
         z-index: 9999;
@@ -159,11 +159,11 @@
     }
   }
   /* fix disappeared window controls in hsl */
-  .sidebar__5e434:has(> .vc-betterFolders-sidebar)
-    > .wrapper_ef3116[aria-label="Servers sidebar"] {
+  ._5e434347c823b592-sidebar:has(> .vc-betterFolders-sidebar)
+    > .ef3116c2da186559-wrapper[aria-label="Servers sidebar"] {
     height: calc(50vw - (1.5 * var(--gap))) !important;
   }
-  .sidebar__5e434 > .wrapper_ef3116[aria-label="Servers sidebar"] {
+  ._5e434347c823b592-sidebar > .ef3116c2da186559-wrapper[aria-label="Servers sidebar"] {
     height: calc(
       100vw - var(--gap) * 4.5 - var(--window-control-size) * 2
     ) !important;
@@ -171,46 +171,46 @@
   }
 
   /* fix hsl clipping through window controls */
-  .vc-betterFolders-sidebar .guilds__5e434 {
+  .vc-betterFolders-sidebar ._5e434347c823b592-guilds {
     height: calc(
       50vw - ((var(--gap) * 1.75 + var(--window-control-size)) * 2)
     ) !important;
     z-index: 200;
     border-radius: 0 !important;
   }
-  .primary_a22cb0 {
+  .a22cb0c66246f5d3-primary {
     background: var(--blue-3);
   }
   /* nuke bar */
-  .base__5e434 {
+  ._5e434347c823b592-base {
     grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
     padding-top: calc(var(--gap) * 2);
   }
 
-  .unreadMentionsIndicatorTop_ef3116 + ul .stack_dbd263::after {
+  .ef3116c2da186559-unreadMentionsIndicatorTop + ul .dbd2630aec71879b-stack::after {
     height: var(--window-control-size);
   }
 
   /* nuke extra bar that i cant bother to fix */
-  > .bar_c38106 {
+  > .c38106a3f0c3ca76-bar {
     display: none !important;
   }
 
   /* update hsl stuff */
-  .content__5e434 {
+  ._5e434347c823b592-content {
     margin-top: calc(var(--__server-container) + var(--gap));
-    .guilds__5e434 {
+    ._5e434347c823b592-guilds {
       transform: translateX(var(--gap));
     }
   }
 
   /* fix misalignment */
-  .page__5e434 {
+  ._5e434347c823b592-page {
     padding-bottom: 0;
   }
 
   /* obliterate the title */
-  .title_c38106 {
+  .c38106a3f0c3ca76-title {
     display: none !important;
   }
 }

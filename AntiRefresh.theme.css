@@ -7,10 +7,10 @@
 */
 
 /* Fix folder icons */
-.folderHeaderSmall__48112 {
+._48112cbe77dc5022-folderHeaderSmall {
   --custom-folder-preview-padding: 4px;
 }
-.folderPreviewGuildIcon__48112 {
+._48112cbe77dc5022-folderPreviewGuildIcon {
   border-radius: 50% !important;
   font-size: 6px !important;
   line-height: 16px;

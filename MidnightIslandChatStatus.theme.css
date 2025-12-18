@@ -6,12 +6,12 @@
  * @source https://github.com/NSPC911/vc-themes
 */
 
-.chatGradientBase__36d07 {
+._36d072eab2b2e737-chatGradientBase {
   display: none !important;
 }
 
-.typing_b88801 {
-  &.inTextChannel_b88801 {
+.b8880176888cc928-typing {
+  &.b8880176888cc928-inTextChannel {
     padding: 0;
     margin-left: var(--space-xs);
     margin-right: var(--space-xs);
@@ -24,7 +24,7 @@
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-md);
   }
-  .typingDots_b88801 {
+  .b8880176888cc928-typingDots {
     margin-left: 0;
     transition:
       transform 1s cubic-bezier(0.4, 1, 0.5, 1.5),
@@ -37,11 +37,11 @@
       pointer-events: none;
     }
   }
-  .cooldownWrapper_b21699 {
+  .b216994de061a9e2-cooldownWrapper {
     padding: 0px 8px 0px 4px;
     min-width: 138px;
   }
 }
-.scrollerSpacer__36d07 {
+._36d072eab2b2e737-scrollerSpacer {
   height: calc(40px + var(--gap));
 }

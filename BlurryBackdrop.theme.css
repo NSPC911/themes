@@ -11,25 +11,25 @@
   --blrbg-dimmness: 25;
 }
 
-.backdrop__78332 {
+._783321f3468cf9e8-backdrop {
   background: rgba(0, 0, 0, calc(var(--blrbg-dimmness) / 100)) !important;
   backdrop-filter: blur(var(--blrbg-blur-by)) !important;
 }
 
 /* fix for the image viewer thing */
-.carouselModal_d3a6f0 > div {
-  > .author__6088c {
+.d3a6f0de39ff36e9-carouselModal > div {
+  > ._6088c3df6d10c76d-author {
     background-color: transparent;
     backdrop-filter: blur(calc(var(--blrbg-blur-by) * 5));
     padding: 5px 10px 5px 60px;
     margin: -5px 0 -5px -60px;
     border-radius: 8px;
     width: fit-content;
-    .timestamp__6088c {
+    ._6088c3df6d10c76d-timestamp {
       color: color-mix(in xyz, white 50%, var(--text-muted) 50%);
     }
   }
-  > .authorAvatar__6088c {
+  > ._6088c3df6d10c76d-authorAvatar {
     z-index: 5;
   }
 }
