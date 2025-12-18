@@ -254,7 +254,7 @@ _37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
 }
 
 /* Hide typing dots in chat bar */
-.b8880176878cc928-ellipsis {
+.b8880176888cc928-ellipsis {
   display: none !important;
   & + span {
     margin-left: 5px !important;
