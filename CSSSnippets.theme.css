@@ -166,24 +166,13 @@ div[class*="repliedMessageSpine_"] {
 }
 */
 
-/* Hide status icons
-   From https://canary.discord.com/channels/1015060230222131221/1134844326933954622/1299991457079234572 */
-[class^="avatar_"] svg > :is(rect, mask) {
-  display: none;
-}
-
-[class^="avatar_"] foreignObject {
-  border-radius: 100%;
-  mask: none;
-}
-
 /* Make the App Launcher disappear among a sea of butterflies */
-[class*="channelAppLauncher_"] {
+.app-launcher-entrypoint {
   display: none !important;
 }
 
 /* Let the User Area elements breathe */
-[class^="panels"] > [class^="container"] {
+._5e434347c823b592-panels > ._37e49614b9f110a9-container {
   height: unset !important;
   align-items: unset !important;
   padding: 6px 8px !important;
@@ -191,13 +180,13 @@ div[class*="repliedMessageSpine_"] {
   gap: 2px !important;
 }
 
-[class^="avatarWrapper"] {
+._37e49614b9f110a9-avatarWrapper {
   margin-right: unset !important;
   margin-left: unset !important;
   padding-left: 4px !important;
 }
 
-[class^="container"] > [class*="buttons"] {
+_37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
   justify-content: space-evenly !important;
 }
 
@@ -224,7 +213,7 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* Hide chatbox when no access */
-[class^="channelTextAreaDisabled"] {
+._740174f3d6a2c8fe-channelTextAreaDisabled {
   display: none !important;
   opacity: 0 !important;
   position: absolute !important;
@@ -265,7 +254,7 @@ div[class*="repliedMessageSpine_"] {
 }
 
 /* Hide typing dots in chat bar */
-svg[class^="ellipsis"] {
+.b8880176878cc928-ellipsis {
   display: none !important;
   & + span {
     margin-left: 5px !important;
@@ -273,19 +262,12 @@ svg[class^="ellipsis"] {
 }
 
 /* Pin the Page Switcher in Finder */
-[class^="searchResultsWrap_"]
-  [class^="container_"]:has(> [class^="pageControlContainer_"]) {
+.a9e7064fdee8e9b0-searchResultsWrap
+  ._86c0fae6715927dc-container:has(> .c1521037ef09de7e-pageControlContainer) {
   position: sticky;
   bottom: 0px;
   z-index: 999;
   background: var(--bg-overlay-1, var(--background-secondary));
-}
-
-/* makes profiles that are long \
-\  because of roles be smaller */
-[class^="mutuals"]
-  + [class^="root"]:not(:has(> [aria-label="View All Roles"])) {
-  max-height: 20vh;
 }
 
 /* turn every text white on hover */
@@ -379,6 +361,6 @@ svg[class^="ellipsis"] {
 }
 
 /* I prefer my font */
-.visual-refresh #app-mount :is(pre, code, [class^="codeLine"]) {
+.visual-refresh #app-mount :is(pre, code, [class$="codeLine"]) {
   font-family: "CaskaydiaCove NF" !important;
 }
