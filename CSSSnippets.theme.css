@@ -228,7 +228,7 @@ _37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
 }
 
 /* Blurred Background while loading */
-[class*="container_"][class*="fixClipping_"] {
+.a2f5142ba8328dfd-container.efbae7425593290b-fixClipping {
   background: 0 0 !important;
   backdrop-filter: blur(5px) !important;
 }
