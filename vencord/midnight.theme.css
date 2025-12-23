@@ -263,4 +263,8 @@ body {
   ._0923f156a0410684-attachWrapper {
     padding: 8px var(--space-xs);
   }
+  /* fix random border bottom */
+  ._9293f6b2fc12398a-container, ._9293f6b2fc12398a-container {
+    border-bottom: none !important;
+  }
 }
