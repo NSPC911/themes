@@ -1,0 +1,38 @@
+/**
+ * @name Image Zoom Spyglass Lens
+ * @author NSPC911
+ * @version 1.0.0
+ * @description Converts the Image Zoom lens (from Vencord) into a Spyglass (with an optional scuffed animation)
+ * @source https://github.com/NSPC911/vc-themes
+*/
+
+:root {
+  /* set to 0 to disable animation */
+  --vcizl-animate-duration: 1s
+}
+
+/* image zoom */
+.vc-imgzoom-lens {
+  border: none;
+  box-shadow: none;
+  filter: none;
+  animation: var(--vcizl-animate-duration) cubic-bezier(.12, .75, 0, 1) 0s 1 zoomIn;
+}
+
+.vc-imgzoom-lens::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAABIUExURR4/WR4/WC5Qei1OeUtomUVik6Xb/IO6387q/2SCo////////4KjxwkfNWecvT9bjCtMdx0+WPn8/zEeCkApEH1QFLGHO////17z+TAAAAATdFJOU+7uzMx4eCcnDQ0bDQ0NJ3jM7lGLVcWxAAAAAWJLR0QKaND0VgAAAAd0SU1FB+kKFQsmAvFtUg8AAAHHSURBVHja7dxbbgIxDEDRAcqjpWV4dv9L5QdRCZAmVoQDnXMXENtnAekOI69rvUDrALReoHUAWi/QOgCtF2jdFeA4sgAAAAAAAAAA9wBdcpPkTpeu994BTHOb5VYC8JHaPLUygEVmy8xKAVaJfSYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA8r4GWg/0XRkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4PkAQwcCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4PYDKbLyOP1h4QwX7UT6BNv90BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4PYH8TAAAAAAAAAAAAAAAAAAAAACAfoLbIAY+KzHrKBwoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALwRQGabykLDCgFS6yuLTSsCyG1bWXBcAUByu8qi8wYBTv+830sAAAAAAAAAgD+AW4ixBAAAAAAAAIwY4AxxXxHln5WOZAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNS0xMC0yMVQxMToyNjo1NCswMDowMPFicCAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjUtMTAtMTZUMDc6NTQ6MTArMDA6MDBOfbqRAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI1LTEwLTIxVDExOjM4OjAyKzAwOjAwI109bgAAAABJRU5ErkJggg==);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+@keyframes zoomIn {
+  from {
+    height: 0;
+    width: 0;
+  }
+}
