@@ -267,4 +267,10 @@ body {
   ._9293f6b2fc12398a-container, ._9293f6b2fc12398a-container {
     border-bottom: none !important;
   }
+  /* search results fix */
+  .a9e7064fdee8e9b0-searchResultsWrap {
+    border: var(--border-thickness) solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-left: var(--gap)
+  }
 }

@@ -234,7 +234,7 @@ _37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
 }
 
 /* Remove stickers and gifting */
-._740174f3d6a2c8fe-buttons > [aria-label="Send a gift"],
+.c0c49a3e5c8626ac-container:has(>[aria-label="Send a gift"]),
 ._740174f3d6a2c8fe-buttons
   > div:has(
     > div[aria-label="Open GIF picker"],
@@ -267,10 +267,21 @@ _37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
   position: sticky;
   bottom: 0px;
   z-index: 999;
-  background: var(--bg-overlay-1, var(--background-secondary));
+  backdrop-filter: blur(10px);
 }
 
-/* turn every text white on hover */
+.a9e7064fdee8e9b0-searchResultsWrap > .a9e7064fdee8e9b0-scroller {
+  padding-left: 8px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+  > #search-results {
+    padding: 0 16px;
+  }
+}
+
+/* turn every text white on hover          *\
+\* not really sure why i like this, but idk */
 *:hover {
   color: white !important;
 }
@@ -321,8 +332,8 @@ _37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
   overflow: hidden;
 } */
 
-/* Yapping so hard, chatting isnt a thing
-   From: https://discord.com/channels/1015060230222131221/1028106818368589824/1364793119886938175 */
+/* Yapping so hard, chatting isnt a thing                                                         *\
+\* From: https://discord.com/channels/1015060230222131221/1028106818368589824/1364793119886938175 */
 .b8880176888cc928-typingDots > .b8880176888cc928-ellipsis + .b8880176888cc928-text {
   font-size: 0;
   height: 16px;
@@ -363,4 +374,103 @@ _37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
 /* I prefer my font */
 .visual-refresh #app-mount :is(pre, code, [class$="codeLine"]) {
   font-family: "CaskaydiaCove NF" !important;
+}
+
+/* Collapsed message buttons                                                                      *\
+\* From: https://discord.com/channels/1015060230222131221/1028106818368589824/1329057978850086962 */
+._740174f3d6a2c8fe-textArea {
+  margin-right: 32px;
+  +._740174f3d6a2c8fe-buttons {
+    position: absolute;
+    right: 0;
+    background-color: color-mix(in oklab, var(--chat-background-default) 0%, transparent);
+    backdrop-filter: blur(3px);
+    border-radius: 8px 0 0 8px;
+    &:not(:hover) > :not(:last-child) { display: none }
+  }
+}
+
+/* RAINBOW THREAD                                                                                 *\
+   NOT MINE! I SIMPLY UPDATED IT WITH THE CLASSES!
+\* From: https://discord.com/channels/1015060230222131221/1134844326933954622/1452611600585461874 */
+.d125d22cdfd32cfe-content > li._5b40bdd67543ba35-container > ul[role="group"] {
+  > ._5b40bdd67543ba35-spineBorder {
+    --step: calc(var(--channels-name-line-height) + 10px);
+    background: var(--thread-muted, repeating-linear-gradient(
+      #824e62 calc(var(--step) * 0),
+      #824e62 calc(var(--step) * 1),
+      #866251 calc(var(--step) * 1),
+      #866251 calc(var(--step) * 2),
+      #857a65 calc(var(--step) * 2),
+      #857a65 calc(var(--step) * 3),
+      #5c7a5e calc(var(--step) * 3),
+      #5c7a5e calc(var(--step) * 4),
+      #4d638b calc(var(--step) * 4),
+      #4d638b calc(var(--step) * 5),
+      #6e5c89 calc(var(--step) * 5),
+      #6e5c89 calc(var(--step) * 6))
+    )
+  }
+  > li {
+    --interactive-hover: var(--thread-core, #f38ba8);
+    --interactive-active: var(--thread-core, #f38ba8);
+  }
+  > li:nth-of-type(6n + 1) {
+    --channels-default: var(--thread-default, rgba(243, 139, 168, 0.7));
+    --text-primary: var(--thread-core, #f38ba8);
+    --interactive-muted: var(--thread-muted, #824e62);
+  }
+  > li:nth-of-type(6n + 2) {
+    --channels-default: var(--thread-default, rgba(250, 179, 135, 0.7));
+    --text-primary: var(--thread-core, #fab387);
+    --interactive-muted: var(--thread-muted, #866251);
+  }
+  > li:nth-of-type(6n + 3) {
+    --channels-default: var(--thread-default, rgba(249, 226, 175, 0.7));
+    --text-primary: var(--thread-core, #f9e2af);
+    --interactive-muted: var(--thread-muted, #857a65);
+  }
+  > li:nth-of-type(6n + 4) {
+    --channels-default: var(--thread-default, rgba(166, 227, 161, 0.7));
+    --text-primary: var(--thread-core, #a6e3a1);
+    --interactive-muted: var(--thread-muted, #5c7a5e);
+  }
+  > li:nth-of-type(6n + 5) {
+    --channels-default: var(--thread-default, rgba(137, 180, 250, 0.7));
+    --text-primary: var(--thread-core, #89b4fa);
+    --interactive-muted: var(--thread-muted, #4d638b);
+  }
+  > li:nth-of-type(6n + 6) {
+    --channels-default: var(--thread-default, rgba(203, 166, 247, 0.7));
+    --text-primary: var(--thread-core, #cba6f7);
+    --interactive-muted: var(--thread-muted, #6e5c89);
+  }
+  li:only-of-type {
+    --channels-default: var(--thread-default, rgba(245, 194, 231, 0.7));
+    --text-primary: var(--thread-core, #f5c2e7);
+    --interactive-muted: var(--thread-muted, #836a81);
+  }
+}
+
+/* Fix folder icons */
+._48112cbe77dc5022-folderHeaderSmall {
+  --custom-folder-preview-padding: 4px;
+}
+._48112cbe77dc5022-folderPreviewGuildIcon {
+  border-radius: 50% !important;
+  font-size: 6px !important;
+  line-height: 16px;
+}
+
+/* fix gone timestamps */
+span.c19a557985eb7793-timestampInline time {
+  font-size: 0px;
+}
+
+h3 > .c19a557985eb7793-timestamp > span.b18fe29d6fe8dd82-hiddenVisually {
+  clip: unset;
+  clip-path: unset;
+  overflow: hidden;
+  height: fit-content;
+  position: relative;
 }
