@@ -137,7 +137,7 @@
       ) !important;
       height: calc(var(--window-control-size) + (4 * var(--gap)));
       transform: translate(
-        -15.5px,
+        -15px,
         calc(var(--window-control-size) * 2 + (7.5 * var(--gap)))
       ) !important;
       background: var(--bg-4) !important;
@@ -161,11 +161,11 @@
   /* fix disappeared window controls in hsl */
   ._5e434347c823b592-sidebar:has(> .vc-betterFolders-sidebar)
     > .ef3116c2da186559-wrapper[aria-label="Servers sidebar"] {
-    height: calc(50vw - (1.5 * var(--gap))) !important;
+    height: calc(50vw - (1 * var(--gap))) !important;
   }
   ._5e434347c823b592-sidebar > .ef3116c2da186559-wrapper[aria-label="Servers sidebar"] {
     height: calc(
-      100vw - var(--gap) * 4.5 - var(--window-control-size) * 2
+      100vw - var(--gap) * 4 - var(--window-control-size) * 2
     ) !important;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
@@ -173,7 +173,7 @@
   /* fix hsl clipping through window controls */
   .vc-betterFolders-sidebar ._5e434347c823b592-guilds {
     height: calc(
-      50vw - ((var(--gap) * 1.75 + var(--window-control-size)) * 2)
+      50vw - ((var(--gap) * 2 + var(--window-control-size)) * 2)
     ) !important;
     z-index: 200;
     border-radius: 0 !important;
