@@ -262,15 +262,15 @@ _37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
 }
 
 /* Pin the Page Switcher in Finder */
-.a98f3b020416ad54-searchResultsWrap
-  ._3f123bbf537a483c-container:has(> .c1521037ef09de7e-pageControlContainer) {
+.a9e7064fdee8e9b0-searchResultsWrap
+  ._86c0fae6715927dc-container:has(> .c1521037ef09de7e-pageControlContainer) {
   position: sticky;
   bottom: 0px;
   z-index: 999;
   backdrop-filter: blur(10px);
 }
 
-.a98f3b020416ad54-searchResultsWrap > .a98f3b020416ad54-scroller {
+.a9e7064fdee8e9b0-searchResultsWrap > .a9e7064fdee8e9b0-scroller {
   padding-left: 8px !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
