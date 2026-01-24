@@ -34,7 +34,7 @@
   --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 }
 
-#app-mount ._44b0c28be7879b7b-wrapper ._44b0c28be7879b7b-mask > rect[x="14.5"] {
+#app-mount .wrapper__44b0c .mask__44b0c > rect[x="14.5"] {
   width: 32px !important;
   height: 32px !important;
   x: 0 !important;

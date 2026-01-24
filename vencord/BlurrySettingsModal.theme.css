@@ -12,21 +12,21 @@
   --panel-backdrop-filter: none !important;
 }
 
-._23e6b439306f125a-standardSidebarView {
+.standardSidebarView__23e6b {
   background: none !important;
   /* more elements transparent! */
-  ._23e6b439306f125a-contentRegion,
-  ._23e6b439306f125a-sidebarRegionScroller,
-  ._730694f5672c9601-cardPrimary,
-  ._1fed1dd06c7aabf7-fieldList,
-  ._535437b3d3b11fd1-scroller,
-  ._88a69141dd70013a-item[role="radio"][aria-checked="false"] {
+  .contentRegion__23e6b,
+  .sidebarRegionScroller__23e6b,
+  .cardPrimary__73069,
+  .fieldList__1fed1,
+  .scroller__53543,
+  .item__88a69[role="radio"][aria-checked="false"] {
     background-color: transparent;
   }
-  ._88a69141dd70013a-item[role="radio"][aria-checked="false"]:hover {
+  .item__88a69[role="radio"][aria-checked="false"]:hover {
     background-color: var(--background-modifier-selected) !important;
   }
-  ._88a69141dd70013a-item[role="radio"][aria-checked="true"] {
+  .item__88a69[role="radio"][aria-checked="true"] {
     background-color: color-mix(
       in srgb,
       transparent 50%,
@@ -34,7 +34,7 @@
     ) !important;
   }
   :not([aria-orientation="horizontal"])
-    > .aa8da23faa27393c-item[role="tab"]:is(
+    > .item_aa8da2[role="tab"]:is(
       [aria-selected="true"],
       [aria-selected="false"]:hover
     ) {
@@ -44,12 +44,12 @@
       var(--button-secondary-background)
     ) !important;
   }
-  .c7e9071ee8df9113-searchBar,
-  ._0ed4fc708cdbac0d-input,
-  ._6a919231d4bdfd4f-bioTextAreaContainer,
-  ._6a919231d4bdfd4f-bioTextArea,
-  .a16aea1526925c2c-select,
-  ._50a5493e9d9cc496-searchContainer > .container_a45028,
+  .searchBar_c7e907,
+  .input__0ed4f,
+  .bioTextAreaContainer__6a919,
+  .bioTextArea__6a919,
+  .select_a16aea,
+  .searchContainer__50a54 > .container_a45028,
   .searchBar_cdb2b0 {
     background-color: color-mix(
       in srgb,
@@ -57,37 +57,37 @@
       var(--input-background)
     ) !important;
   }
-  ._1fed1dd06c7aabf7-accountProfileCard,
-  .c7f964e7e0fc8b47-metadataContainer,
-  .a9b45282395ecdfc-review {
+  .accountProfileCard__1fed1,
+  .metadataContainer_c7f964,
+  .review_a9b452 {
     background-color: color-mix(
       in srgb,
       transparent 50%,
       var(--background-tertiary)
     ) !important;
   }
-  ._1fed1dd06c7aabf7-background,
-  ._5cea9da4c2ca012f-card,
-  ._1a4ef2934d882343-settingCard,
-  .a9b45282395ecdfc-notice,
-  ._28e57b0268546d72-onboardingStepContainer,
-  ._981f723644a1a061-descriptionBox,
-  ._23e6b439306f125a-sidebar::before {
+  .background__1fed1,
+  .card__5cea9,
+  .settingCard__1a4ef,
+  .notice_a9b452,
+  .onboardingStepContainer__28e57,
+  .descriptionBox__981f7,
+  .sidebar__23e6b::before {
     background-color: color-mix(
       in srgb,
       transparent 50%,
       var(--background-secondary)
     ) !important;
   }
-  ._5cea9da4c2ca012f-header,
-  ._5153730f0c7cf20d-recommendedServerCard {
+  .header__5cea9,
+  .recommendedServerCard__51537 {
     background-color: color-mix(
       in srgb,
       transparent 50%,
       var(--background-secondary-alt)
     ) !important;
   }
-  ._23e6b439306f125a-toolsContainer {
+  .toolsContainer__23e6b {
     background-color: color-mix(
       in srgb,
       transparent 50%,
@@ -95,47 +95,47 @@
     ) !important;
   }
   .vc-addon-card,
-  ._43dab84f7529cb48-auditLog,
-  ._4b8d892e5bcb9bd7-scrollerContainer,
-  ._73000d97b1b29da5-upsellContainer {
+  .auditLog__43dab,
+  .scrollerContainer__4b8d8,
+  .upsellContainer__73000 {
     background-color: color-mix(
       in srgb,
       transparent 50%,
       var(--card-primary-bg)
     ) !important;
   }
-  ._43dab84f7529cb48-headerExpanded {
+  .headerExpanded__43dab {
     background-color: color-mix(
       in srgb,
       transparent 50%,
       var(--card-secondary-bg)
     ) !important;
   }
-  ._50a5493e9d9cc496-authedAppV2,
+  .authedAppV2__50a54,
   .connectContainer_c7f964,
-  .c7f964e7e0fc8b47-connectionHeader {
+  .connectionHeader_c7f964 {
     background-color: color-mix(
       in srgb,
       transparent 50%,
       var(--bg-surface-raised)
     ) !important;
   }
-  ._50a5493e9d9cc496-headerV2,
-  .c7f964e7e0fc8b47-connectionsContainer > div > button,
-  .c7f964e7e0fc8b47-connection {
+  .headerV2__50a54,
+  .connectionsContainer_c7f964 > div > button,
+  .connection_c7f964 {
     background-color: color-mix(
       in srgb,
       transparent 50%,
       var(--bg-mod-subtle)
     ) !important;
   }
-  ._23e6b439306f125a-contentRegionScroller {
+  .contentRegionScroller__23e6b {
     margin-top: 46px !important;
     background-color: transparent !important;
   }
 }
 
-._960e4207cea8323e-layer[aria-hidden="true"] + ._960e4207cea8323e-layer {
+.layer__960e4[aria-hidden="true"] + .layer__960e4 {
   background-color: rgba(0, 0, 0, calc(var(--blrsm-dimmness) / 100)) !important;
   backdrop-filter: blur(var(--blrsm-blur-by));
 }

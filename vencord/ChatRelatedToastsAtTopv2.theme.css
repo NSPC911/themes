@@ -6,7 +6,7 @@
  * @source https://nspc911.github.io/themes/vencord/ChatRelatedToastsAtTopv2.theme.css
 */
 
-.dc83f5490ab160ad-chatHeaderBar {
+.chatHeaderBar_dc83f5 {
   position: absolute;
   background: var(--accent-3);
   border-bottom: 0px solid transparent !important;
@@ -19,15 +19,15 @@
   z-index: 1;
   box-shadow: unset;
   outline: none;
-  &:not(:hover) .dc83f5490ab160ad-chatHeaderBarText {
+  &:not(:hover) .chatHeaderBarText_dc83f5 {
     color: var(--control-text-primary-default) !important;
   }
-  &:has(> button:hover) .dc83f5490ab160ad-chatHeaderBarText {
+  &:has(> button:hover) .chatHeaderBarText_dc83f5 {
     color: white !important;
   }
 }
 
-._0f481cbbd7530492-jumpToPresentBar {
+.jumpToPresentBar__0f481 {
   position: absolute;
   top: 10px;
   bottom: unset;
@@ -51,26 +51,26 @@
     box-shadow: unset;
     border: unset;
   }
-  &:not(:hover) ._0f481cbbd7530492-barButtonMain {
+  &:not(:hover) .barButtonMain__0f481 {
     color: var(--control-text-primary-default);
   }
 }
-._0f481cbbd7530492-newMessagesBar {
+.newMessagesBar__0f481 {
   box-shadow: unset !important;
   z-index: 10;
 }
-._0f481cbbd7530492-newMessagesBar ~ ._0f481cbbd7530492-jumpToPresentBar {
+.newMessagesBar__0f481 ~ .jumpToPresentBar__0f481 {
   top: 39px;
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
-.dc83f5490ab160ad-chatHeaderBar ~ ._36d072eab2b2e737-messagesWrapper > ._0f481cbbd7530492-jumpToPresentBar {
+.chatHeaderBar_dc83f5 ~ .messagesWrapper__36d07 > .jumpToPresentBar__0f481 {
   top: 43px;
 }
-.dc83f5490ab160ad-chatHeaderBar:hover
-  ~ ._36d072eab2b2e737-messagesWrapper
-  > ._0f481cbbd7530492-jumpToPresentBar,
-.dc83f5490ab160ad-chatHeaderBar
-  ~ ._36d072eab2b2e737-messagesWrapper
-  > ._0f481cbbd7530492-jumpToPresentBar:hover {
+.chatHeaderBar_dc83f5:hover
+  ~ .messagesWrapper__36d07
+  > .jumpToPresentBar__0f481,
+.chatHeaderBar_dc83f5
+  ~ .messagesWrapper__36d07
+  > .jumpToPresentBar__0f481:hover {
   top: 50px;
 }
