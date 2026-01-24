@@ -11,7 +11,7 @@
   --sm-height: 87.5vh;
 }
 
-._23e6b439306f125a-standardSidebarView {
+.standardSidebarView__23e6b {
   position: absolute;
   width: var(--sm-width);
   max-width: var(--sm-width) !important;
@@ -24,12 +24,12 @@
   overflow: hidden;
   border: rgba(255, 255, 255, 0.1) 1px solid;
 
-  ._23e6b439306f125a-contentRegion {
+  .contentRegion__23e6b {
     width: calc(var(--sm-width) - var(--sm-sidebar-width));
     display: block;
     flex: none;
 
-    ._23e6b439306f125a-toolsContainer {
+    .toolsContainer__23e6b {
       margin: 0;
       position: absolute;
       right: 0px;
@@ -41,18 +41,18 @@
       width: 100%;
       box-shadow: var(--elevation-low);
 
-      ._23e6b439306f125a-tools {
+      .tools__23e6b {
         position: absolute;
         top: 10px;
         right: 20px;
         z-index: 5000;
 
-        .c2b141c0f80863fb-container {
-          .c2b141c0f80863fb-keybind {
+        .container_c2b141 {
+          .keybind_c2b141 {
             display: none;
           }
 
-          .c2b141c0f80863fb-closeButton {
+          .closeButton_c2b141 {
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.1);
             color: white;
@@ -79,13 +79,13 @@
       }
     }
 
-    ._23e6b439306f125a-contentColumn:not([id*="vencord"], [id*="vesktop"]) {
+    .contentColumn__23e6b:not([id*="vencord"], [id*="vesktop"]) {
       /* vencord tabs excluded because they are literally the only ones that break lmfao */
       min-width: 0px !important;
       width: 100%;
       padding: 0px 20px;
 
-      > .f131e93f07e2fe18-settingsPage {
+      > .settingsPage_f131e9 {
         > div {
           padding-top: 66px;
         }
@@ -117,23 +117,23 @@
       }
 
       > div > .children__7bffb,
-      .d6f9e90c3456ac40-tabBar,
+      .tabBar_d6f9e9,
       .vc-settings-tab-bar,
       .vc-special-card,
-      > div > .b717a15017b82443-h5 {
+      > div > .h5_b717a1 {
         margin-top: 66px;
       }
 
-      .bdedd943df1d89dd-headerContainer {
+      .headerContainer_bdedd9 {
         justify-content: center;
       }
     }
   }
 
-  ._23e6b439306f125a-sidebarRegion {
+  .sidebarRegion__23e6b {
     flex: none;
 
-    ._23e6b439306f125a-sidebar {
+    .sidebar__23e6b {
       width: var(--sm-sidebar-width);
       padding: 0;
       overflow: visible !important;
@@ -155,7 +155,7 @@
         color: white;
       }
 
-      .aa8da23faa27393c-side {
+      .side_aa8da2 {
         overflow: visible !important;
         padding: 60px 8px 60px 16px;
       }
@@ -163,11 +163,11 @@
   }
 }
 
-._960e4207cea8323e-layer[aria-hidden="true"] + ._960e4207cea8323e-layer {
+.layer__960e4[aria-hidden="true"] + .layer__960e4 {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-._960e4207cea8323e-baseLayer {
+.baseLayer__960e4 {
   opacity: 1 !important;
   transform: scale(1) !important;
 }

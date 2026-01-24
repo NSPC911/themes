@@ -199,7 +199,7 @@ body {
   }
 
   /* move the unread bar down (why the hell is it in the middle of nowhere) */
-  ._629e4c86564a4ee7-unreadBottom {
+  .unreadBottom__629e4 {
     bottom: 0 !important;
   }
 
@@ -212,30 +212,30 @@ body {
     color: var(--text-4);
   }
 
-  .f75fb00fb7356cbe-content > .c8ffbb79449f399c-membersWrap {
+  .content_f75fb0 > .membersWrap_c8ffbb {
     overflow: visible !important;
   }
 
-  ._44df51b030bd5ece-wrapper {
+  .wrapper__44df5 {
     z-index: 0;
   }
 
-  ._0f481cbbd7530492-jumpToPresentBar > .a22cb0c66246f5d3-button {
+  .jumpToPresentBar__0f481 > .button_a22cb0 {
     color: black;
   }
   /* fix favourites v2 */
-  ._2ea32c412048f708-modeSelected ._2ea32c412048f708-iconWithGuildIcon,
-  ._2ea32c412048f708-modeSelected:hover ._2ea32c412048f708-iconWithGuildIcon {
+  .modeSelected__2ea32 .iconWithGuildIcon__2ea32,
+  .modeSelected__2ea32:hover .iconWithGuildIcon__2ea32 {
     color: var(--text-0);
   }
   /* search area fixes */
-  ._9293f6b2fc12398a-toolbar {
+  .toolbar__9293f {
     gap: 0;
-    > ._496769951eb140fe-search {
+    > .search__49676 {
       margin: 0;
     }
   }
-  .c322aadb96ff59c9-search:not(.c322aadb96ff59c9-open) .c322aadb96ff59c9-searchBar {
+  .search_c322aa:not(.open_c322aa) .searchBar_c322aa {
     width: unset;
     background: none;
     border: none;
@@ -245,7 +245,7 @@ body {
         color: transparent !important;
       }
     }
-    > .c322aadb96ff59c9-icon {
+    > .icon_c322aa {
       width: 32px;
       position: absolute;
       pointer-events: none;
@@ -260,15 +260,15 @@ body {
     }
   }
 
-  ._0923f156a0410684-attachWrapper {
+  .attachWrapper__0923f {
     padding: 8px var(--space-xs);
   }
   /* fix random border bottom */
-  ._9293f6b2fc12398a-container, ._9293f6b2fc12398a-container {
+  .container__9293f, .container__9293f {
     border-bottom: none !important;
   }
   /* search results fix */
-  .a98f3b020416ad54-searchResultsWrap {
+  .searchResultsWrap_a98f3b {
     border: var(--border-thickness) solid var(--border);
     border-radius: var(--radius-lg);
     margin-left: var(--gap)
