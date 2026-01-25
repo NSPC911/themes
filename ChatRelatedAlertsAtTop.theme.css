@@ -22,7 +22,7 @@
 
 .visual-refresh #app-mount .chatHeaderBar_dc83f5 {
   width: calc(100% - 45px) !important;
-  border-bottom-color: transparent !important;
+  border-bottom: none !important;
   min-width: unset !important;
   top: calc(8px * var(--craat-popout)) !important;
   border-radius: calc(var(--craat-border-radius) * var(--craat-popout))
@@ -53,8 +53,9 @@
         .newTopicsBarContainer__0f481
       )
   ) {
-    border-radius: calc(var(--craat-border-radius) * var(--craat-popout))
-      calc(var(--craat-border-radius) * var(--craat-popout)) 0 0;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom: none !important;
   }
   & ~ .messagesWrapper__36d07 {
     margin-top: -1px;
@@ -66,6 +67,7 @@
     ) {
       border-top-left-radius: 0 !important;
       border-top-right-radius: 0 !important;
+      border-top: none !important;
     }
   }
 }
@@ -120,14 +122,14 @@
     }
     ~ .jumpToPresentBar__0f481 {
       transform: translateY(calc(100% - 3px));
-      border-top-color: transparent !important;
+      border-top: none !important;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
     &:has(~ .jumpToPresentBar__0f481) {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-      border-bottom-color: transparent !important;
+      border-bottom: none !important;
     }
   }
   .newTopicsBarContainer__0f481 {
@@ -158,11 +160,18 @@
         background-color: var(--control-primary-border-hover);
         border: 1px solid transparent;
       }
+      .barButtonIcon__0f481 {
+        margin-inline-start: 0;
+        -webkit-margin-inline-start: 0;
+      }
     }
     &:has(~ .jumpToPresentBar__0f481) {
       border-bottom-left-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
-      border-bottom-color: transparent !important;
+      border-bottom: none !important;
+      > .topicsDropdown__0f481 {
+        top: 83px;
+      }
     }
     ~ .jumpToPresentBar__0f481 {
       transform: translateY(calc(100% - 3px));
@@ -174,6 +183,11 @@
   }
   /* Fix misalignment */
   .topicsPillCarets__0f481 {
-    top: 0;
+    padding-inline-end: 0;
+    -webkit-padding-inline-end: 0;
+  }
+  .topicsPillContainer__0f481 {
+    padding-left: 3px !important;
   }
 }
+
