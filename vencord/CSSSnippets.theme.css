@@ -469,3 +469,8 @@ h3 > .timestamp_c19a55 > span.hiddenVisually_b18fe2 {
   height: fit-content;
   position: relative;
 }
+
+/* hide back forward button */
+.backForwardButtons__63abb {
+  display: none !important;
+}

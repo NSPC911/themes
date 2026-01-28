@@ -273,4 +273,11 @@ body {
     border-radius: var(--radius-lg);
     margin-left: var(--gap)
   }
+  .postEnrollmentBackground__14e2c,
+  .postEnrollmentBackground__24e2c  {
+    border-radius: var(--radius-lg);
+  }
+  .wrapper__0d616 {
+    border-radius: var(--radius-lg)
+  }
 }
