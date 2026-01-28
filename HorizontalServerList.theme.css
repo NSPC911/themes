@@ -95,7 +95,7 @@
 }
 .sidebar__5e434:not(:has(> .vc-betterFolders-sidebar))
   > .wrapper_ef3116.guilds__5e434 {
-  height: calc(100vw - (var(--gap) * 3)) !important;
+  height: calc(100vw - (var(--gap) * 4)) !important;
 }
 .sidebar__5e434:has(> .vc-betterFolders-sidebar)
   > .wrapper_ef3116.guilds__5e434 {
@@ -125,7 +125,7 @@
 
     .winButtons_c38106 {
       z-index: 9999;
-      position: absolute;
+      position: fixed;
       transform-origin: center;
       rotate: -90deg;
       border-radius: 0 0 var(--radius-lg) var(--radius-lg);
@@ -133,7 +133,7 @@
       padding: 0px var(--gap);
       border: var(--border-thickness) solid var(--border);
       width: calc(
-        var(--custom-guild-list-width) - (2.5 * var(--gap))
+        var(--custom-guild-list-width) - (2.25 * var(--gap))
       ) !important;
       height: calc(var(--window-control-size) + (4 * var(--gap)));
       transform: translate(
@@ -165,7 +165,7 @@
   }
   .sidebar__5e434 > .wrapper_ef3116[aria-label="Servers sidebar"] {
     height: calc(
-      100vw - var(--gap) * 4 - var(--window-control-size) * 2
+      100vw - var(--gap) * 5 - var(--window-control-size) * 2
     ) !important;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
@@ -173,7 +173,7 @@
   /* fix hsl clipping through window controls */
   .vc-betterFolders-sidebar .guilds__5e434 {
     height: calc(
-      50vw - ((var(--gap) * 2 + var(--window-control-size)) * 2)
+      50vw - ((var(--gap) * 2.5 + var(--window-control-size)) * 2)
     ) !important;
     z-index: 200;
     border-radius: 0 !important;
