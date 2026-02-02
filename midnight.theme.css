@@ -280,4 +280,9 @@ body {
   .wrapper__0d616 {
     border-radius: var(--radius-lg)
   }
+  /* codeblock fix */
+  .textContainer__4d95d {
+    scrollbar-color: var(--bg-3) transparent;
+    scrollbar-width: thin;
+  }
 }
