@@ -286,3 +286,21 @@ body {
     scrollbar-width: thin;
   }
 }
+/* vc window fix */
+#app-mount [data-popout-root="true"] {
+  .chatContent_f75fb0 {
+    margin: var(--gap);
+    margin-left: 0;
+  }
+  .container__9293f {
+    margin: var(--gap);
+    width: calc(100% - var(--gap));
+    margin-bottom: 0;
+    margin-top: calc(1 * var(--gap));
+    border-radius: var(--radius-md);
+    margin-left: 0;
+  }
+  .chat_ee72fa::before {
+    display: none !important
+  }
+}
