@@ -263,10 +263,6 @@ body {
   .attachWrapper__0923f {
     padding: 8px var(--space-xs);
   }
-  /* fix random border bottom */
-  .container__9293f, .container__9293f {
-    border-bottom: none !important;
-  }
   /* search results fix */
   .searchResultsWrap_a98f3b {
     border: var(--border-thickness) solid var(--border);
@@ -284,6 +280,18 @@ body {
   .textContainer__4d95d {
     scrollbar-color: var(--bg-3) transparent;
     scrollbar-width: thin;
+  }
+  /* fix vc area */
+  .panels__5e434 .wrapper_e131a9 {
+    padding-top: 6px
+  }
+  /* vc main fix */
+  .chat_ee72fa:before {
+    display: none !important
+  }
+  /* another border bottom fix */
+  .high-contrast-mode .container__9293f, .theme-midnight .container__9293f {
+    border-bottom: none !important;
   }
 }
 /* vc window fix */
