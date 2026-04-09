@@ -44,9 +44,6 @@
   margin-inline-start: 3px !important;
   -webkit-margin-inline-start: 3px !important;
 }
-.barButtonMain__0f481 {
-  padding-top: 0.75rem;
-}
 .jumpToPresentBar__0f481 {
   position: absolute;
   top: 10px;
@@ -71,8 +68,11 @@
     box-shadow: unset;
     border: unset;
   }
+  .barButtonMain__0f481 {
+    padding-top: calc(0.5 * (42px - 1rem))
+  }
   &:not(:hover) .barButtonMain__0f481 {
-    color: var(--control-text-primary-default);
+    color: var(--control-primary-text-default)
   }
 }
 .newMessagesBar__0f481 {

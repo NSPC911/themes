@@ -281,10 +281,6 @@ body {
     scrollbar-color: var(--bg-3) transparent;
     scrollbar-width: thin;
   }
-  /* fix vc area */
-  .panels__5e434 .wrapper_e131a9 {
-    padding-top: 6px
-  }
   /* vc main fix */
   .chat_ee72fa:before {
     display: none !important
