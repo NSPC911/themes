@@ -327,39 +327,6 @@ _37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
   overflow: hidden;
 } */
 
-/* Yapping so hard, chatting isnt a thing                                                         *\
-\* From: https://discord.com/channels/1015060230222131221/1028106818368589824/1364793119886938175 */
-.typingDots_b88801 > .ellipsis_b88801 + .text_b88801 {
-  font-size: 0;
-  height: 16px;
-  & > strong {
-    font-size: 12px;
-    &::after {
-      color: var(--text-muted);
-    }
-    &:last-child::after {
-      content: " is yapping...";
-      font-weight: 500;
-    }
-    &:last-child::after {
-      content: " are yapping...";
-      font-weight: 500;
-    }
-    &:nth-last-child(2)::after {
-      content: " and ";
-    }
-    &:not(:last-child)::after {
-      content: ", ";
-      font-weight: 500;
-    }
-  }
-
-  &:not(:has(> strong))::after {
-    font-size: 12px;
-    content: "Several people are yapping...";
-  }
-}
-
 /* Smaller banner */
 .notice__6e2b9 {
   z-index: 102;
