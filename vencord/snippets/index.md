@@ -58,6 +58,24 @@ reminder that some may not work.
 
   [<kbd>Jump to message</kbd>](https://discord.com/channels/1015060230222131221/1028106818368589824/1430160181357969449)
 
+- [Kinda Chat Bubbles](https://nspc911.github.io/themes/vencord/ChatBubblesKinda.theme.css)
+
+  Adds a seamless bubble like appearance to messages
+
+  ```css
+  :root {
+    /* border for the messages          *\
+    \* set to none if you dont want any */
+    --cbk-border: none;
+    /* background for the messages             *\
+    \* set to transparent if you dont want any */
+    --cbk-background: #ffffff11;
+    /* border radius for the messages  *\
+    \* set to 0px if you dont want any */
+    --cbk-border-radius: 10px;
+  }
+  ```
+
 ## not used
 
 - [Refreshed Seamless Chat Bar](https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css) 📦
@@ -160,5 +178,5 @@ reminder that some may not work.
 <sub>
 Footnotes:
 1. If a snippet doesn't have a url, refer to the message.
-2. If a snippet has <kbd>📦</kbd>, it means that I no longer use the snippet.
+2. If a snippet has <kbd>📦</kbd>, it means that I no longer use the snippet. This means that I won't know when it updates, but I am willing to update them when necessary.
 <sub>

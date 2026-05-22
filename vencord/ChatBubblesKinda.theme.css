@@ -1,0 +1,96 @@
+/**
+ * @name Kinda Chat Bubbles
+ * @author NSPG911
+ * @version 1.0.0
+ * @description Make continuous chats seamless like a chat bubble, with a bit of customisation
+ * @source https://github.com/NSPC911/themes
+*/
+
+:root {
+  /* border for the messages          *\
+  \* set to none if you dont want any */
+  --cbk-border: none;
+  /* background for the messages             *\
+  \* set to transparent if you dont want any */
+  --cbk-background: #ffffff11;
+  /* border radius for the messages  *\
+  \* set to 0px if you dont want any */
+  --cbk-border-radius: 10px;
+}
+
+.messageListItem__5126c {
+  .contents_c19a55,
+  .container_b7e1cb {
+    border: var(--cbk-border);
+    border-radius: var(--cbk-border-radius);
+    padding: 5px 10px;
+    background: var(--cbk-background);
+  }
+  /* if last message or last message before separator */
+  &:nth-last-child(2) > div > .contents_c19a55,
+  &:has(+ :is([role="separator"], .groupStart__5126c)) > div > .contents_c19a55 {
+    &:not(:has(+ .container_b7e1cb > *)),
+    & + .container_b7e1cb {
+      &&&&& {
+        border-bottom-right-radius: var(--cbk-border-radius);
+        border-bottom-left-radius: var(--cbk-border-radius);
+        border-bottom: var(--cbk-border);
+      }
+    }
+  }
+  /* if not group start but next is group start */
+  &:not(:has(> .groupStart__5126c)):has(+ .messageListItem__5126c > .groupStart__5126c) > div > .contents_c19a55 {
+    /* remove border top if it has an image/file
+       or it is alone */
+    &:not(:has(+.container_b7e1cb> *)),
+    & + .container_b7e1cb {
+      border-top: none;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+    &:has(+.container_b7e1cb > *) {
+      border-top: none;
+      border-bottom: none;
+      border-radius: 0;
+    }
+  }
+  /* if group start, but next isnt group start*/
+  &:has(> .groupStart__5126c):not(:has(+ .messageListItem__5126c > .groupStart__5126c)) > div > .contents_c19a55 {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    & + .container_b7e1cb:has(> *) {
+      border-top: none;
+      border-bottom: none;
+      border-radius: 0;
+    }
+  }
+  /* is mid section and next isnt start */
+  &:not(:has(> .groupStart__5126c)):not(:has(+ .messageListItem__5126c > .groupStart__5126c)) > div > :is(.container_b7e1cb, .contents_c19a55) {
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0;
+  }
+  /* is group start and next is group start */
+  &:has(> .groupStart__5126c):has(+ .messageListItem__5126c > .groupStart__5126c) > div .contents_c19a55 {
+    &:has(+ .container_b7e1cb > *) {
+      border-bottom: none;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    & + .container_b7e1cb {
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+  /* dont need the inner margins ig */
+  .cozyMessage__5126c {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important
+  }
+  /** ocd moment **/
+  .visualMediaItemContainer_f4758a {
+    transform: translateX(-1.5px)
+  }
+}
