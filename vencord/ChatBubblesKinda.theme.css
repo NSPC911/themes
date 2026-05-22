@@ -42,13 +42,13 @@
   &:not(:has(> .groupStart__5126c)):has(+ .messageListItem__5126c > .groupStart__5126c) > div > .contents_c19a55 {
     /* remove border top if it has an image/file
        or it is alone */
-    &:not(:has(+.container_b7e1cb> *)),
+    &:not(:has(+ .container_b7e1cb > *)),
     & + .container_b7e1cb {
       border-top: none;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
     }
-    &:has(+.container_b7e1cb > *) {
+    &:has(+ .container_b7e1cb > *) {
       border-top: none;
       border-bottom: none;
       border-radius: 0;
@@ -87,10 +87,10 @@
   /* dont need the inner margins ig */
   .cozyMessage__5126c {
     padding-top: 0 !important;
-    padding-bottom: 0 !important
+    padding-bottom: 0 !important;
   }
   /** ocd moment **/
   .visualMediaItemContainer_f4758a {
-    transform: translateX(-1.5px)
+    transform: translateX(-1.5px);
   }
 }

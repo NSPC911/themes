@@ -43,12 +43,6 @@ reminder that some may not work.
 
   Turns the Image Zoom plugin from Vencord into a spyglass, with an optional zoom animation
 
-`Variables`
-
-  Turns the Image Zoom plugin from Vencord into a spyglass, with an optional zoom animation
-
-  `Variables`
-
   ```css
   /* set to 0 to disable animation */
   :root {
