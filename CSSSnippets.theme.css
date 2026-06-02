@@ -376,6 +376,9 @@ _37e49614b9f110a9-avatarWrapper > [class*="buttons"] {
   > li {
     --interactive-hover: var(--thread-core, #f38ba8);
     --interactive-active: var(--thread-core, #f38ba8);
+    & > svg {
+      color: var(--interactive-muted);
+    }
   }
   > li:nth-of-type(6n + 1) {
     --channels-default: var(--thread-default, rgba(243, 139, 168, 0.7));

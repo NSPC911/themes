@@ -289,6 +289,13 @@ body {
   .container__9293f, .container__9293f {
     border-bottom: none !important;
   }
+  .chat_f75fb0 > .wrapper_cb9592 {
+    margin-bottom: var(--gap)
+  }
+  /* vc icon in server fix */
+  .iconBadge__650eb:not(.isCurrentUserConnected__650eb) {
+    color: var(--text-1)
+  }
 }
 /* vc window fix */
 #app-mount [data-popout-root="true"] {
